@@ -1,0 +1,22 @@
+{
+  "DATA_READINESS": "BLOCKED",
+  "AuditTimeUtc": "2026-08-29T19:12:58.405943+00:00",
+  "RawDirectory": "C:\\Users\\MY PC\\Desktop\\Hackathon\\data\\raw\\deepvoice",
+  "RawDirectoryExists": false,
+  "FileCount": 0,
+  "AudioFileCount": 0,
+  "CsvFileCount": 0,
+  "OpenZipPresent": false,
+  "SampleSubmissionPresent": false,
+  "DuplicateByteGroups": 0,
+  "Issues": [
+    "AUDIO_FILES_NOT_EXTRACTED_OR_MISSING",
+    "OFFICIAL_OPEN_ZIP_MISSING",
+    "RAW_DIRECTORY_MISSING",
+    "RAW_FILES_MISSING",
+    "SAMPLE_SUBMISSION_NOT_EXTRACTED_OR_MISSING"
+  ],
+  "CsvResults": [],
+  "ZipResults": [],
+  "ReadinessNote": "Overall readiness remains BLOCKED until official dummy data and registered labeled training data are fully audited"
+}

@@ -216,3 +216,83 @@ E01의 full report에는 기존 계획의 source/codec/rate뿐 아니라 위 7�
 ### 다음 gate
 
 E01 구현·실행 결과는 `EXPERIMENT_BATCH: COMPLETE`만으로 채택하지 않는다. 독립 `EXPERIMENT_AUDIT: PASS`를 받은 뒤에만 baseline 수치와 E02 진입을 모델 개선 근거로 해석한다.
+
+## D16. E01-R4 감사 통과와 full training 실행 승인
+
+판정일: 2026-08-30  
+근거 run: `E01-R4` cache·수치·worker·runtime benchmark  
+독립 감사: `EXPERIMENT_AUDIT: PASS`
+
+### 결정과 승인 범위
+
+- E01 상태를 `READY_FOR_FULL_TRAINING_R4_AUDIT_PASS`로 올린다.
+- R4 증거가 승인하는 다음 작업은 **E01 log-mel reference baseline의 full 3-seed training 한 가지뿐**이다.
+- 통계 workload `32,768 samples/epoch × 20 epochs × 3 seeds = 1,966,080 training samples`와 seed `20260830/20260831/20260832`를 보존한다. validation은 seed마다 18,165 segment다.
+- E02 artifact branch, WavLM/MERT, architecture·loss·sampling·data·split·precision 변경, hyperparameter 탐색은 승인하지 않는다.
+- R4에는 full training, checkpoint, validation OOF, metric이 없다. pilot loss `0.63425410`과 throughput은 수치·자원 gate용이며 E01 성능이 아니다.
+
+따라서 E01의 기존 성공 조건인 3-seed 재현성, 표준편차 0.005 이하, full shortcut report는 아직 충족되지 않았다. post-training 독립 감사 전에는 baseline 성능, 모델 개선 또는 E02 진입을 주장하지 않는다.
+
+### R1–R4 계보
+
+- E01 R1은 nonfinite loss를 PASS로 기록한 점, strict JSON 위반, immutable driver 불일치 때문에 계속 `BLOCKED`다.
+- E01 R3는 strict serializer와 logits/loss/gradient/parameter hard guard 부재 때문에 계속 `BLOCKED`다.
+- R4는 새 immutable `experiments/e01_r4` source 16개에서 recursive finite JSON, masked-NaN·skipped-step 반례, guarded FP32를 통과했다.
+- R4는 R1/R2/R3 code·report를 대체 삭제하지 않는다. 이전 실패와 제한은 보존하고, R4는 **full-run readiness 근거만** 새로 제공한다.
+
+핵심 감사 hash:
+
+- manifest: `2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6`
+- R4 batch report: `08922f2f2e7e73fe922603f2c8abdb90228fb3b7644b2cc32e0828dc7d7a2423`
+- R4 validation audit Markdown: `1aac0423b4e655e349bcbdb47f4cbce0a7df24eeabcf9c4638905778b9ea9203`
+- R4 validation audit JSON: `59a43367738e9508c9d76644b50c8e1b1f227898c9df3501e262d92af14bc1f1`
+- R4 run manifest: `0bae4d736918b4d7f99ff2762ddde53fc230b4ada65ac4e90426f5dec2024c53`
+- R4 code-inventory CSV file: `3728b4164f6c01140f72e039825036bc76fb55cb5c3d86571c85d20e09835aea`
+- R4 immutable source content inventory: `002e5f7bbe0ba37762f907aa975e7bfb71f95cf71393de768da1c9c54db96a16`
+- active cache index: `ff27584b19039226557dc12dc62a91f6cf8f723e711737406ae77341ab9ef13a`
+- R4 config: `626d4e61d84552f81a1294fb085ea19bff268696ac94e63ed08a4100d265756c`
+
+### exact cache와 AIME locator 결론
+
+- active cache는 non-test FMA/AIME 5,651개, float32 1-D NPY 5,651개, 9,557,290,108 bytes이며 reload 최대 절대 차이는 0이다.
+- active cache index는 quarantine를 0개 참조하고 raw original은 보존되어 있다.
+- AIME manifest의 `row`는 **1-based**다. resolver는 `resolved_zero_based_row = declared_manifest_row - 1`을 사용한다.
+- non-test AIME 1,009개와 36 shard를 전수 검사해 parquet ID mismatch와 cache resolution mismatch가 모두 0이었다.
+- locator와 cache metadata는 raw source를 찾고 무결성을 검증하는 용도일 뿐 모델 feature가 아니다.
+
+### performance-first 실행 근거
+
+- precision은 autocast와 GradScaler를 끈 `fp32_guarded`다. 매 batch logits, loss, FP32 gradient, parameter와 optimizer step을 검사하며 skip은 0이었다.
+- Windows worker 0/2/4가 동일 locator·tensor sequence를 만들었고, measured loader가 가장 빠른 worker 2를 선택했다.
+- GTX 1660 SUPER 6 GiB에서 guarded batch 32가 선택되었고 realistic cached loader+GPU throughput은 98.6615 sample/s였다.
+- safety factor 0.80을 적용한 conservative rate는 78.9292 sample/s, validation 포함 3-seed 예상시간은 7.1111시간이다.
+- 사용자는 임의의 짧은 실행보다 모델 성능을 우선한다. 따라서 기존 `3 GPU-hours`를 workload 축소 gate로 사용하지 않고, 24 wall-hour gate 안에서 `32,768 × 20 × 3` 전체를 실행한다.
+- 속도를 위해 FP16, epoch/seed/data 축소, cache 근사, label mask·sampler 변경을 도입하지 않는다.
+
+### E01-R5에서 허용하는 변경
+
+R5는 사용자 가시성과 장시간 실행 복구를 위한 **execution/progress/resume plumbing만** 추가할 수 있다.
+
+허용:
+
+- 사용자가 직접 볼 수 있는 별도 CMD 창에서 foreground training 실행
+- seed/epoch/batch, 완료 sample/전체 sample, elapsed, measured throughput, 최근 loss, seed ETA와 전체 ETA의 주기적 출력
+- 동일 정보를 append-only log에 기록
+- atomic checkpoint와 resume state, 중단 후 동일 지점에서 재개
+- 시작 전 R4 manifest/source/config/cache hash와 CUDA/worker/batch/FP32 guard 재검사
+
+금지:
+
+- model, feature, loss, label mask, sampler draw, dataset, split, segment, augmentation, optimizer hyperparameter, batch 32, worker 2, guarded FP32의 변경
+- workload `32,768 × 20 × 3` 축소
+- 진행률 표시를 위한 validation/test 재사용 또는 test 통계
+- resume 시 이미 완료한 gradient sample을 중복하거나 아직 실행하지 않은 sample을 건너뛰는 것
+
+R5 resume state는 최소 model, optimizer, scheduler가 있으면 scheduler, seed, epoch, batch/global step, sampler position, CPU/CUDA RNG를 저장한다. 작은 interrupted-vs-uninterrupted equivalence test에서 sample sequence와 최종 state digest가 일치해야 한다. model/data semantics 또는 R4 고정 hash가 달라지면 full run을 시작하지 않고 `EXPERIMENT_BATCH: BLOCKED`로 되돌린다.
+
+### 사용자 관찰과 다음 gate
+
+- 장시간 run은 숨김 process가 아니라 가시적인 CMD 창에서 progress/ETA를 보여야 한다.
+- 사용자가 완료 시점을 직접 알리고 후속 감사를 요청한다. assistant가 장시간 run을 polling하거나 완료를 추측하지 않는다.
+- completion 후 checkpoint, OOF, five-head metric, 7개 shortcut 축, seed 안정성, workload completeness, resume lineage를 독립 validation auditor가 검사한다.
+- 그 post-training 결과가 `EXPERIMENT_AUDIT: PASS`를 받아야 E01을 `COMPLETE`로 바꾸고 성능을 해석하거나 E02를 열 수 있다.

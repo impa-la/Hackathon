@@ -1,0 +1,153 @@
+{
+  "blockers": [],
+  "environment": {
+    "disk_free_bytes": 54447796224,
+    "disk_free_gib": 50.70846176147461,
+    "disk_total_bytes": 1023522828288,
+    "ffmpeg": {
+      "available": true,
+      "return_code": 0,
+      "stderr": "",
+      "stdout": "ffmpeg version 9.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with gcc 16.1.0 (Rev2, Built by MSYS2 project)\nconfiguration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0"
+    },
+    "ffprobe": {
+      "available": true,
+      "return_code": 0,
+      "stderr": "",
+      "stdout": "ffprobe version 9.0.1-essentials_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers\nbuilt with gcc 16.1.0 (Rev2, Built by MSYS2 project)\nconfiguration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101"
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "pyarrow": "25.0.1",
+      "scipy": null,
+      "torch": "2.7.1+cu126",
+      "torchaudio": "2.7.1+cu126"
+    },
+    "physical_gpu": {
+      "available": true,
+      "return_code": 0,
+      "stderr": "",
+      "stdout": "NVIDIA GeForce GTX 1660 SUPER, 6144 MiB, 560.94"
+    },
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_executable": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\.venv-e01\\Scripts\\python.exe",
+    "python_launchers": {
+      "available": true,
+      "return_code": 0,
+      "stderr": "",
+      "stdout": "-V:3.13 *        C:\\Python313\\python.exe\n -V:3.10          C:\\Users\\MY PC\\AppData\\Local\\Programs\\Python\\Python310\\python.exe\n -V:3.9           C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python39_64\\python.exe\n -V:Astral/CPython3.12.13 C:\\Users\\MY PC\\Claude\\Projects\\game\\AudioTests\\Tamtamburin\\VoiceBenchmark\\GitHubModelsPage1V1\\PythonRuntimes\\cpython-3.12.13-windows-x86_64-none\\python.exe\n -V:Astral/CPython3.11.16 C:\\Users\\MY PC\\AppData\\Roaming\\uv\\python\\cpython-3.11.16-windows-x86_64-none\\python.exe\n -V:Astral/CPython3.10.20 C:\\Users\\MY PC\\Claude\\Projects\\game\\AudioTests\\Tamtamburin\\VoiceBenchmark\\GitHubModelsPage1V1\\PythonRuntimes\\cpython-3.10.20-windows-x86_64-none\\python.exe"
+    },
+    "python_version": "3.13.5",
+    "torch_cuda_available": true,
+    "torch_cuda_device_count": 1,
+    "torch_cuda_version": "12.6"
+  },
+  "expected_install_disk_gib_with_cache": 8.0,
+  "gates": {
+    "all_four_locator_decoders": true,
+    "cuda_available": true,
+    "dedicated_venv": true,
+    "e00_r2_audit_pass": true,
+    "e00_r2_contract_hash": true,
+    "ffmpeg": true,
+    "free_disk_at_least_12_gib": true,
+    "pyarrow_25_0_1": true,
+    "raw_locator_containers": true,
+    "torch_2_7_1_cu126": true,
+    "torchaudio_2_7_1_cu126": true
+  },
+  "install_sources": [
+    "https://pytorch.org/get-started/previous-versions/",
+    "https://arrow.apache.org/docs/python/install.html"
+  ],
+  "installation_commands_windows": [
+    "py -3.13 -m venv deepvoice\\.venv-e01",
+    "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install --upgrade pip",
+    "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install torch==2.7.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu126",
+    "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install pyarrow==25.0.1"
+  ],
+  "locator_probes": [
+    {
+      "container_bytes": 40401539,
+      "container_exists": true,
+      "dataset": "aime-open-model-subset",
+      "decode_requested": true,
+      "decode_seconds": 0.3623786000025575,
+      "decode_status": "PASS",
+      "decoded_sample_count": 162880,
+      "decoder_diagnostics": {
+        "asserted_parquet_id": "00025",
+        "declared_manifest_row": 1,
+        "decoder_backend": "ffmpeg_subprocess_bytes",
+        "resolved_zero_based_row": 0,
+        "resolver_version": "aime_manifest_one_based_v1",
+        "source_locator_index_semantics": "manifest_one_based_resolved_to_parquet_zero_based"
+      },
+      "kind": "parquet",
+      "member_exists": null,
+      "scope": "first_non_test_record_for_dataset"
+    },
+    {
+      "container_bytes": 960738,
+      "container_exists": true,
+      "dataset": "fma-small",
+      "decode_requested": true,
+      "decode_seconds": 0.0978839000017615,
+      "decode_status": "PASS",
+      "decoded_sample_count": 479625,
+      "decoder_diagnostics": {
+        "decoder_backend": "ffmpeg_subprocess_path"
+      },
+      "kind": "file",
+      "member_exists": null,
+      "scope": "first_non_test_record_for_dataset"
+    },
+    {
+      "container_bytes": 425830,
+      "container_exists": true,
+      "dataset": "ljspeech-1.1",
+      "decode_requested": true,
+      "decode_seconds": 0.00659559999985504,
+      "decode_status": "PASS",
+      "decoded_sample_count": 154480,
+      "decoder_diagnostics": {
+        "decoder_backend": "stdlib_pcm_path"
+      },
+      "kind": "file",
+      "member_exists": null,
+      "scope": "first_non_test_record_for_dataset"
+    },
+    {
+      "container_bytes": 28918626084,
+      "container_exists": true,
+      "dataset": "wavefake-1.2.0",
+      "decode_requested": true,
+      "decode_seconds": 0.8379881999971985,
+      "decode_status": "PASS",
+      "decoded_sample_count": 143592,
+      "decoder_diagnostics": {
+        "decoder_backend": "stdlib_pcm_bytes"
+      },
+      "kind": "zip",
+      "member_exists": true,
+      "scope": "first_non_test_record_for_dataset"
+    }
+  ],
+  "manifest": {
+    "crossing_group_count": 0,
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "manifest_total_row_count": 137328,
+    "test_field_contract": {
+      "allowed_fields": [
+        "content_group_key",
+        "recommended_content_split"
+      ],
+      "retained_forbidden_fields": 0,
+      "test_statistics": 0
+    },
+    "train_row_count": 110059,
+    "validation_row_count": 13540
+  },
+  "minimum_free_disk_gib_after_install": 12.0,
+  "status": "READY"
+}

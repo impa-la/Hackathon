@@ -1,0 +1,18 @@
+{
+  "balanced_group_draws_per_epoch": 8192,
+  "balanced_pilot_samples_per_second": 17.320803031408065,
+  "effective_training_samples_per_second": 17.320803031408065,
+  "full_run_gate_gpu_hours": 3.0,
+  "full_run_gate_wall_hours": 24.0,
+  "gpu_segments_per_second": 440.65764480438804,
+  "loader_files_per_second": 21.58670949486683,
+  "projected_three_seed_wall_hours": 32.08753598485236,
+  "samples_per_balanced_group_draw": 4,
+  "samples_per_epoch": 32768,
+  "status": "BLOCKED_RESOURCE",
+  "training_hours_per_seed": 10.510161919995314,
+  "training_samples_per_seed": 655360,
+  "validation_files_per_seed": 13540,
+  "validation_hours_per_seed": 0.18568340828880486,
+  "validation_segments_per_seed": 18165
+}

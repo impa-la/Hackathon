@@ -1,0 +1,126 @@
+{
+  "balanced_pilot_is_e01_performance_result": false,
+  "config": {
+    "balanced_group_draws_per_epoch": 8192,
+    "base_channels": 24,
+    "batch_size": 16,
+    "bootstrap_replicates": 200,
+    "e00_r2_audit_relative_path": "reports/e00-r2-validation-audit.md",
+    "e00_r2_audit_required_first_line": "EXPERIMENT_AUDIT: PASS",
+    "e00_r2_contract_relative_path": "experiments/e00_r2/contract.py",
+    "e00_r2_contract_sha256": "b489b136eb80edba8e8a5d6636ae70e273bb677201a6e7da0b3dfb48a2aae4ce",
+    "epochs": 20,
+    "expected_install_disk_gib_with_cache": 8.0,
+    "experiment_id": "E01",
+    "feature_contract": "decoded waveform only; source, codec, sample rate, path and provider metadata are forbidden model inputs",
+    "full_run_requires": {
+      "cuda": true,
+      "ffmpeg": true,
+      "minimum_free_disk_gib": 12.0,
+      "pyarrow_version": "25.0.1",
+      "torch_version": "2.7.1+cu126 compatible",
+      "torchaudio_version": "2.7.1+cu126 compatible"
+    },
+    "heldout_training_families": [
+      "common_voice_prompt",
+      "jsut_basic5000"
+    ],
+    "hop_length": 160,
+    "installation_commands_windows": [
+      "py -3.13 -m venv deepvoice\\.venv-e01",
+      "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install --upgrade pip",
+      "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install torch==2.7.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu126",
+      "deepvoice\\.venv-e01\\Scripts\\python.exe -m pip install pyarrow==25.0.1"
+    ],
+    "learning_rate": 0.0003,
+    "manifest_relative_path": "reports/deepvoice-training-manifest.csv.gz",
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "max_segments_per_file": 8,
+    "mel_bins": 80,
+    "n_fft": 512,
+    "official_install_sources": [
+      "https://pytorch.org/get-started/previous-versions/",
+      "https://arrow.apache.org/docs/python/install.html"
+    ],
+    "padding_contract": "right-zero-pad to 8 seconds with explicit valid-sample/frame masking in feature normalization and CNN pooling",
+    "pilot_samples": 64,
+    "sample_rate": 16000,
+    "samples_per_balanced_group_draw": 4,
+    "samples_per_epoch": 32768,
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "segment_seconds": 8.0,
+    "singleton_tolerance": 1e-06,
+    "status_before_run": "READY_TO_IMPLEMENT",
+    "training_sampling": "group-first exact 25% speech-real, 25% speech-fake, 25% music-real, 25% music-fake",
+    "weight_decay": 0.0001,
+    "workers": 0
+  },
+  "cost": {
+    "hardware": "local GTX 1660 SUPER 6 GiB",
+    "incremental_cloud_or_api_cost_krw": 0
+  },
+  "experiment_batch": "BLOCKED_RESOURCE",
+  "experiment_id": "E01",
+  "full_training_started": false,
+  "manifest_integrity": {
+    "crossing_group_count": 0,
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "manifest_total_row_count": 137328,
+    "test_field_contract": {
+      "allowed_fields": [
+        "content_group_key",
+        "recommended_content_split"
+      ],
+      "retained_forbidden_fields": 0,
+      "test_statistics": 0
+    },
+    "train_row_count": 110059,
+    "validation_row_count": 13540
+  },
+  "preflight_status": "READY",
+  "run_finished_utc": "2026-08-30T11:45:52.201700+00:00",
+  "run_started_utc": "2026-08-30T11:45:28.632990+00:00",
+  "runtime_projection": {
+    "balanced_group_draws_per_epoch": 8192,
+    "balanced_pilot_samples_per_second": 17.546298238267507,
+    "effective_training_samples_per_second": 17.546298238267507,
+    "full_run_gate_gpu_hours": 3.0,
+    "full_run_gate_wall_hours": 24.0,
+    "gpu_segments_per_second": 439.08958434042086,
+    "loader_files_per_second": 18.297910104248473,
+    "projected_three_seed_wall_hours": 31.776394355860813,
+    "samples_per_balanced_group_draw": 4,
+    "samples_per_epoch": 32768,
+    "status": "BLOCKED_RESOURCE",
+    "training_hours_per_seed": 10.375091200001124,
+    "training_samples_per_seed": 655360,
+    "validation_files_per_seed": 13540,
+    "validation_hours_per_seed": 0.21704025195247997,
+    "validation_segments_per_seed": 18165
+  },
+  "runtime_seconds": 23.568724400000065,
+  "scope": "fixed log-mel CNN baseline only; no E02",
+  "test_usage_contract": {
+    "allowed_fields": [
+      "content_group_key",
+      "recommended_content_split"
+    ],
+    "test_metrics": 0,
+    "test_predictions": 0,
+    "test_statistics": 0
+  },
+  "tiny_smoke_is_e01_performance_result": false,
+  "unit_test_status": "PASS",
+  "versions": {
+    "config_sha256": "83fd9c9660c13856351332fb63c68f6eadcf77f350b39529fca933461ea6d1a9",
+    "e00_r2_contract_sha256": "b489b136eb80edba8e8a5d6636ae70e273bb677201a6e7da0b3dfb48a2aae4ce",
+    "e01_code_inventory_sha256": "b241b70bc028a2a791c4a707078d49a70fd7a6fbd980897f7d23b1ff7a3f63d4",
+    "git_head": "4eff360b862d755fc4b06582f93740ec4bb1bda4",
+    "git_status_porcelain": "M ../.gitignore\n?? ../.codex/\n?? README.md\n?? build_submission.py\n?? configs/\n?? experiments/e01/\n?? metrics.py\n?? model/\n?? open.zip\n?? prepare_manifest.py\n?? requirements-dev.txt\n?? requirements.txt\n?? script.py\n?? tests/\n?? train.py\n?? ../narajang/",
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6"
+  }
+}

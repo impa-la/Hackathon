@@ -1,0 +1,12 @@
+{
+  "checked_record_count": 1009,
+  "checked_shard_count": 36,
+  "declared_row_zero_count": 0,
+  "maximum_declared_row": 31,
+  "minimum_declared_row": 1,
+  "parquet_id_mismatch_count": 0,
+  "resolution_rule": "resolved_zero_based_row = declared_manifest_row - 1",
+  "resolver_version": "aime_manifest_one_based_v1",
+  "scope": "non-test AIME records only",
+  "status": "PASS"
+}

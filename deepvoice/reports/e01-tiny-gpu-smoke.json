@@ -1,0 +1,16 @@
+{
+  "batch_size": 4,
+  "device": "cuda",
+  "is_e01_performance_result": false,
+  "loss": 0.7070387005805969,
+  "peak_allocated_bytes": 67786752,
+  "prediction_sha256": "d1b8381ed30629d8df006ca594303f5814ae9d4fefc465cd01f06d6e1e154e5f",
+  "scope": "synthetic one-step smoke only",
+  "seconds": 2.5494054999981017,
+  "seed": 20260830,
+  "segment_seconds": 8.0,
+  "status": "PASS",
+  "trainable_parameters": 136661,
+  "training_segments_per_second": 7.174232881685429,
+  "training_step_seconds": 0.5575509000009333
+}

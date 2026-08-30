@@ -1,0 +1,5 @@
+scope,stratum,group_count,row_count,target_fraction
+train_no_test,speech_real,10470,10470,0.25
+train_no_test,speech_fake,10470,73290,0.25
+train_no_test,music_real,855,4276,0.25
+train_no_test,music_fake,264,888,0.25

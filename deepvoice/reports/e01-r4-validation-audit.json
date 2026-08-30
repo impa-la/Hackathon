@@ -1,0 +1,572 @@
+{
+  "status": "PASS",
+  "audit_id": "E01-R4-INDEPENDENT-AUDIT-20260830",
+  "scope": "experiments/e01_r4 and e01-r4-* benchmark-only readiness",
+  "test_data_handling": "test rows used only as group/split crossing projections; no test statistics, predictions, labels, masks, or metrics calculated",
+  "checks": [
+    {
+      "check": "manifest_and_test_isolation",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+        "row_count": 137328,
+        "train_rows": 110059,
+        "validation_rows": 13540,
+        "crossing_group_count": 0,
+        "test_handling": "group/split crossing projection only; test rows discarded immediately, with no label/mask/metadata/performance statistic retained"
+      }
+    },
+    {
+      "check": "immutable_source_inventory",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "file_count": 16,
+        "inventory_sha256": "002e5f7bbe0ba37762f907aa975e7bfb71f95cf71393de768da1c9c54db96a16",
+        "recorded_inventory_sha256": "002e5f7bbe0ba37762f907aa975e7bfb71f95cf71393de768da1c9c54db96a16",
+        "files": [
+          {
+            "relative_path": "__init__.py",
+            "bytes": 196,
+            "sha256": "59b630f18e878172ee2b0bf1951aec1f6238c880e4e4f9e372f61556f4f779c0",
+            "match": true
+          },
+          {
+            "relative_path": "audio.py",
+            "bytes": 12085,
+            "sha256": "f44dd5c977797b419dc138e9e782e038106e9b115c1c68212b47e6c1c6607d3b",
+            "match": true
+          },
+          {
+            "relative_path": "benchmark.py",
+            "bytes": 16564,
+            "sha256": "efe9144c823a1f311a58e13ed8a6f8dd9a4e428e23e56b5b22238884fe86727d",
+            "match": true
+          },
+          {
+            "relative_path": "cache.py",
+            "bytes": 19250,
+            "sha256": "8e00266b969be19c1adf564d0c93ce158b7aced3b704c80c7dcd2679df0c8b3e",
+            "match": true
+          },
+          {
+            "relative_path": "config.json",
+            "bytes": 2842,
+            "sha256": "626d4e61d84552f81a1294fb085ea19bff268696ac94e63ed08a4100d265756c",
+            "match": true
+          },
+          {
+            "relative_path": "contract_adapter.py",
+            "bytes": 1828,
+            "sha256": "fc2459405ced1caf808e6f5decf0f0aec4a6c882eaed09458aeeb733fff540ba",
+            "match": true
+          },
+          {
+            "relative_path": "determinism.py",
+            "bytes": 1589,
+            "sha256": "7a5981d58af8475bbc875f990d6bf53f1ddd00bfba7eab840f2cc598081c7e82",
+            "match": true
+          },
+          {
+            "relative_path": "model.py",
+            "bytes": 7211,
+            "sha256": "89eeab2c3b8bfa5c25ed1c58716c9baad4a6b0104d18a38449fbd65df672b726",
+            "match": true
+          },
+          {
+            "relative_path": "numerical.py",
+            "bytes": 6791,
+            "sha256": "fcd26d62f6d238441175920ae24073a8c5b9aab4ba5d9365e60e44cf5c1ea98e",
+            "match": true
+          },
+          {
+            "relative_path": "preflight.py",
+            "bytes": 7619,
+            "sha256": "d009268ceff8687f26af7a94e928938308b5a1fbb701ad86e9b784d94716918e",
+            "match": true
+          },
+          {
+            "relative_path": "records.py",
+            "bytes": 4009,
+            "sha256": "c0dfbc9ffb8b38fb345f369f5433860a974bd8cadae1993fb3c5c62620593f6a",
+            "match": true
+          },
+          {
+            "relative_path": "run_e01.py",
+            "bytes": 15888,
+            "sha256": "6d9515fe64335f25245534514f04f1e80cd5daa9b42756f93928a2d4f9fda0b7",
+            "match": true
+          },
+          {
+            "relative_path": "run_tests.py",
+            "bytes": 18948,
+            "sha256": "d28f5f9ed4c5fc1643f1ee87144ff2d1b91e855d2b3a18310dfd1837e69cd0e0",
+            "match": true
+          },
+          {
+            "relative_path": "sampling.py",
+            "bytes": 5052,
+            "sha256": "593cba9bb3e7211ca8ff5c4a93369e3158efb797df8bf6d7261caf08e8cd6ace",
+            "match": true
+          },
+          {
+            "relative_path": "strict_serialization.py",
+            "bytes": 1490,
+            "sha256": "f84200bcf46e6e18993d916c8294870353c0d8e88d6a4f27b55f64564bdf7f8a",
+            "match": true
+          },
+          {
+            "relative_path": "train_e01.py",
+            "bytes": 18134,
+            "sha256": "966ddb8e9bb5bb1f2690965e4338d5ec40c3297f76282ab2f8ed9a1993e4d0b8",
+            "match": true
+          }
+        ]
+      }
+    },
+    {
+      "check": "strict_recursive_json",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "strict_output_count": 13,
+        "output_count": 13,
+        "outputs": [
+          {
+            "file": "e01-r4-aime-row-resolution.json",
+            "sha256": "13b197d9dea7c197538e5ce8ec849af8398ac3d0d39099e182e1e7d44a132418",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-batch-autotune.json",
+            "sha256": "ecf92b6a1dde008c9165f5a1d7a0521cfbfa6b487b8c6e891dd3df7a860a0715",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-cache-build.json",
+            "sha256": "e645992d3b0d8040bca2a14c054a993ddd6dfb55fd2724845a06b0d2e57ec46c",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-cache-integrity.json",
+            "sha256": "7dd39f3611af571283c98c56371139a172979ec4653de80232fac97b3a599e7f",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-cache-storage-gate.json",
+            "sha256": "b460638e61c1c6b89760d2b8057ba96de7195909ff70f51e42c7a83824229ac9",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-cached-gpu-pilot.json",
+            "sha256": "139ae9eb47fa9cacb376e028f85fe26833fc3216444b7ea17bd185e92d1dec33",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-preflight.json",
+            "sha256": "bb4afcd749fa50cfaf430e9533f941ad2fe7881a5237257346b390939d48ae65",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-run-manifest.json",
+            "sha256": "0bae4d736918b4d7f99ff2762ddde53fc230b4ada65ac4e90426f5dec2024c53",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-runtime-projection.json",
+            "sha256": "dbbb7e3d1235f007d2d4a8dce5e6456bef898afcf753f2bbb869bae0dff33660",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-tiny-gpu-smoke.json",
+            "sha256": "c95b402b08583b8908ef9713d12f205608ccf94750f368a5bf5d61881cf64d64",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-unit-test-results.json",
+            "sha256": "655183f180a5698b75d1b0a753ea30eb1a06a4d42711fed417a7f47ca7f562e8",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "e01-r4-windows-workers.json",
+            "sha256": "a84f7c2362fe05bf3da57fc9c63ca30783a35ab751f807f62a6264eebda6a1e7",
+            "strict_recursive_finite": true,
+            "error": null
+          },
+          {
+            "file": "benchmark-run.json",
+            "sha256": "0bae4d736918b4d7f99ff2762ddde53fc230b4ada65ac4e90426f5dec2024c53",
+            "strict_recursive_finite": true,
+            "error": null
+          }
+        ],
+        "nested_nan_rejected": true,
+        "nested_error_path_reported": true,
+        "json_bytes_allow_nan_false": true,
+        "json_line_allow_nan_false": true
+      }
+    },
+    {
+      "check": "tests_and_guarded_fp32",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "fresh_test_status": "PASS",
+        "fresh_test_count": 15,
+        "recorded_test_count": 15,
+        "required_adversarial_tests_in_suite": true,
+        "fresh_cuda_smoke": {
+          "status": "PASS",
+          "scope": "synthetic one-step smoke only",
+          "is_e01_performance_result": false,
+          "seed": 20260830,
+          "device": "cuda",
+          "batch_size": 4,
+          "segment_seconds": 8.0,
+          "loss": 0.7070387005805969,
+          "prediction_sha256": "b3237afe5435d4fbca2b92f279c7b3e4cbe0da5ea8e92700ba0ebd6caa573a57",
+          "trainable_parameters": 136661,
+          "seconds": 0.6373691999979201,
+          "training_step_seconds": 0.5992167000003974,
+          "training_segments_per_second": 6.675381377049984,
+          "precision_mode": "fp32_guarded",
+          "autocast_enabled": false,
+          "grad_scaler_enabled": false,
+          "peak_allocated_bytes": 67786752,
+          "optimizer_step_before": 0,
+          "optimizer_step_after": 1
+        },
+        "guard_markers_present": true,
+        "pilot": {
+          "status": "PASS",
+          "batch_count": 32,
+          "guarded_batch_count": 32,
+          "optimizer_skip_count": 0,
+          "final_loss": 0.6342540979385376,
+          "maximum_fp32_gradient_norm": 0.41709980368614197,
+          "precision_mode": "fp32_guarded",
+          "autocast_enabled": false,
+          "grad_scaler_enabled": false
+        }
+      }
+    },
+    {
+      "check": "exact_cache_and_quarantine",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "cache_root": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\cache\\e01_r4",
+        "cache_index_sha256": "ff27584b19039226557dc12dc62a91f6cf8f723e711737406ae77341ab9ef13a",
+        "index_entries": 5651,
+        "npy_file_count": 5651,
+        "sidecar_file_count": 5651,
+        "npy_bytes": 9557290108,
+        "dtype_counts": {
+          "float32": 5651
+        },
+        "dataset_counts": {
+          "fma-small": 4642,
+          "aime-open-model-subset": 1009
+        },
+        "header_error_count": 0,
+        "sidecar_error_count": 0,
+        "manifest_file_sha_alignment_mismatch_count": 0,
+        "raw_cache_exactness_samples": [
+          {
+            "dataset": "fma-small",
+            "sample_id": "2",
+            "sample_count": 479625,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          },
+          {
+            "dataset": "fma-small",
+            "sample_id": "106877",
+            "sample_count": 479625,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          },
+          {
+            "dataset": "fma-small",
+            "sample_id": "153452",
+            "sample_count": 479625,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          },
+          {
+            "dataset": "aime-open-model-subset",
+            "sample_id": "00025",
+            "sample_count": 162880,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          },
+          {
+            "dataset": "aime-open-model-subset",
+            "sample_id": "02522",
+            "sample_count": 163680,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          },
+          {
+            "dataset": "aime-open-model-subset",
+            "sample_id": "04496",
+            "sample_count": 160000,
+            "raw_cache_array_equal": true,
+            "cache_file_sha256_match": true,
+            "waveform_value_sha256_match": true,
+            "maximum_absolute_delta": 0.0
+          }
+        ],
+        "raw_sources_retained": true,
+        "quarantine_root": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\cache\\e01_r4_invalid_quarantine_20260830",
+        "quarantine_file_count": 48,
+        "active_index_quarantine_reference_count": 0
+      }
+    },
+    {
+      "check": "aime_one_based_resolution",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "checked_record_count": 1009,
+        "checked_shard_count": 36,
+        "one_based_id_mismatch_count": 0,
+        "cache_index_resolution_mismatch_count": 0,
+        "file_sha256_alignment_samples": [
+          {
+            "sample_id": "00025",
+            "raw_audio_sha256": "b6fb2b339799e7d4fc8c73abe9c861c551de8e07b4fa7e1fca71f797bf36f614",
+            "manifest_file_sha256": "b6fb2b339799e7d4fc8c73abe9c861c551de8e07b4fa7e1fca71f797bf36f614",
+            "cache_index_source_audio_sha256": "b6fb2b339799e7d4fc8c73abe9c861c551de8e07b4fa7e1fca71f797bf36f614",
+            "match": true
+          },
+          {
+            "sample_id": "00479",
+            "raw_audio_sha256": "cc87015f6598b339be90fa02472c4f82297dda1515d4a3d8a53e01fa41301406",
+            "manifest_file_sha256": "cc87015f6598b339be90fa02472c4f82297dda1515d4a3d8a53e01fa41301406",
+            "cache_index_source_audio_sha256": "cc87015f6598b339be90fa02472c4f82297dda1515d4a3d8a53e01fa41301406",
+            "match": true
+          },
+          {
+            "sample_id": "00814",
+            "raw_audio_sha256": "c7f02d51534020272b5b1294e89377d2dfc9d6cf03b7bc3a200d2b9071f1c745",
+            "manifest_file_sha256": "c7f02d51534020272b5b1294e89377d2dfc9d6cf03b7bc3a200d2b9071f1c745",
+            "cache_index_source_audio_sha256": "c7f02d51534020272b5b1294e89377d2dfc9d6cf03b7bc3a200d2b9071f1c745",
+            "match": true
+          },
+          {
+            "sample_id": "01319",
+            "raw_audio_sha256": "57455cb32a9146032ea9add97ecb91e7ba91a974efa74a20230502d3b3444475",
+            "manifest_file_sha256": "57455cb32a9146032ea9add97ecb91e7ba91a974efa74a20230502d3b3444475",
+            "cache_index_source_audio_sha256": "57455cb32a9146032ea9add97ecb91e7ba91a974efa74a20230502d3b3444475",
+            "match": true
+          },
+          {
+            "sample_id": "01684",
+            "raw_audio_sha256": "54747b3a133fbcb782e5641a75f7d08c4e9afafe242a758643af0bf0a9ba7979",
+            "manifest_file_sha256": "54747b3a133fbcb782e5641a75f7d08c4e9afafe242a758643af0bf0a9ba7979",
+            "cache_index_source_audio_sha256": "54747b3a133fbcb782e5641a75f7d08c4e9afafe242a758643af0bf0a9ba7979",
+            "match": true
+          },
+          {
+            "sample_id": "02178",
+            "raw_audio_sha256": "e74abc4391575a52a2fe2a845dd8b88ed769f575187ba96dac7ae43c97b9ef42",
+            "manifest_file_sha256": "e74abc4391575a52a2fe2a845dd8b88ed769f575187ba96dac7ae43c97b9ef42",
+            "cache_index_source_audio_sha256": "e74abc4391575a52a2fe2a845dd8b88ed769f575187ba96dac7ae43c97b9ef42",
+            "match": true
+          },
+          {
+            "sample_id": "02522",
+            "raw_audio_sha256": "a5106c530d2ad1eac9a4b6c6096f58e9eb0823408e656024c0d7b0e53053c7d1",
+            "manifest_file_sha256": "a5106c530d2ad1eac9a4b6c6096f58e9eb0823408e656024c0d7b0e53053c7d1",
+            "cache_index_source_audio_sha256": "a5106c530d2ad1eac9a4b6c6096f58e9eb0823408e656024c0d7b0e53053c7d1",
+            "match": true
+          },
+          {
+            "sample_id": "02999",
+            "raw_audio_sha256": "4a7b1b25ee6a1a65a1a7c7ab339c9e8901af6c989282784d3fd58eb91ba1f37e",
+            "manifest_file_sha256": "4a7b1b25ee6a1a65a1a7c7ab339c9e8901af6c989282784d3fd58eb91ba1f37e",
+            "cache_index_source_audio_sha256": "4a7b1b25ee6a1a65a1a7c7ab339c9e8901af6c989282784d3fd58eb91ba1f37e",
+            "match": true
+          },
+          {
+            "sample_id": "03469",
+            "raw_audio_sha256": "4600cc0aa098b279054c318f9e55de5169f7836c1329116e68c0c420ebc63778",
+            "manifest_file_sha256": "4600cc0aa098b279054c318f9e55de5169f7836c1329116e68c0c420ebc63778",
+            "cache_index_source_audio_sha256": "4600cc0aa098b279054c318f9e55de5169f7836c1329116e68c0c420ebc63778",
+            "match": true
+          },
+          {
+            "sample_id": "03813",
+            "raw_audio_sha256": "81f7b2e47de837643bcbaf058b77e72601ff1c7ca9f74580d2514d8c2ca125da",
+            "manifest_file_sha256": "81f7b2e47de837643bcbaf058b77e72601ff1c7ca9f74580d2514d8c2ca125da",
+            "cache_index_source_audio_sha256": "81f7b2e47de837643bcbaf058b77e72601ff1c7ca9f74580d2514d8c2ca125da",
+            "match": true
+          },
+          {
+            "sample_id": "04314",
+            "raw_audio_sha256": "7353a12d22395759410173e40ea2b6a2bcb469c0fd61d1083d60225f5b900701",
+            "manifest_file_sha256": "7353a12d22395759410173e40ea2b6a2bcb469c0fd61d1083d60225f5b900701",
+            "cache_index_source_audio_sha256": "7353a12d22395759410173e40ea2b6a2bcb469c0fd61d1083d60225f5b900701",
+            "match": true
+          },
+          {
+            "sample_id": "01205",
+            "raw_audio_sha256": "3bfe003805386b71969ca80053cd389ef7fb60f4d0e77a63f4035be4beaf1055",
+            "manifest_file_sha256": "3bfe003805386b71969ca80053cd389ef7fb60f4d0e77a63f4035be4beaf1055",
+            "cache_index_source_audio_sha256": "3bfe003805386b71969ca80053cd389ef7fb60f4d0e77a63f4035be4beaf1055",
+            "match": true
+          }
+        ]
+      }
+    },
+    {
+      "check": "workers_batch_and_measured_selection",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "worker_candidates": [
+          {
+            "exact_expected_locator_sequence": true,
+            "locator_sequence_sha256": "b3361e453b4126a5cccb9fc9b81b1f005726b777dd2b0a3cd0deded3a0b57a2f",
+            "measured_samples_per_second": 188.26173381708597,
+            "measured_seconds": 5.4392359999983455,
+            "measured_tagged_epoch": 1,
+            "parent_interop_threads": 1,
+            "parent_intraop_threads": 1,
+            "persistent_workers": false,
+            "status": "PASS",
+            "tensor_sequence_sha256": "d215fc06116931e064c09af4a4bb1150ddca99fbfd112297ad06c3fc8b1b1997",
+            "warm_locator_sequence_sha256": "1673417e5ff58be2973e85eb317160928522fef50c736d060e48d26fc4f55107",
+            "warm_samples_per_second": 167.31294559726436,
+            "warm_seconds": 6.12026760000299,
+            "warm_tagged_epoch": 0,
+            "worker_intraop_threads": 1,
+            "workers": 0
+          },
+          {
+            "exact_expected_locator_sequence": true,
+            "locator_sequence_sha256": "b3361e453b4126a5cccb9fc9b81b1f005726b777dd2b0a3cd0deded3a0b57a2f",
+            "measured_samples_per_second": 444.27269371146343,
+            "measured_seconds": 2.304890700001124,
+            "measured_tagged_epoch": 1,
+            "parent_interop_threads": 1,
+            "parent_intraop_threads": 1,
+            "persistent_workers": true,
+            "status": "PASS",
+            "tensor_sequence_sha256": "d215fc06116931e064c09af4a4bb1150ddca99fbfd112297ad06c3fc8b1b1997",
+            "warm_locator_sequence_sha256": "1673417e5ff58be2973e85eb317160928522fef50c736d060e48d26fc4f55107",
+            "warm_samples_per_second": 102.8145864539705,
+            "warm_seconds": 9.959676300000865,
+            "warm_tagged_epoch": 0,
+            "worker_intraop_threads": 1,
+            "workers": 2
+          },
+          {
+            "exact_expected_locator_sequence": true,
+            "locator_sequence_sha256": "b3361e453b4126a5cccb9fc9b81b1f005726b777dd2b0a3cd0deded3a0b57a2f",
+            "measured_samples_per_second": 421.0264212992154,
+            "measured_seconds": 2.4321514000002935,
+            "measured_tagged_epoch": 1,
+            "parent_interop_threads": 1,
+            "parent_intraop_threads": 1,
+            "persistent_workers": true,
+            "status": "PASS",
+            "tensor_sequence_sha256": "d215fc06116931e064c09af4a4bb1150ddca99fbfd112297ad06c3fc8b1b1997",
+            "warm_locator_sequence_sha256": "1673417e5ff58be2973e85eb317160928522fef50c736d060e48d26fc4f55107",
+            "warm_samples_per_second": 62.025601442536555,
+            "warm_seconds": 16.509311900001194,
+            "warm_tagged_epoch": 0,
+            "worker_intraop_threads": 1,
+            "workers": 4
+          }
+        ],
+        "cross_worker_tensor_digest": "d215fc06116931e064c09af4a4bb1150ddca99fbfd112297ad06c3fc8b1b1997",
+        "independent_warm_locator_sha256": "1673417e5ff58be2973e85eb317160928522fef50c736d060e48d26fc4f55107",
+        "independent_measured_locator_sha256": "b3361e453b4126a5cccb9fc9b81b1f005726b777dd2b0a3cd0deded3a0b57a2f",
+        "selected_workers": 2,
+        "selected_worker_measured_samples_per_second": 444.27269371146343,
+        "selected_batch_size": 32,
+        "selected_batch_segments_per_second": 765.9674288249253,
+        "cpu_thread_pin_source_verified": true
+      }
+    },
+    {
+      "check": "runtime_projection_math",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "samples_per_epoch": 32768,
+        "epochs": 20,
+        "seed_count": 3,
+        "training_samples_per_seed": 655360,
+        "training_samples_three_seeds": 1966080,
+        "validation_segments_per_seed": 18165,
+        "measured_cached_end_to_end_samples_per_second": 98.66154248421302,
+        "projection_safety_factor": 0.8,
+        "conservative_samples_per_second": 78.92923398737042,
+        "projected_hours_per_seed_including_validation": 2.3703546623512697,
+        "projected_three_seed_wall_hours": 7.111063987053809,
+        "full_training_wall_gate_hours": 24.0,
+        "group_draw_product": 32768,
+        "ready_under_24_hour_gate": true,
+        "statistical_workload_reduced": false
+      }
+    },
+    {
+      "check": "benchmark_only_output_scope",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "artifact_files": [
+          "artifacts/e01_r4/benchmark-run.json"
+        ],
+        "checkpoint_files": [],
+        "forbidden_report_count": 0,
+        "full_training_started": false,
+        "execution_phase": "CACHE_AND_BENCHMARK_ONLY_BEFORE_LONG_FULL_TRAINING",
+        "e02_absence_claim": true
+      }
+    }
+  ],
+  "input_hashes": {
+    "manifest": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "run_manifest": "0bae4d736918b4d7f99ff2762ddde53fc230b4ada65ac4e90426f5dec2024c53",
+    "code_inventory": "3728b4164f6c01140f72e039825036bc76fb55cb5c3d86571c85d20e09835aea",
+    "cache_index": "ff27584b19039226557dc12dc62a91f6cf8f723e711737406ae77341ab9ef13a",
+    "batch_report": "08922f2f2e7e73fe922603f2c8abdb90228fb3b7644b2cc32e0828dc7d7a2423"
+  },
+  "audit_environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\.venv-e01\\Scripts\\python.exe",
+    "torch": "2.7.1+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "parent_intraop_threads": 1,
+    "parent_interop_threads": 1
+  },
+  "runtime_seconds": 42.51922629999899
+}

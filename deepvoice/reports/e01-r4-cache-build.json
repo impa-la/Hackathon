@@ -1,0 +1,23 @@
+{
+  "action": "REUSED_COMPLETE_NO_RAW_REDECODE",
+  "all_reload_max_absolute_delta": 0.0,
+  "build_and_verify_seconds": 0.0,
+  "built_entries": 1375,
+  "cache_format": "npy-float32-v1",
+  "cache_index_sha256": "ff27584b19039226557dc12dc62a91f6cf8f723e711737406ae77341ab9ef13a",
+  "cache_npy_bytes": 9557290108,
+  "cache_npy_gib": 8.900920029729605,
+  "completed_entries": 5651,
+  "datasets": {
+    "aime-open-model-subset": 1009,
+    "fma-small": 4642
+  },
+  "disk_consumed_bytes": 1377226752,
+  "disk_free_after_bytes": 54469660672,
+  "disk_free_before_bytes": 55846887424,
+  "expected_entries": 5651,
+  "recovered_partial_entries": 0,
+  "scope": "non-test FMA and AIME only",
+  "status": "PASS",
+  "verified_existing_entries": 4276
+}

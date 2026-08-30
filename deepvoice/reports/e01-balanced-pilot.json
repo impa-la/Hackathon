@@ -1,0 +1,25 @@
+{
+  "batch_count": 4,
+  "batch_size": 16,
+  "compute_seconds": 0.23963060000096448,
+  "compute_segments_per_second": 267.07774382629935,
+  "decode_files_per_second": 18.78010098060611,
+  "decode_seconds": 3.4078623999994306,
+  "decoder_backend_counts": {
+    "ffmpeg_subprocess_bytes": 6,
+    "ffmpeg_subprocess_path": 16,
+    "stdlib_pcm_bytes": 26,
+    "stdlib_pcm_path": 16
+  },
+  "end_to_end_samples_per_second": 17.546298238267507,
+  "final_loss": NaN,
+  "is_e01_performance_result": false,
+  "locator_sequence_sha256": "bf1521429da1de010fcfff9ba6c577d101c6e830051447028e40f5fc34d62c16",
+  "peak_allocated_bytes": 129290752,
+  "peak_allocated_gib": 0.12041139602661133,
+  "sample_count": 64,
+  "scope": "deterministic balanced real-locator training pilot; not a performance result",
+  "seed": 20260830,
+  "status": "PASS",
+  "total_seconds": 3.647493000000395
+}

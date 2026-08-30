@@ -9,6 +9,7 @@ deepvoice/checkpoints/
 
 # Local caches
 deepvoice/.cache/
+deepvoice/.venv-e01/
 deepvoice/reports/.idea/
 __pycache__/
 *.pyc

@@ -1,0 +1,52 @@
+{
+  "status": "READY_NOT_LAUNCHED",
+  "experiment_id": "E01",
+  "revision": "R5",
+  "authorizing_r4_audit": {
+    "relative_path": "reports/e01-r4-validation-audit.md",
+    "sha256": "1aac0423b4e655e349bcbdb47f4cbce0a7df24eeabcf9c4638905778b9ea9203",
+    "required_first_line": "EXPERIMENT_AUDIT: PASS",
+    "status": "PASS"
+  },
+  "r4_r5_common_source_byte_identity": {
+    "status": "PASS",
+    "compared_file_count": 15,
+    "exact_file_count": 15,
+    "exceptions": [
+      "config.json",
+      "new R5 execution/progress/resume/test files"
+    ]
+  },
+  "tests": {
+    "status": "PASS",
+    "r4_regression_checks": 15,
+    "r5_resume_progress_checks": 7,
+    "total_checks": 22,
+    "staging_status": "PASS",
+    "actual_status": "PASS"
+  },
+  "prelaunch": {
+    "status": "READY",
+    "training_started": false,
+    "cache_status": "PASS",
+    "cache_completed_entries": 5651,
+    "precision_mode": "fp32_guarded",
+    "autocast_enabled": false,
+    "grad_scaler_enabled": false,
+    "batch_size": 32,
+    "workers": 2,
+    "samples_per_epoch": 32768,
+    "epochs": 20,
+    "seeds": [20260830, 20260831, 20260832],
+    "test_statistics": 0
+  },
+  "run_identity": {
+    "config_sha256": "16cbcc9d49348dd5b5b2be7f337dd5d977db29522e0d1cfc0c35d7d59faa782c",
+    "code_inventory_sha256": "7daef3da4bb28abb744235275d65e64c26c69ddab3fd9dc67d694b07fbc70a0c",
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "cache_summary_sha256": "68fe173d8fe19d0e82ec748edf68ce484ac4cf455b48bfb6a670f781f2d09853",
+    "cache_index_sha256": "ff27584b19039226557dc12dc62a91f6cf8f723e711737406ae77341ab9ef13a"
+  },
+  "visible_cmd_launch_powershell": "Start-Process -FilePath 'cmd.exe' -ArgumentList @('/k', 'cd /d \"C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\" && \".venv-e01\\Scripts\\python.exe\" -u -m experiments.e01_r5.run_full_training')",
+  "monitoring_contract": "The assistant does not poll this visible CMD. The user will notify the assistant when it finishes."
+}

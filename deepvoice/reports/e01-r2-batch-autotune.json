@@ -1,0 +1,71 @@
+{
+  "candidates": [
+    {
+      "batch_size": 4,
+      "iterations": 3,
+      "memory_fraction": 0.0071727904149584435,
+      "peak_allocated_bytes": 46208000,
+      "peak_allocated_gib": 0.04303455352783203,
+      "seconds": 0.05111160000160453,
+      "segments_per_second": 234.7803629630708,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 8,
+      "iterations": 3,
+      "memory_fraction": 0.01127093739509049,
+      "peak_allocated_bytes": 72608768,
+      "peak_allocated_gib": 0.06762218475341797,
+      "seconds": 0.09487430000081076,
+      "segments_per_second": 252.96629329328283,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 12,
+      "iterations": 3,
+      "memory_fraction": 0.015394516983896073,
+      "peak_allocated_bytes": 99173376,
+      "peak_allocated_gib": 0.0923624038696289,
+      "seconds": 0.10329140000249026,
+      "segments_per_second": 348.5285318926074,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 16,
+      "iterations": 3,
+      "memory_fraction": 0.020069348365700568,
+      "peak_allocated_bytes": 129289216,
+      "peak_allocated_gib": 0.12040996551513672,
+      "seconds": 0.10892810000223108,
+      "segments_per_second": 440.65764480438804,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 24,
+      "iterations": 3,
+      "memory_fraction": 0.027984929907730497,
+      "peak_allocated_bytes": 180282368,
+      "peak_allocated_gib": 0.16790103912353516,
+      "seconds": 0.16772750000018277,
+      "segments_per_second": 429.267711018894,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 32,
+      "iterations": 3,
+      "memory_fraction": 0.036032761014862816,
+      "peak_allocated_bytes": 232127488,
+      "peak_allocated_gib": 0.2161855697631836,
+      "seconds": 0.22475880000274628,
+      "segments_per_second": 427.12454417280657,
+      "status": "PASS"
+    }
+  ],
+  "device": "NVIDIA GeForce GTX 1660 SUPER",
+  "recommended_batch_size": 16,
+  "recommended_peak_allocated_bytes": 129289216,
+  "recommended_segments_per_second": 440.65764480438804,
+  "selection_rule": "highest measured segments/s among batches using <=85% VRAM",
+  "status": "PASS",
+  "total_memory_bytes": 6442123264
+}

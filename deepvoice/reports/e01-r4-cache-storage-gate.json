@@ -1,0 +1,14 @@
+{
+  "current_free_bytes": 54447513600,
+  "eligible_entry_count": 5651,
+  "estimated_metadata_bytes": 11573248,
+  "estimated_npy_bytes_from_duration": 9557307664,
+  "estimated_total_cache_bytes": 9568880912,
+  "existing_cache_bytes": 9568049857,
+  "projected_free_after_build_bytes": 54446682545,
+  "raw_sources_retained": true,
+  "remaining_estimated_bytes": 831055,
+  "required_current_free_bytes": 12885732943,
+  "safety_free_bytes": 12884901888,
+  "status": "PASS"
+}

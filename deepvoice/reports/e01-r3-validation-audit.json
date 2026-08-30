@@ -1,0 +1,394 @@
+{
+  "status": "BLOCKED",
+  "audit_id": "E01-R3-INDEPENDENT-AUDIT-20260830",
+  "scope": "immutable experiments/e01_r3 and e01-r3-* outputs only",
+  "test_data_handling": "real test rows used only as group/split projections for crossing; no test performance, metadata, label, mask, or prediction statistic calculated",
+  "checks": [
+    {
+      "check": "manifest_and_test_isolation",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+        "row_count": 137328,
+        "train_rows": 110059,
+        "validation_rows": 13540,
+        "crossing_group_count": 0,
+        "test_handling": "streamed group/split projection for crossing only; test rows were discarded immediately and no test statistic was retained",
+        "implementation_builds_labels_from_non_test_rows": true
+      }
+    },
+    {
+      "check": "immutable_source_inventory",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "file_count": 12,
+        "inventory_sha256": "9597d5465c495889dadd0941f5ae987f1f1a64698b328a2b434f4baacd2e64d4",
+        "recorded_inventory_sha256": "9597d5465c495889dadd0941f5ae987f1f1a64698b328a2b434f4baacd2e64d4",
+        "files": [
+          {
+            "relative_path": "__init__.py",
+            "bytes": 196,
+            "sha256": "59b630f18e878172ee2b0bf1951aec1f6238c880e4e4f9e372f61556f4f779c0",
+            "match": true
+          },
+          {
+            "relative_path": "audio.py",
+            "bytes": 12085,
+            "sha256": "f44dd5c977797b419dc138e9e782e038106e9b115c1c68212b47e6c1c6607d3b",
+            "match": true
+          },
+          {
+            "relative_path": "benchmark.py",
+            "bytes": 13065,
+            "sha256": "d35390964d1be94310212eea8a8726181ee42e62db497ca894f3b6aeab53c706",
+            "match": true
+          },
+          {
+            "relative_path": "config.json",
+            "bytes": 2309,
+            "sha256": "83fd9c9660c13856351332fb63c68f6eadcf77f350b39529fca933461ea6d1a9",
+            "match": true
+          },
+          {
+            "relative_path": "contract_adapter.py",
+            "bytes": 1828,
+            "sha256": "fc2459405ced1caf808e6f5decf0f0aec4a6c882eaed09458aeeb733fff540ba",
+            "match": true
+          },
+          {
+            "relative_path": "model.py",
+            "bytes": 7140,
+            "sha256": "2f956279b4711234b79cd1def782fad75a762fe28a4de1202c7d60597c18a165",
+            "match": true
+          },
+          {
+            "relative_path": "preflight.py",
+            "bytes": 7467,
+            "sha256": "a67192b7f1da82cb671c79810857419968c20ab92aa32e9772694c4296037b8b",
+            "match": true
+          },
+          {
+            "relative_path": "records.py",
+            "bytes": 4009,
+            "sha256": "c0dfbc9ffb8b38fb345f369f5433860a974bd8cadae1993fb3c5c62620593f6a",
+            "match": true
+          },
+          {
+            "relative_path": "run_e01.py",
+            "bytes": 16064,
+            "sha256": "35de1fd842359b5ed1c5e11ffb0861e27239b18ecabca00b2b357bb1ce75d2ed",
+            "match": true
+          },
+          {
+            "relative_path": "run_tests.py",
+            "bytes": 10665,
+            "sha256": "d0c4457584d4c6b24b26ad99406fb29c074fd9b93b677a7d206db66adc1a0c0a",
+            "match": true
+          },
+          {
+            "relative_path": "sampling.py",
+            "bytes": 5052,
+            "sha256": "593cba9bb3e7211ca8ff5c4a93369e3158efb797df8bf6d7261caf08e8cd6ace",
+            "match": true
+          },
+          {
+            "relative_path": "train_e01.py",
+            "bytes": 14461,
+            "sha256": "d6e19ca4c09a4840703089db2c769c98bca6c94f0d1b8e93f8f9c75bc394f939",
+            "match": true
+          }
+        ]
+      }
+    },
+    {
+      "check": "strict_json_outputs_and_writer",
+      "status": "BLOCKED",
+      "errors": [
+        "R3 JsonBytes accepts nonfinite values and can emit non-standard bare NaN"
+      ],
+      "evidence": {
+        "strict_output_count": 9,
+        "output_count": 9,
+        "outputs": [
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-balanced-pilot.json",
+            "sha256": "1fb8e885d2baee7da4fbed50c5ffc86ba26c7d4ee4cdc690789eb913bbca880d",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-batch-autotune.json",
+            "sha256": "68b8cd1bb004489c15274cc4114eb28328084e2411e076071c6152ddedc4c81a",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-loader-benchmark.json",
+            "sha256": "d0f30511a6cee75a7fa4f1d6160e5ee81cbcd79af08ffacca9c4e7ecd9d9e883",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-preflight.json",
+            "sha256": "230e3c3f662fa47ffb59a8b4c98f8680018c42ebd9559c68a1939549d96bd376",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-run-manifest.json",
+            "sha256": "5204813bfcfda060c6be41c674bc5fabdbffae31246592e5d005cfecb8243907",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-runtime-projection.json",
+            "sha256": "ee84223f62172852c857405c8dc3ea9ebe53e8dc291fbd6628ad9ca2e91eaa5a",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-tiny-gpu-smoke.json",
+            "sha256": "a44db91843c3f2165bd012390df8a5c5cdb3b5032e9d19ae92570981113f22dc",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\reports\\e01-r3-unit-test-results.json",
+            "sha256": "e3fa7022243f70c7ae69ec74c3b271b6b0b8c554c28d34d70a4727bf9fb379d7",
+            "strict": true,
+            "error": null
+          },
+          {
+            "file": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\artifacts\\e01\\r3\\run.json",
+            "sha256": "5204813bfcfda060c6be41c674bc5fabdbffae31246592e5d005cfecb8243907",
+            "strict": true,
+            "error": null
+          }
+        ],
+        "json_writer_rejects_nan": false,
+        "json_writer_nan_payload": "{\n  \"sentinel\": NaN\n}\n",
+        "required_writer_contract": "json.dumps(..., allow_nan=False)"
+      }
+    },
+    {
+      "check": "nonfinite_hard_guard_behavior",
+      "status": "BLOCKED",
+      "errors": [
+        "balanced pilot checks Loss only; logits, gradients, and parameters lack hard guards",
+        "loss-only guard accepts masked NaN logits while backward produces NaN gradients",
+        "future full RunSeed path has no explicit logits/loss/gradient/parameter finite guard"
+      ],
+      "evidence": {
+        "recorded_pilot_status": "PASS",
+        "recorded_final_loss": 0.6945863962173462,
+        "recorded_final_loss_finite": true,
+        "pilot_source_guards": {
+          "loss": true,
+          "logits": false,
+          "gradients": true,
+          "parameters": true
+        },
+        "full_run_has_any_explicit_finite_guard": false,
+        "masked_nan_counterexample": {
+          "logits_all_finite": false,
+          "loss": 0.6931471824645996,
+          "loss_finite": true,
+          "gradients_all_finite": false
+        },
+        "grad_scaler_nonfinite_behavior": {
+          "probe_loss_finite": true,
+          "gradient_finite": false,
+          "parameter_unchanged_after_silent_skip": true,
+          "scale_before": 65536.0,
+          "scale_after": 32768.0,
+          "exception_raised": false
+        },
+        "conclusion": "GradScaler can skip an unsafe step without raising; it is not the claimed logits/loss/gradient/parameter hard-failure contract"
+      }
+    },
+    {
+      "check": "four_real_locator_loaders",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "decode_count": 4,
+        "rows": [
+          {
+            "dataset": "ljspeech-1.1",
+            "sample_id": "LJ001-0001",
+            "locator_kind": "file",
+            "container_bytes": 425830,
+            "independent_ffmpeg_samples": 154481,
+            "e01_r3_samples": 154480,
+            "absolute_count_delta": 1,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "decoder_backend": "stdlib_pcm_path"
+          },
+          {
+            "dataset": "wavefake-1.2.0",
+            "sample_id": "ljspeech_hifiGAN:LJ023-0093",
+            "locator_kind": "zip",
+            "container_bytes": 28918626084,
+            "independent_ffmpeg_samples": 143593,
+            "e01_r3_samples": 143592,
+            "absolute_count_delta": 1,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "decoder_backend": "stdlib_pcm_bytes"
+          },
+          {
+            "dataset": "fma-small",
+            "sample_id": "2",
+            "locator_kind": "file",
+            "container_bytes": 960738,
+            "independent_ffmpeg_samples": 479625,
+            "e01_r3_samples": 479625,
+            "absolute_count_delta": 0,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "decoder_backend": "ffmpeg_subprocess_path"
+          },
+          {
+            "dataset": "aime-open-model-subset",
+            "sample_id": "00025",
+            "locator_kind": "parquet",
+            "container_bytes": 40401539,
+            "independent_ffmpeg_samples": 162880,
+            "e01_r3_samples": 162880,
+            "absolute_count_delta": 0,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "decoder_backend": "ffmpeg_subprocess_bytes"
+          }
+        ]
+      }
+    },
+    {
+      "check": "valid_length_tail_fp32_and_gradscaler",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "segment_length": 128000,
+        "valid_length": 64000,
+        "feature_tail_delta": 0.0,
+        "logit_tail_delta": 0.0,
+        "valid_region_logit_delta": 2.4713575839996338e-05,
+        "valid_frame_count": 400,
+        "feature_dtype_under_cuda_autocast": "torch.float32",
+        "logit_dtype_under_cuda_autocast": "torch.float16",
+        "grad_scaler_enabled": true
+      }
+    },
+    {
+      "check": "exact_group_first_sampler",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "sample_count": 32768,
+        "stratum_counts": {
+          "music_fake": 8192,
+          "music_real": 8192,
+          "speech_fake": 8192,
+          "speech_real": 8192
+        },
+        "speech_pair_mismatch_count": 0,
+        "heldout_sample_count": 0,
+        "aime_provider_counts": {
+          "AudioLDM 2 Large": 921,
+          "AudioLDM 2 Music": 951,
+          "MusicGen Large": 847,
+          "MusicGen Medium": 924,
+          "MusicGen Small": 868,
+          "Mustango": 921,
+          "Riffusion": 907,
+          "Stable Audio v1": 914,
+          "Stable Audio v2": 939
+        },
+        "aime_provider_count_range": [
+          847,
+          951
+        ],
+        "group_index": {
+          "speech_real": {
+            "group_count": 10470,
+            "row_count": 10470
+          },
+          "speech_fake": {
+            "group_count": 10470,
+            "row_count": 73290
+          },
+          "music_real": {
+            "group_count": 855,
+            "row_count": 4276
+          },
+          "music_fake": {
+            "group_count": 264,
+            "row_count": 888
+          }
+        }
+      }
+    },
+    {
+      "check": "resource_projection_math",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "samples_per_epoch": 32768,
+        "training_samples_per_seed": 655360,
+        "validation_files_per_seed": 13540,
+        "validation_segments_per_seed": 18165,
+        "gpu_segments_per_second": 395.64167722954755,
+        "loader_files_per_second": 21.563063335067124,
+        "balanced_pilot_samples_per_second": 19.26493960696731,
+        "effective_training_samples_per_second": 19.26493960696731,
+        "training_hours_per_seed": 9.44952064000277,
+        "validation_hours_per_seed": 0.18717732792486447,
+        "projected_three_seed_wall_hours": 28.9100939037829,
+        "training_decodes_three_seeds": 1966080,
+        "group_draw_product": 32768,
+        "gpu_hour_gate": 3.0,
+        "wall_hour_gate": 24.0,
+        "expected_status": "BLOCKED_RESOURCE"
+      }
+    },
+    {
+      "check": "exclusive_outputs_and_lineage_limitations",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "artifact_files": [
+          "artifacts/e01/r3/run.json"
+        ],
+        "checkpoint_files": [],
+        "full_training_started": false,
+        "experiment_batch": "BLOCKED_RESOURCE",
+        "lineage": {
+          "concurrent_mutation_limitation": "The shared experiments/e01 directory changed after R1 before an independent snapshot was made; only R1 reports, not exact R1 source bytes, are preserved.",
+          "prior_report_outputs_preserved": true,
+          "prior_source_code_byte_preserved": false,
+          "reason": "R1 recorded nonfinite final_loss as PASS; R2 corrected numerics but shared a mutable experiments/e01 path. R3 is an independent experiments/e01_r3 snapshot with FP32 log-mel, GradScaler and a nonfinite hard guard.",
+          "supersedes": [
+            "E01-R1",
+            "E01-R2"
+          ]
+        },
+        "performance_claims_absent": true
+      }
+    }
+  ],
+  "input_hashes": {
+    "manifest": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "run_manifest": "5204813bfcfda060c6be41c674bc5fabdbffae31246592e5d005cfecb8243907",
+    "balanced_pilot": "1fb8e885d2baee7da4fbed50c5ffc86ba26c7d4ee4cdc690789eb913bbca880d",
+    "code_inventory": "a867e540852439bb0b52b84d58b730a4864f169b17d3061f0eeb212a34b27914",
+    "batch_report": "05f6b705e415bb84f477e0074247c93dea5d3815ed64079d67c5894804fe8730"
+  },
+  "audit_environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\.venv-e01\\Scripts\\python.exe",
+    "torch": "2.7.1+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER"
+  },
+  "runtime_seconds": 11.097332699999242
+}

@@ -1,0 +1,21 @@
+{
+  "autocast_enabled": false,
+  "batch_size": 4,
+  "device": "cuda",
+  "grad_scaler_enabled": false,
+  "is_e01_performance_result": false,
+  "loss": 0.7070387005805969,
+  "optimizer_step_after": 1,
+  "optimizer_step_before": 0,
+  "peak_allocated_bytes": 67786752,
+  "precision_mode": "fp32_guarded",
+  "prediction_sha256": "5c3d90ab2bef3ef27f0a6c6140bde7f229c1e78b6fdad0cc688cf28cdf8a9bb7",
+  "scope": "synthetic one-step smoke only",
+  "seconds": 0.5320127999984834,
+  "seed": 20260830,
+  "segment_seconds": 8.0,
+  "status": "PASS",
+  "trainable_parameters": 136661,
+  "training_segments_per_second": 8.032012388578373,
+  "training_step_seconds": 0.4980071999998472
+}

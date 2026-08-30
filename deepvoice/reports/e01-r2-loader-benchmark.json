@@ -1,0 +1,51 @@
+{
+  "balanced_files_per_second": 21.58670949486683,
+  "balanced_mean_warm_decode_seconds": 0.046324799999638344,
+  "probes": [
+    {
+      "attempt_seconds": [
+        0.004761200001667021,
+        0.003748000002815388
+      ],
+      "dataset": "ljspeech-1.1",
+      "decoded_sample_count": 154480,
+      "decoder_backend": "stdlib_pcm_path",
+      "stratum": "speech_real",
+      "warm_decode_seconds": 0.003748000002815388
+    },
+    {
+      "attempt_seconds": [
+        0.8800350999990769,
+        0.004660800001147436
+      ],
+      "dataset": "wavefake-1.2.0",
+      "decoded_sample_count": 143592,
+      "decoder_backend": "stdlib_pcm_bytes",
+      "stratum": "speech_fake",
+      "warm_decode_seconds": 0.004660800001147436
+    },
+    {
+      "attempt_seconds": [
+        0.12130690000049071,
+        0.10492409999642405
+      ],
+      "dataset": "fma-small",
+      "decoded_sample_count": 479625,
+      "decoder_backend": "ffmpeg_subprocess_path",
+      "stratum": "music_real",
+      "warm_decode_seconds": 0.10492409999642405
+    },
+    {
+      "attempt_seconds": [
+        0.16914070000348147,
+        0.0719662999981665
+      ],
+      "dataset": "aime-open-model-subset",
+      "decoded_sample_count": 162880,
+      "decoder_backend": "ffmpeg_subprocess_bytes",
+      "stratum": "music_fake",
+      "warm_decode_seconds": 0.0719662999981665
+    }
+  ],
+  "status": "PASS"
+}

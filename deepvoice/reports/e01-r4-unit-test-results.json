@@ -1,0 +1,66 @@
+{
+  "check_count": 15,
+  "checks": [
+    {
+      "check": "CheckPinnedContract",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckLocatorParsing",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckFileZipAndMp3Loaders",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckParquetDependencyGuard",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckFixedSegmentContract",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckGroupFirstBalance",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckMaskedLoss",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckMaskedNanLogitAdversary",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckStrictNestedJsonRejectsNan",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckSkippedOptimizerStepRejected",
+      "status": "PASS"
+    },
+    {
+      "check": "<lambda>",
+      "status": "PASS"
+    },
+    {
+      "check": "CheckAimeOneBasedRowResolver",
+      "status": "PASS"
+    },
+    {
+      "check": "<lambda>",
+      "status": "PASS"
+    },
+    {
+      "check": "<lambda>",
+      "status": "PASS"
+    },
+    {
+      "check": "<lambda>",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,354 @@
+{
+  "status": "BLOCKED",
+  "audit_id": "E01-R1-INDEPENDENT-AUDIT-20260830",
+  "finished_at_local": "2026-08-30 20:57:05 +0900",
+  "scope": "original e01-* BLOCKED_RESOURCE run only; later e01-r2/e01-r3 outputs excluded",
+  "test_data_handling": "real test rows used only as group/split projections for crossing; no test performance or metadata statistics calculated",
+  "checks": [
+    {
+      "check": "manifest_and_test_isolation",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+        "row_count": 137328,
+        "train_rows": 110059,
+        "validation_rows": 13540,
+        "crossing_group_count": 0,
+        "actual_test_handling": "group/split projection for crossing only; no retained test rows",
+        "allowed_test_fields": [
+          "content_group_key",
+          "recommended_content_split"
+        ]
+      }
+    },
+    {
+      "check": "four_real_locator_loaders",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "decode_count": 4,
+        "rows": [
+          {
+            "dataset": "ljspeech-1.1",
+            "sample_id": "LJ001-0001",
+            "locator_kind": "file",
+            "container_bytes": 425830,
+            "independent_ffmpeg_sample_count_16k": 154481,
+            "e01_loader_sample_count_16k": 154480,
+            "independent_count_absolute_delta": 1,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "e01_decoder_backend": "stdlib_pcm_path",
+            "preflight_sample_count": 154480,
+            "loader_report_sample_count": 154480
+          },
+          {
+            "dataset": "wavefake-1.2.0",
+            "sample_id": "ljspeech_hifiGAN:LJ023-0093",
+            "locator_kind": "zip",
+            "container_bytes": 28918626084,
+            "independent_ffmpeg_sample_count_16k": 143593,
+            "e01_loader_sample_count_16k": 143592,
+            "independent_count_absolute_delta": 1,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "e01_decoder_backend": "stdlib_pcm_bytes",
+            "preflight_sample_count": 143592,
+            "loader_report_sample_count": 143592
+          },
+          {
+            "dataset": "fma-small",
+            "sample_id": "2",
+            "locator_kind": "file",
+            "container_bytes": 960738,
+            "independent_ffmpeg_sample_count_16k": 479625,
+            "e01_loader_sample_count_16k": 479625,
+            "independent_count_absolute_delta": 0,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "e01_decoder_backend": "ffmpeg_subprocess_path",
+            "preflight_sample_count": 479625,
+            "loader_report_sample_count": 479625
+          },
+          {
+            "dataset": "aime-open-model-subset",
+            "sample_id": "00025",
+            "locator_kind": "parquet",
+            "container_bytes": 40401539,
+            "independent_ffmpeg_sample_count_16k": 162880,
+            "e01_loader_sample_count_16k": 162880,
+            "independent_count_absolute_delta": 0,
+            "accepted_endpoint_rounding_tolerance_samples": 1,
+            "e01_decoder_backend": "ffmpeg_subprocess_bytes",
+            "preflight_sample_count": 162880,
+            "loader_report_sample_count": 162880
+          }
+        ]
+      }
+    },
+    {
+      "check": "valid_length_and_tail_invariance",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "segment_length": 128000,
+        "valid_length": 64000,
+        "feature_tail_delta": 0.0,
+        "logit_tail_delta": 0.0,
+        "valid_region_logit_delta": 0.0018694177269935608,
+        "valid_frame_count": 400,
+        "segment_valid_lengths": [
+          64000
+        ]
+      }
+    },
+    {
+      "check": "group_first_sampler_and_balance",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "samples": 32768,
+        "stratum_counts": {
+          "music_fake": 8192,
+          "music_real": 8192,
+          "speech_fake": 8192,
+          "speech_real": 8192
+        },
+        "speech_pair_mismatch_count": 0,
+        "heldout_sample_count": 0,
+        "music_fake_provider_counts": {
+          "AudioLDM 2 Large": 921,
+          "AudioLDM 2 Music": 951,
+          "MusicGen Large": 847,
+          "MusicGen Medium": 924,
+          "MusicGen Small": 868,
+          "Mustango": 921,
+          "Riffusion": 907,
+          "Stable Audio v1": 914,
+          "Stable Audio v2": 939
+        },
+        "music_fake_provider_count_range": [
+          847,
+          951
+        ],
+        "group_index": {
+          "speech_real": {
+            "group_count": 10470,
+            "row_count": 10470
+          },
+          "speech_fake": {
+            "group_count": 10470,
+            "row_count": 73290
+          },
+          "music_real": {
+            "group_count": 855,
+            "row_count": 4276
+          },
+          "music_fake": {
+            "group_count": 264,
+            "row_count": 888
+          }
+        }
+      }
+    },
+    {
+      "check": "resource_projection_math_and_gate",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "samples_per_epoch": 32768,
+        "training_samples_per_seed": 655360,
+        "validation_files_per_seed": 13540,
+        "validation_segments_per_seed": 18165,
+        "gpu_segments_per_second": 439.08958434042086,
+        "loader_files_per_second": 18.297910104248473,
+        "balanced_pilot_samples_per_second": 17.546298238267507,
+        "effective_training_samples_per_second": 17.546298238267507,
+        "training_hours_per_seed": 10.375091200001124,
+        "validation_hours_per_seed": 0.21704025195247997,
+        "projected_three_seed_wall_hours": 31.776394355860813,
+        "training_decodes_three_seeds": 1966080,
+        "group_draw_product": 32768,
+        "gpu_hour_gate": 3.0,
+        "wall_hour_gate": 24.0,
+        "expected_status": "BLOCKED_RESOURCE",
+        "math_matches_report": true
+      }
+    },
+    {
+      "check": "exclusive_outputs_and_no_performance_artifacts",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "artifact_files": [
+          "artifacts\\e01\\run.json"
+        ],
+        "checkpoint_files": [],
+        "e01_results_exists": false,
+        "validation_or_performance_artifact_count": 0,
+        "full_training_started": false,
+        "experiment_batch": "BLOCKED_RESOURCE"
+      }
+    },
+    {
+      "check": "finite_pilot_and_strict_json",
+      "status": "BLOCKED",
+      "errors": [
+        "balanced pilot is PASS despite nonfinite final_loss",
+        "balanced pilot is not strict RFC JSON: non-standard JSON constant NaN"
+      ],
+      "evidence": {
+        "pilot_status": "PASS",
+        "final_loss": "NaN",
+        "final_loss_is_finite": false,
+        "strict_json_valid": false,
+        "strict_json_error": "non-standard JSON constant NaN",
+        "non_strict_e01_json_files": [
+          {
+            "file": "e01-balanced-pilot.json",
+            "error": "non-standard JSON constant NaN"
+          }
+        ],
+        "root_cause": {
+          "pass_gate": "R1 accepted Pilot['status'] without validating returned final_loss",
+          "writer": "Python json.dumps default allow_nan=True emitted the non-standard NaN token",
+          "projection": "runtime projection consumed throughput from the invalid PASS pilot"
+        }
+      }
+    },
+    {
+      "check": "code_report_consistency",
+      "status": "BLOCKED",
+      "errors": [
+        "run_e01.py differs from R1 inventory"
+      ],
+      "evidence": {
+        "inventory_digest": "b241b70bc028a2a791c4a707078d49a70fd7a6fbd980897f7d23b1ff7a3f63d4",
+        "recorded_inventory_digest": "b241b70bc028a2a791c4a707078d49a70fd7a6fbd980897f7d23b1ff7a3f63d4",
+        "config_sha256": "83fd9c9660c13856351332fb63c68f6eadcf77f350b39529fca933461ea6d1a9",
+        "files": [
+          {
+            "relative_path": "__init__.py",
+            "recorded_bytes": 196,
+            "actual_bytes": 196,
+            "recorded_sha256": "59b630f18e878172ee2b0bf1951aec1f6238c880e4e4f9e372f61556f4f779c0",
+            "actual_sha256": "59b630f18e878172ee2b0bf1951aec1f6238c880e4e4f9e372f61556f4f779c0",
+            "match": true
+          },
+          {
+            "relative_path": "audio.py",
+            "recorded_bytes": 12085,
+            "actual_bytes": 12085,
+            "recorded_sha256": "f44dd5c977797b419dc138e9e782e038106e9b115c1c68212b47e6c1c6607d3b",
+            "actual_sha256": "f44dd5c977797b419dc138e9e782e038106e9b115c1c68212b47e6c1c6607d3b",
+            "match": true
+          },
+          {
+            "relative_path": "benchmark.py",
+            "recorded_bytes": 13065,
+            "actual_bytes": 13065,
+            "recorded_sha256": "d35390964d1be94310212eea8a8726181ee42e62db497ca894f3b6aeab53c706",
+            "actual_sha256": "d35390964d1be94310212eea8a8726181ee42e62db497ca894f3b6aeab53c706",
+            "match": true
+          },
+          {
+            "relative_path": "config.json",
+            "recorded_bytes": 2309,
+            "actual_bytes": 2309,
+            "recorded_sha256": "83fd9c9660c13856351332fb63c68f6eadcf77f350b39529fca933461ea6d1a9",
+            "actual_sha256": "83fd9c9660c13856351332fb63c68f6eadcf77f350b39529fca933461ea6d1a9",
+            "match": true
+          },
+          {
+            "relative_path": "contract_adapter.py",
+            "recorded_bytes": 1828,
+            "actual_bytes": 1828,
+            "recorded_sha256": "fc2459405ced1caf808e6f5decf0f0aec4a6c882eaed09458aeeb733fff540ba",
+            "actual_sha256": "fc2459405ced1caf808e6f5decf0f0aec4a6c882eaed09458aeeb733fff540ba",
+            "match": true
+          },
+          {
+            "relative_path": "model.py",
+            "recorded_bytes": 7140,
+            "actual_bytes": 7140,
+            "recorded_sha256": "2f956279b4711234b79cd1def782fad75a762fe28a4de1202c7d60597c18a165",
+            "actual_sha256": "2f956279b4711234b79cd1def782fad75a762fe28a4de1202c7d60597c18a165",
+            "match": true
+          },
+          {
+            "relative_path": "preflight.py",
+            "recorded_bytes": 7467,
+            "actual_bytes": 7467,
+            "recorded_sha256": "a67192b7f1da82cb671c79810857419968c20ab92aa32e9772694c4296037b8b",
+            "actual_sha256": "a67192b7f1da82cb671c79810857419968c20ab92aa32e9772694c4296037b8b",
+            "match": true
+          },
+          {
+            "relative_path": "records.py",
+            "recorded_bytes": 4009,
+            "actual_bytes": 4009,
+            "recorded_sha256": "c0dfbc9ffb8b38fb345f369f5433860a974bd8cadae1993fb3c5c62620593f6a",
+            "actual_sha256": "c0dfbc9ffb8b38fb345f369f5433860a974bd8cadae1993fb3c5c62620593f6a",
+            "match": true
+          },
+          {
+            "relative_path": "run_e01.py",
+            "recorded_bytes": 13706,
+            "actual_bytes": 14798,
+            "recorded_sha256": "8ebc70a414cae3d6408f0c9e65f43f1dd37dfdae4d272439203b6f609da96517",
+            "actual_sha256": "5c7d9b7cc2db4c60e1719a9174489ceb51b82caf83522423b36f319da0f87c9d",
+            "match": false
+          },
+          {
+            "relative_path": "run_tests.py",
+            "recorded_bytes": 10755,
+            "actual_bytes": 10755,
+            "recorded_sha256": "5f72bc210eb20bf5fcf7e3a9e8fbe823ca22d230bb8f46c830af4e2668fc662b",
+            "actual_sha256": "5f72bc210eb20bf5fcf7e3a9e8fbe823ca22d230bb8f46c830af4e2668fc662b",
+            "match": true
+          },
+          {
+            "relative_path": "sampling.py",
+            "recorded_bytes": 5052,
+            "actual_bytes": 5052,
+            "recorded_sha256": "593cba9bb3e7211ca8ff5c4a93369e3158efb797df8bf6d7261caf08e8cd6ace",
+            "actual_sha256": "593cba9bb3e7211ca8ff5c4a93369e3158efb797df8bf6d7261caf08e8cd6ace",
+            "match": true
+          },
+          {
+            "relative_path": "train_e01.py",
+            "recorded_bytes": 14461,
+            "actual_bytes": 14461,
+            "recorded_sha256": "d6e19ca4c09a4840703089db2c769c98bca6c94f0d1b8e93f8f9c75bc394f939",
+            "actual_sha256": "d6e19ca4c09a4840703089db2c769c98bca6c94f0d1b8e93f8f9c75bc394f939",
+            "match": true
+          }
+        ]
+      }
+    },
+    {
+      "check": "report_scope_and_claims",
+      "status": "PASS",
+      "errors": [],
+      "evidence": {
+        "required_limitations_present": true,
+        "tiny_smoke_is_performance": false,
+        "balanced_pilot_is_performance": false
+      }
+    }
+  ],
+  "input_hashes": {
+    "manifest": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "e01_run_manifest": "2aae56da47d36627c977fd669633faaf192ba73cf081fb67a046d3837682037f",
+    "e01_balanced_pilot": "56bbb032f651b9e617146dfb8d128e8bf274130d5e4bbca41c75b80f56f72746",
+    "e01_code_inventory": "945e90f99d4a4fa9235b1b8b91fa4cc2e511b01cb511f7e13e1f232e4359ed71",
+    "e01_batch_report": "60a17b0568f491508e8e59f182f39d37f827076f7dc653bdddfd0c8a3d8e840c"
+  },
+  "audit_environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\.venv-e01\\Scripts\\python.exe",
+    "torch": "2.7.1+cu126",
+    "torch_cuda_available": true,
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER"
+  },
+  "runtime_seconds": 10.980045500000415
+}

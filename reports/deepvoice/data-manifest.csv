@@ -1,3 +1,2 @@
 relative_path,role,source_url,retrieved_at_utc,bytes,sha256,archive_status,parse_status,notes
-data/raw/deepvoice/,required_raw_directory,https://dacon.io/competitions/official/236749/data,,0,,MISSING,MISSING,"Directory not present at audit time 2026-08-30 Asia/Seoul"
-data/raw/deepvoice/official-2026-08-30/open.zip,official_dummy_package,https://dacon.io/competitions/official/236749/data,,0,,MISSING,MISSING,"Expected package described by official data page; direct anonymous download URL was not exposed and no local file exists"
+deepvoice/open.zip,official_format_example_package_not_training_data,https://dacon.io/competitions/official/236749/data,USER_PROVIDED; exact download time unknown,4563728495,925502542774e08d3f28ed6cca174e607903e2abf948b0b76df5b3d067a8df1c,OK,OK,Read in place; source not modified. Official page says no training dataset is provided.

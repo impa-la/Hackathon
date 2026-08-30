@@ -168,3 +168,51 @@
 - mixed data 또는 새로운 외부 데이터
 - encoder fine-tune/LoRA와 derived checkpoint 재배포 판단
 - test를 여는 시점이나 calibration 자료
+
+## D15. E00-R2 감사 통과와 E01 진입 판정
+
+판정일: 2026-08-30
+근거 run: `E00-R2`
+독립 감사: `EXPERIMENT_AUDIT: PASS`
+
+### 결정
+
+- E00 상태를 `COMPLETE_AUDIT_PASS`로 승인한다.
+- E01 상태는 `READY_TO_IMPLEMENT`로만 연다. 이는 구현 착수 허가이지 학습 완료, baseline 성능 확보, E02 진입 또는 모델 가설 채택을 뜻하지 않는다.
+- E00은 scorer, label mask, split/group, content-group bootstrap, singleton-equivalence, shortcut 경보 계약의 실행 가능성을 검증한 실험이다. E00의 label-independent uniform RNG fixture 수치에는 모델·OOF·baseline 성능의 의미가 없다.
+
+### 감사 근거와 R1 계보
+
+- manifest SHA-256 `2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6`와 137,328행이 일치했다.
+- content-group split crossing은 0개, 선언 테스트는 9/9 PASS, 독립 QA는 34/34 PASS다.
+- 공식 five-head 유효 가중치 `0.45/0.18/0.27/0.05/0.05`, 3 seed × content-group bootstrap 200회, singleton 최대 차이 0이 독립 재계산과 일치했다.
+- test 행은 crossing 검사에 필요한 `content_group_key`, `recommended_content_split`만 즉시 투영되며 label, metadata, prediction, metric 통계에 사용되지 않았다.
+- R1은 test-derived 통계 2건 때문에 계속 `BLOCKED`다. R2가 이를 지우거나 성공으로 소급 변경하지 않는다. R1 보고서와 artifact를 보존하고, 감사된 12개 R1/R2 validation artifact의 byte-for-byte 동등성 계보를 유지한다.
+
+### 33개 label-pure shortcut 경보의 해석
+
+7개 축의 44개 label slice 중 33개가 label-pure였다: `dataset`, `source_family`, `generator_or_provider`, `codec`, `sample_rate_hz`, `channels`, `duration_bucket_seconds`.
+
+이는 모델이 좋은 특징을 학습했다는 결과가 아니라 metadata·수집원·신호 형식만으로 label을 맞힐 수 있는 데이터 교란 경보다. 특히 FMA의 MP3/긴 stereo 음악은 주로 real, AIME provider와 일부 sample rate/PCM format은 fake, 개별 speech generator/provider도 label-pure다. E01에서 이 slice의 높은 점수를 일반화 성능으로 채택하지 않는다.
+
+E01의 full report에는 기존 계획의 source/codec/rate뿐 아니라 위 7개 축 전체의 row count, label purity, 예측 분포, 계산 가능한 macro/worst metric을 포함한다. label이 한 클래스뿐인 slice에서 AUC/EER을 억지로 만들지 않고 `UNDEFINED_SINGLE_CLASS`로 기록한다. 파일명, 경로, provider, 원 codec/rate/channel metadata는 입력 feature로 사용하지 않는다.
+
+### E01 범위와 성공 기준 재확인
+
+- 범위는 기존 log-mel CNN을 **reference baseline으로 재현**하는 것뿐이다. 구조 탐색, E02 artifact branch, WavLM/MERT, calibration tuning 또는 leaderboard 최적화를 섞지 않는다.
+- E00의 manifest, 고정 split, five-head mask, 8초 segment, sampling, seed `20260830/31/32`, validation-only scorer와 group bootstrap을 그대로 사용한다.
+- 성공은 3-seed baseline artifact와 full report가 재현되고 seed 표준편차가 0.005 이하인 것이다. E00 fixture를 이기는 것은 성공 조건이 아니다.
+- 기존 중단 기준인 score 재현 tolerance 0.005 실패 또는 shortcut probe 누락을 유지한다. 추가로 manifest 변화, group crossing, test 통계 사용, label mask 위반, singleton delta 1e-6 초과가 하나라도 생기면 E01 결과를 감사에 넘기지 않고 중단한다.
+- 33개 label-pure 경보 자체는 예상된 데이터 특성이므로 자동 중단 사유가 아니다. 다만 그 경보를 feature로 직접 이용하거나 성능 향상의 근거로 삼으면 중단한다.
+
+### 현재 계산 환경 제약
+
+- E00-R2 실행 환경은 Python 3.13.5, 논리 CPU 12개, `torch_cuda_available=false`, CUDA device 0개였다.
+- 물리 장치는 GTX 1660 6 GiB이나 현재 software 환경에서는 CUDA를 사용할 수 없다. 따라서 지금 승인한 것은 E01 구현과 CPU smoke test까지이며, full 3-seed 학습 완료나 GPU runtime 적합 판정이 아니다.
+- E01의 기존 예상 자원 `3 GPU-hours; 1 day`는 계획값으로 유지하되 현재 host에서 검증된 비용으로 해석하지 않는다. full run 전에 한 epoch timing과 peak RAM/VRAM을 측정한다.
+- CPU projected wall time이 1일을 넘거나, CUDA가 준비된 뒤 GTX 1660 6 GiB에서 동일 semantics로 실행할 수 없으면 데이터 축소, split 변경, seed 축소로 우회하지 않는다. 적합한 CUDA host로 옮기거나 `EXPERIMENT_BATCH: BLOCKED`로 보고한다.
+- GTX 1660 결과는 DACON L4 22.4 GiB의 최종 60분 추론 적합성을 증명하지 않는다. L4 runtime gate는 E13에서 별도로 유지한다.
+
+### 다음 gate
+
+E01 구현·실행 결과는 `EXPERIMENT_BATCH: COMPLETE`만으로 채택하지 않는다. 독립 `EXPERIMENT_AUDIT: PASS`를 받은 뒤에만 baseline 수치와 E02 진입을 모델 개선 근거로 해석한다.

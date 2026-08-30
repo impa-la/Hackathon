@@ -1,0 +1,339 @@
+{
+  "experiment_batch": "COMPLETE",
+  "experiment_id": "E00-R2",
+  "finished_at_local": "2026-08-30 20:06:08 +0900",
+  "scope": "evaluation contract only; no model training and no E01",
+  "lineage": {
+    "revision": 2,
+    "supersedes_revision": 1,
+    "reason": "R1 recorded test-derived label/mask counts and a test split row total; R2 restricts test access to content_group_key and recommended_content_split for crossing audit only",
+    "superseded_files": {
+      "reports\\e00-experiment-batch.md": {
+        "bytes": 3725,
+        "sha256": "2b0f02b16674113904700a281c8f7576706e1f422ee88006ed817f24b523b1ff"
+      },
+      "reports\\e00-run-manifest.json": {
+        "bytes": 10066,
+        "sha256": "20ad36b955c926b82bb6e3cb370bf8772b486a821fc7580c0f485f08b2373152"
+      }
+    }
+  },
+  "config": {
+    "experiment_id": "E00-R2",
+    "revision": 2,
+    "batch_status": "PLANNED",
+    "supersedes_report": "reports/e00-experiment-batch.md",
+    "supersedes_reason": "R1 recorded test-derived label/mask counts and a test split row total; R2 restricts test access to content_group_key and recommended_content_split for crossing audit only",
+    "manifest_relative_path": "reports/deepvoice-training-manifest.csv.gz",
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "evaluation_split": "validation",
+    "split_column": "recommended_content_split",
+    "group_column": "content_group_key",
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "bootstrap_replicates": 200,
+    "bootstrap_confidence": 0.95,
+    "singleton_tolerance": 1e-06,
+    "fixture_prediction_kind": "label-independent deterministic uniform contract fixture",
+    "fixture_is_model_result": false,
+    "head_weights": {
+      "FILE_FAKE_PROB": 0.45,
+      "VOICE_FAKE_PROB": 0.18,
+      "MUSIC_FAKE_PROB": 0.27,
+      "VOICE_PRESENT_PROB": 0.05,
+      "MUSIC_PRESENT_PROB": 0.05
+    },
+    "robust_selection_definition": "Official weighted validation proxy; robustness slices are mandatory gates and are not collapsed into an invented penalty",
+    "test_split_policy": "Immediately project each test row to content_group_key and recommended_content_split; use only for crossing detection; never retain or aggregate any other test field"
+  },
+  "manifest": {
+    "path": "reports\\deepvoice-training-manifest.csv.gz",
+    "bytes": 14236928,
+    "sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "row_count": 137328
+  },
+  "split_audit": {
+    "crossing_group_count": 0
+  },
+  "non_test_scope": {
+    "scope": "train_plus_validation_no_test",
+    "train_row_count": 110059,
+    "validation_row_count": 13540
+  },
+  "test_split_policy": "project to content_group_key and recommended_content_split immediately; crossing detection only",
+  "test_field_access_contract": {
+    "allowed_fields": [
+      "content_group_key",
+      "recommended_content_split"
+    ],
+    "retained_label_or_metadata_fields": 0,
+    "test_prediction_rows": 0,
+    "test_metric_rows": 0,
+    "test_mask_summary_rows": 0,
+    "sentinel_invariance_test": "PASS"
+  },
+  "label_contract": "explicit dataset-to-five-head mapping with unknown labels masked",
+  "robust_selection_definition": "Official weighted validation proxy; robustness slices are mandatory gates and are not collapsed into an invented penalty",
+  "prediction_kind": "label-independent deterministic uniform contract fixture; not model, OOF or baseline",
+  "tests": {
+    "status": "PASS",
+    "check_count": 9,
+    "checks": [
+      {
+        "check": "CheckOfficialMetricExample",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckOfficialWeightExpansion",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckLabelMaskMapping",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckGroupCrossingAudit",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckTestSentinelIsolation",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckCrossingAuditRejectsMetadata",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckContentGroupBootstrapReproducibility",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckSingletonEquivalence",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckMaskAwareMetrics",
+        "status": "PASS"
+      }
+    ]
+  },
+  "singleton_equivalence": [
+    {
+      "seed": 20260830,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    },
+    {
+      "seed": 20260831,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    },
+    {
+      "seed": 20260832,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    }
+  ],
+  "bootstrap": [
+    {
+      "seed": 20260830,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.507701443957295,
+          "lower": 0.4917727772662313,
+          "upper": 0.5244136149768702
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.5001426988444656,
+          "lower": 0.4903726807278914,
+          "upper": 0.5118340325218113
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.5058329899558331,
+          "lower": 0.4920751271145371,
+          "upper": 0.519996851689731
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.5276068745044907,
+          "lower": 0.4775107124475362,
+          "upper": 0.581541694900211
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.46976794321000326,
+          "lower": 0.41908015120803466,
+          "upper": 0.5288912775046231
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.5129007601704573,
+          "lower": 0.4879185554464407,
+          "upper": 0.5377457614688755
+        }
+      }
+    },
+    {
+      "seed": 20260831,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.47953947899725863,
+          "lower": 0.4635535205229668,
+          "upper": 0.4947290323358626
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.4976688003760779,
+          "lower": 0.4859776557783632,
+          "upper": 0.5098713430538017
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.48882755515773296,
+          "lower": 0.4739052561672724,
+          "upper": 0.5058125985365947
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.4398084651796825,
+          "lower": 0.3847881225348524,
+          "upper": 0.4852983492406519
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.49298929357651333,
+          "lower": 0.448351423888216,
+          "upper": 0.5337247619090358
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.48403617244583275,
+          "lower": 0.4616814638518104,
+          "upper": 0.5047993207587516
+        }
+      }
+    },
+    {
+      "seed": 20260832,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.5002190513022203,
+          "lower": 0.4832430045487112,
+          "upper": 0.5145273077629751
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.49782910062053887,
+          "lower": 0.487773854274979,
+          "upper": 0.5085435168302829
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.5040294792823551,
+          "lower": 0.49014638787346454,
+          "upper": 0.5169902317138713
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.4997775600343576,
+          "lower": 0.44928685944809155,
+          "upper": 0.5433481486558304
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.5111454189724711,
+          "lower": 0.4628056556616926,
+          "upper": 0.5660045087559176
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.49946875188507756,
+          "lower": 0.47309916154926385,
+          "upper": 0.5253175130544978
+        }
+      }
+    }
+  ],
+  "environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Python313\\python.exe",
+    "logical_cpu_count": 12,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "torch": "2.12.0",
+      "torchaudio": null,
+      "scikit-learn": null,
+      "soundfile": null
+    },
+    "torch_cuda_available": false,
+    "torch_cuda_device_count": 0,
+    "torch_cuda_version": null,
+    "gpu_names": []
+  },
+  "runtime_seconds": {
+    "manifest_hash_seconds": 0.03411509999932605,
+    "manifest_load_and_contract_seconds": 2.5243632000019716,
+    "shortcut_reports_seconds": 0.8373538999985612,
+    "seed_runs": [
+      {
+        "seed": 20260830,
+        "bootstrap_seconds": 16.64099619999979,
+        "total_seed_seconds": 17.196170999999595
+      },
+      {
+        "seed": 20260831,
+        "bootstrap_seconds": 16.503029700001207,
+        "total_seed_seconds": 17.072660700003325
+      },
+      {
+        "seed": 20260832,
+        "bootstrap_seconds": 16.46625920000224,
+        "total_seed_seconds": 17.023811499999283
+      }
+    ],
+    "total": 55.18855279999843
+  },
+  "cost": {
+    "gpu_hours": 0.0,
+    "wall_clock_hours": 0.01533015355555512,
+    "logical_cpu_hour_upper_bound": 0.18396184266666143,
+    "cost_note": "No paid service or pretrained model was used; CPU upper bound assumes every logical CPU was busy for the full wall time"
+  },
+  "code": {
+    "git_head": "7186551068e1c1c8e11b37639815fc5d5f2e8285",
+    "git_status_short": "?? .codex/\n?? deepvoice/README.md\n?? deepvoice/build_submission.py\n?? deepvoice/configs/\n?? deepvoice/experiments/\n?? deepvoice/metrics.py\n?? deepvoice/model/\n?? deepvoice/open.zip\n?? deepvoice/prepare_manifest.py\n?? deepvoice/reports/e00-bootstrap-summary.csv\n?? deepvoice/reports/e00-experiment-batch.md\n?? deepvoice/reports/e00-group-crossings.csv\n?? deepvoice/reports/e00-head-metrics.csv\n?? deepvoice/reports/e00-label-mask-audit.csv\n?? deepvoice/reports/e00-r2-bootstrap-summary.csv\n?? deepvoice/reports/e00-r2-group-crossings.csv\n?? deepvoice/reports/e00-r2-head-metrics.csv\n?? deepvoice/reports/e00-r2-label-mask-audit.csv\n?? deepvoice/reports/e00-r2-seed-summary.csv\n?? deepvoice/reports/e00-r2-shortcut-label-audit.csv\n?? deepvoice/reports/e00-r2-shortcut-metric-fixture.csv\n?? deepvoice/reports/e00-r2-singleton-equivalence.json\n?? deepvoice/reports/e00-run-manifest.json\n?? deepvoice/reports/e00-runtime.json\n?? deepvoice/reports/e00-seed-summary.csv\n?? deepvoice/reports/e00-shortcut-label-audit.csv\n?? deepvoice/reports/e00-shortcut-metric-fixture.csv\n?? deepvoice/reports/e00-singleton-equivalence.json\n?? deepvoice/reports/e00-validation-audit.json\n?? deepvoice/reports/e00-validation-audit.md\n?? deepvoice/requirements-dev.txt\n?? deepvoice/requirements.txt\n?? deepvoice/script.py\n?? deepvoice/tests/\n?? deepvoice/train.py\n?? narajang/",
+    "files": {
+      "experiments\\e00_r2\\contract.py": {
+        "bytes": 25371,
+        "sha256": "b489b136eb80edba8e8a5d6636ae70e273bb677201a6e7da0b3dfb48a2aae4ce"
+      },
+      "experiments\\e00_r2\\run_e00.py": {
+        "bytes": 26735,
+        "sha256": "18bbeddfe5d6e170563041e64c2ddb37d9c3b5130bed1b0a56ef61f686b726ee"
+      },
+      "experiments\\e00_r2\\run_tests.py": {
+        "bytes": 9708,
+        "sha256": "eb29dddfa576e3780c7ab6087b53ece39ac87b1bc54711d16e78bfc6855ff5e2"
+      },
+      "experiments\\e00_r2\\config.json": {
+        "bytes": 1403,
+        "sha256": "1b36f1266267d5e4a2fdbf91cef6245a2f2753fba975f4c0fd0ea88db7873d97"
+      }
+    }
+  },
+  "official_metric_source": {
+    "url": "https://dacon.io/competitions/official/236749/overview/evaluation",
+    "verified_date": "2026-08-30"
+  }
+}

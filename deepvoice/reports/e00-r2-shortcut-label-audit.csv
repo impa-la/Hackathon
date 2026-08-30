@@ -1,0 +1,45 @@
+scope,axis,slice,row_count,file_fake_rate,file_label_pure,shortcut_risk,FILE_FAKE_PROB_observed_count,FILE_FAKE_PROB_positive_rate,VOICE_FAKE_PROB_observed_count,VOICE_FAKE_PROB_positive_rate,MUSIC_FAKE_PROB_observed_count,MUSIC_FAKE_PROB_positive_rate,VOICE_PRESENT_PROB_observed_count,VOICE_PRESENT_PROB_positive_rate,MUSIC_PRESENT_PROB_observed_count,MUSIC_PRESENT_PROB_positive_rate
+train_plus_validation_no_test,dataset,aime-open-model-subset,1009,1.0,true,HIGH,1009,1.0,0,,1009,1.0,1009,0.0,1009,1.0
+train_plus_validation_no_test,dataset,fma-small,4642,0.0,true,HIGH,4642,0.0,0,,4642,0.0,0,,4642,1.0
+train_plus_validation_no_test,dataset,ljspeech-1.1,11779,0.0,true,HIGH,11779,0.0,11779,0.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,dataset,wavefake-1.2.0,106169,1.0,true,HIGH,106169,1.0,106169,1.0,0,,106169,1.0,106169,0.0
+train_plus_validation_no_test,source_family,aime_music,1009,1.0,true,HIGH,1009,1.0,0,,1009,1.0,1009,0.0,1009,1.0
+train_plus_validation_no_test,source_family,common_voice_prompt,14688,1.0,true,HIGH,14688,1.0,14688,1.0,0,,14688,1.0,14688,0.0
+train_plus_validation_no_test,source_family,fma_music,4642,0.0,true,HIGH,4642,0.0,0,,4642,0.0,0,,4642,1.0
+train_plus_validation_no_test,source_family,jsut_basic5000,9028,1.0,true,HIGH,9028,1.0,9028,1.0,0,,9028,1.0,9028,0.0
+train_plus_validation_no_test,source_family,ljspeech,94232,0.875,false,MONITOR,94232,0.875,94232,0.875,0,,94232,1.0,94232,0.0
+train_plus_validation_no_test,generator_or_provider,AudioLDM 2 Large,111,1.0,true,HIGH,111,1.0,0,,111,1.0,111,0.0,111,1.0
+train_plus_validation_no_test,generator_or_provider,AudioLDM 2 Music,114,1.0,true,HIGH,114,1.0,0,,114,1.0,114,0.0,114,1.0
+train_plus_validation_no_test,generator_or_provider,MusicGen Large,111,1.0,true,HIGH,111,1.0,0,,111,1.0,111,0.0,111,1.0
+train_plus_validation_no_test,generator_or_provider,MusicGen Medium,112,1.0,true,HIGH,112,1.0,0,,112,1.0,112,0.0,112,1.0
+train_plus_validation_no_test,generator_or_provider,MusicGen Small,110,1.0,true,HIGH,110,1.0,0,,110,1.0,110,0.0,110,1.0
+train_plus_validation_no_test,generator_or_provider,Mustango,115,1.0,true,HIGH,115,1.0,0,,115,1.0,115,0.0,115,1.0
+train_plus_validation_no_test,generator_or_provider,Riffusion,109,1.0,true,HIGH,109,1.0,0,,109,1.0,109,0.0,109,1.0
+train_plus_validation_no_test,generator_or_provider,Stable Audio v1,111,1.0,true,HIGH,111,1.0,0,,111,1.0,111,0.0,111,1.0
+train_plus_validation_no_test,generator_or_provider,Stable Audio v2,116,1.0,true,HIGH,116,1.0,0,,116,1.0,116,0.0,116,1.0
+train_plus_validation_no_test,generator_or_provider,conformer_fastspeech2_parallel_wavegan,14688,1.0,true,HIGH,14688,1.0,14688,1.0,0,,14688,1.0,14688,0.0
+train_plus_validation_no_test,generator_or_provider,fma_real,4642,0.0,true,HIGH,4642,0.0,0,,4642,0.0,0,,4642,1.0
+train_plus_validation_no_test,generator_or_provider,full_band_melgan,11779,1.0,true,HIGH,11779,1.0,11779,1.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,generator_or_provider,hifigan,11779,1.0,true,HIGH,11779,1.0,11779,1.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,generator_or_provider,ljspeech_real,11779,0.0,true,HIGH,11779,0.0,11779,0.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,generator_or_provider,melgan,11779,1.0,true,HIGH,11779,1.0,11779,1.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,generator_or_provider,melgan_large,11779,1.0,true,HIGH,11779,1.0,11779,1.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,generator_or_provider,multi_band_melgan,16293,1.0,true,HIGH,16293,1.0,16293,1.0,0,,16293,1.0,16293,0.0
+train_plus_validation_no_test,generator_or_provider,parallel_wavegan,16293,1.0,true,HIGH,16293,1.0,16293,1.0,0,,16293,1.0,16293,0.0
+train_plus_validation_no_test,generator_or_provider,waveglow,11779,1.0,true,HIGH,11779,1.0,11779,1.0,0,,11779,1.0,11779,0.0
+train_plus_validation_no_test,codec,mp3,4642,0.0,true,HIGH,4642,0.0,0,,4642,0.0,0,,4642,1.0
+train_plus_validation_no_test,codec,pcm_f32le,558,1.0,true,HIGH,558,1.0,0,,558,1.0,558,0.0,558,1.0
+train_plus_validation_no_test,codec,pcm_s16le,118399,0.9005143624523856,false,MONITOR,118399,0.9005143624523856,117948,0.9001339573371316,451,1.0,118399,0.9961908462064714,118399,0.0038091537935286616
+train_plus_validation_no_test,sample_rate_hz,16000,340,1.0,true,HIGH,340,1.0,0,,340,1.0,340,0.0,340,1.0
+train_plus_validation_no_test,sample_rate_hz,22050,108928,0.8917909077555817,false,MONITOR,108928,0.8917909077555817,108920,0.8918564083731179,8,0.0,108920,1.0,108928,7.344300822561692e-05
+train_plus_validation_no_test,sample_rate_hz,24000,9028,1.0,true,HIGH,9028,1.0,9028,1.0,0,,9028,1.0,9028,0.0
+train_plus_validation_no_test,sample_rate_hz,32000,333,1.0,true,HIGH,333,1.0,0,,333,1.0,333,0.0,333,1.0
+train_plus_validation_no_test,sample_rate_hz,44100,4500,0.02422222222222222,false,MONITOR,4500,0.02422222222222222,0,,4500,0.02422222222222222,109,0.0,4500,1.0
+train_plus_validation_no_test,sample_rate_hz,48000,470,0.4829787234042553,false,MONITOR,470,0.4829787234042553,0,,470,0.4829787234042553,227,0.0,470,1.0
+train_plus_validation_no_test,channels,1,118775,0.9004504314881078,false,MONITOR,118775,0.9004504314881078,117948,0.9001339573371316,827,0.9455864570737605,118730,0.9934136275583256,118775,0.006962744685329404
+train_plus_validation_no_test,channels,2,4824,0.04705638474295191,false,MONITOR,4824,0.04705638474295191,0,,4824,0.04705638474295191,227,0.0,4824,1.0
+train_plus_validation_no_test,duration_bucket_seconds,00_to_04,26083,0.9332132040026071,false,MONITOR,26083,0.9332132040026071,26080,0.9333205521472393,3,0.0,26080,1.0,26083,0.00011501744431238738
+train_plus_validation_no_test,duration_bucket_seconds,04_to_08,61457,0.8964641944774395,false,MONITOR,61457,0.8964641944774395,61457,0.8964641944774395,0,,61457,1.0,61457,0.0
+train_plus_validation_no_test,duration_bucket_seconds,08_to_15,31414,0.8829502769465843,false,MONITOR,31414,0.8829502769465843,30405,0.8790659431014636,1009,1.0,31414,0.967880562806392,31414,0.03211943719360794
+train_plus_validation_no_test,duration_bucket_seconds,15_to_30,2708,0.0022156573116691287,false,MONITOR,2708,0.0022156573116691287,6,1.0,2702,0.0,6,1.0,2708,0.9977843426883308
+train_plus_validation_no_test,duration_bucket_seconds,30_plus,1937,0.0,true,HIGH,1937,0.0,0,,1937,0.0,0,,1937,1.0

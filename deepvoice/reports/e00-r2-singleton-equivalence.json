@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 20260830,
+    "file_count": 64,
+    "maximum_segments": 8,
+    "max_absolute_delta": 0.0,
+    "other_file_permutation_delta": 0.0
+  },
+  {
+    "seed": 20260831,
+    "file_count": 64,
+    "maximum_segments": 8,
+    "max_absolute_delta": 0.0,
+    "other_file_permutation_delta": 0.0
+  },
+  {
+    "seed": 20260832,
+    "file_count": 64,
+    "maximum_segments": 8,
+    "max_absolute_delta": 0.0,
+    "other_file_permutation_delta": 0.0
+  }
+]

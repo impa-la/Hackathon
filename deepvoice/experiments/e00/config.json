@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E00",
+  "batch_status": "PLANNED",
+  "manifest_relative_path": "reports/deepvoice-training-manifest.csv.gz",
+  "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+  "evaluation_split": "validation",
+  "split_column": "recommended_content_split",
+  "group_column": "content_group_key",
+  "seeds": [20260830, 20260831, 20260832],
+  "bootstrap_replicates": 200,
+  "bootstrap_confidence": 0.95,
+  "singleton_tolerance": 1e-6,
+  "fixture_prediction_kind": "label-independent deterministic uniform contract fixture",
+  "fixture_is_model_result": false,
+  "head_weights": {
+    "FILE_FAKE_PROB": 0.45,
+    "VOICE_FAKE_PROB": 0.18,
+    "MUSIC_FAKE_PROB": 0.27,
+    "VOICE_PRESENT_PROB": 0.05,
+    "MUSIC_PRESENT_PROB": 0.05
+  },
+  "robust_selection_definition": "Official weighted validation proxy; robustness slices are mandatory gates and are not collapsed into an invented penalty",
+  "test_split_policy": "Audit group crossing only; do not calculate prediction statistics or metrics"
+}

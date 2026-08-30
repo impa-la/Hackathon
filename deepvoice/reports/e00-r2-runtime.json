@@ -1,0 +1,31 @@
+{
+  "runtime_seconds": {
+    "manifest_hash_seconds": 0.03411509999932605,
+    "manifest_load_and_contract_seconds": 2.5243632000019716,
+    "shortcut_reports_seconds": 0.8373538999985612,
+    "seed_runs": [
+      {
+        "seed": 20260830,
+        "bootstrap_seconds": 16.64099619999979,
+        "total_seed_seconds": 17.196170999999595
+      },
+      {
+        "seed": 20260831,
+        "bootstrap_seconds": 16.503029700001207,
+        "total_seed_seconds": 17.072660700003325
+      },
+      {
+        "seed": 20260832,
+        "bootstrap_seconds": 16.46625920000224,
+        "total_seed_seconds": 17.023811499999283
+      }
+    ],
+    "total": 55.18855279999843
+  },
+  "cost": {
+    "gpu_hours": 0.0,
+    "wall_clock_hours": 0.01533015355555512,
+    "logical_cpu_hour_upper_bound": 0.18396184266666143,
+    "cost_note": "No paid service or pretrained model was used; CPU upper bound assumes every logical CPU was busy for the full wall time"
+  }
+}

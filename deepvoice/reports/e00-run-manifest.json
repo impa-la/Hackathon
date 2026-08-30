@@ -1,0 +1,302 @@
+{
+  "experiment_batch": "COMPLETE",
+  "experiment_id": "E00",
+  "finished_at_local": "2026-08-30 19:51:04 +0900",
+  "scope": "evaluation contract only; no model training and no E01",
+  "config": {
+    "experiment_id": "E00",
+    "batch_status": "PLANNED",
+    "manifest_relative_path": "reports/deepvoice-training-manifest.csv.gz",
+    "manifest_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "evaluation_split": "validation",
+    "split_column": "recommended_content_split",
+    "group_column": "content_group_key",
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "bootstrap_replicates": 200,
+    "bootstrap_confidence": 0.95,
+    "singleton_tolerance": 1e-06,
+    "fixture_prediction_kind": "label-independent deterministic uniform contract fixture",
+    "fixture_is_model_result": false,
+    "head_weights": {
+      "FILE_FAKE_PROB": 0.45,
+      "VOICE_FAKE_PROB": 0.18,
+      "MUSIC_FAKE_PROB": 0.27,
+      "VOICE_PRESENT_PROB": 0.05,
+      "MUSIC_PRESENT_PROB": 0.05
+    },
+    "robust_selection_definition": "Official weighted validation proxy; robustness slices are mandatory gates and are not collapsed into an invented penalty",
+    "test_split_policy": "Audit group crossing only; do not calculate prediction statistics or metrics"
+  },
+  "manifest": {
+    "path": "reports\\deepvoice-training-manifest.csv.gz",
+    "bytes": 14236928,
+    "sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "row_count": 137328
+  },
+  "split_audit": {
+    "row_count": 137328,
+    "content_group_count": 35779,
+    "crossing_group_count": 0,
+    "train_row_count": 110059,
+    "validation_row_count": 13540,
+    "test_row_count": 13729
+  },
+  "test_split_policy": "group crossing only; no test predictions or test metrics",
+  "label_contract": "explicit dataset-to-five-head mapping with unknown labels masked",
+  "robust_selection_definition": "Official weighted validation proxy; robustness slices are mandatory gates and are not collapsed into an invented penalty",
+  "prediction_kind": "label-independent deterministic uniform contract fixture; not model, OOF or baseline",
+  "tests": {
+    "status": "PASS",
+    "check_count": 7,
+    "checks": [
+      {
+        "check": "CheckOfficialMetricExample",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckOfficialWeightExpansion",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckLabelMaskMapping",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckGroupCrossingAudit",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckContentGroupBootstrapReproducibility",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckSingletonEquivalence",
+        "status": "PASS"
+      },
+      {
+        "check": "CheckMaskAwareMetrics",
+        "status": "PASS"
+      }
+    ]
+  },
+  "singleton_equivalence": [
+    {
+      "seed": 20260830,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    },
+    {
+      "seed": 20260831,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    },
+    {
+      "seed": 20260832,
+      "file_count": 64,
+      "maximum_segments": 8,
+      "max_absolute_delta": 0.0,
+      "other_file_permutation_delta": 0.0
+    }
+  ],
+  "bootstrap": [
+    {
+      "seed": 20260830,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.507701443957295,
+          "lower": 0.4917727772662313,
+          "upper": 0.5244136149768702
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.5001426988444656,
+          "lower": 0.4903726807278914,
+          "upper": 0.5118340325218113
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.5058329899558331,
+          "lower": 0.4920751271145371,
+          "upper": 0.519996851689731
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.5276068745044907,
+          "lower": 0.4775107124475362,
+          "upper": 0.581541694900211
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.46976794321000326,
+          "lower": 0.41908015120803466,
+          "upper": 0.5288912775046231
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.5129007601704573,
+          "lower": 0.4879185554464407,
+          "upper": 0.5377457614688755
+        }
+      }
+    },
+    {
+      "seed": 20260831,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.47953947899725863,
+          "lower": 0.4635535205229668,
+          "upper": 0.4947290323358626
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.4976688003760779,
+          "lower": 0.4859776557783632,
+          "upper": 0.5098713430538017
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.48882755515773296,
+          "lower": 0.4739052561672724,
+          "upper": 0.5058125985365947
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.4398084651796825,
+          "lower": 0.3847881225348524,
+          "upper": 0.4852983492406519
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.49298929357651333,
+          "lower": 0.448351423888216,
+          "upper": 0.5337247619090358
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.48403617244583275,
+          "lower": 0.4616814638518104,
+          "upper": 0.5047993207587516
+        }
+      }
+    },
+    {
+      "seed": 20260832,
+      "requested_replicates": 200,
+      "valid_replicates": 200,
+      "confidence": 0.95,
+      "group_count": 3550,
+      "intervals": {
+        "RobustSelectionScore": {
+          "mean": 0.5002190513022203,
+          "lower": 0.4832430045487112,
+          "upper": 0.5145273077629751
+        },
+        "FILE_FAKE_PROB_component": {
+          "mean": 0.49782910062053887,
+          "lower": 0.487773854274979,
+          "upper": 0.5085435168302829
+        },
+        "VOICE_FAKE_PROB_component": {
+          "mean": 0.5040294792823551,
+          "lower": 0.49014638787346454,
+          "upper": 0.5169902317138713
+        },
+        "MUSIC_FAKE_PROB_component": {
+          "mean": 0.4997775600343576,
+          "lower": 0.44928685944809155,
+          "upper": 0.5433481486558304
+        },
+        "VOICE_PRESENT_PROB_component": {
+          "mean": 0.5111454189724711,
+          "lower": 0.4628056556616926,
+          "upper": 0.5660045087559176
+        },
+        "MUSIC_PRESENT_PROB_component": {
+          "mean": 0.49946875188507756,
+          "lower": 0.47309916154926385,
+          "upper": 0.5253175130544978
+        }
+      }
+    }
+  ],
+  "environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Python313\\python.exe",
+    "logical_cpu_count": 12,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "torch": "2.12.0",
+      "torchaudio": null,
+      "scikit-learn": null,
+      "soundfile": null
+    },
+    "torch_cuda_available": false,
+    "torch_cuda_device_count": 0,
+    "torch_cuda_version": null,
+    "gpu_names": []
+  },
+  "runtime_seconds": {
+    "manifest_hash_seconds": 0.03377379999801633,
+    "manifest_load_and_contract_seconds": 2.7340409999997064,
+    "shortcut_reports_seconds": 0.8074834999970335,
+    "seed_runs": [
+      {
+        "seed": 20260830,
+        "bootstrap_seconds": 18.60989189999964,
+        "total_seed_seconds": 19.20381720000296
+      },
+      {
+        "seed": 20260831,
+        "bootstrap_seconds": 18.040912399999797,
+        "total_seed_seconds": 18.630939099999523
+      },
+      {
+        "seed": 20260832,
+        "bootstrap_seconds": 17.370539200001076,
+        "total_seed_seconds": 18.050061499998264
+      }
+    ],
+    "total": 60.01259200000277
+  },
+  "cost": {
+    "gpu_hours": 0.0,
+    "wall_clock_hours": 0.016670164444445214,
+    "logical_cpu_hour_upper_bound": 0.20004197333334256,
+    "cost_note": "No paid service or pretrained model was used; CPU upper bound assumes every logical CPU was busy for the full wall time"
+  },
+  "code": {
+    "git_head": "7186551068e1c1c8e11b37639815fc5d5f2e8285",
+    "git_status_short": "?? .codex/\n?? deepvoice/README.md\n?? deepvoice/build_submission.py\n?? deepvoice/configs/\n?? deepvoice/experiments/\n?? deepvoice/metrics.py\n?? deepvoice/model/\n?? deepvoice/open.zip\n?? deepvoice/prepare_manifest.py\n?? deepvoice/reports/e00-bootstrap-summary.csv\n?? deepvoice/reports/e00-group-crossings.csv\n?? deepvoice/reports/e00-head-metrics.csv\n?? deepvoice/reports/e00-label-mask-audit.csv\n?? deepvoice/reports/e00-seed-summary.csv\n?? deepvoice/reports/e00-shortcut-label-audit.csv\n?? deepvoice/reports/e00-shortcut-metric-fixture.csv\n?? deepvoice/reports/e00-singleton-equivalence.json\n?? deepvoice/requirements-dev.txt\n?? deepvoice/requirements.txt\n?? deepvoice/script.py\n?? deepvoice/tests/\n?? deepvoice/train.py\n?? narajang/",
+    "files": {
+      "experiments\\e00\\contract.py": {
+        "bytes": 24003,
+        "sha256": "8cf46de76026f67fa7af234b22bf1062bdb56acd6f7533b68a1e0376bf37f447"
+      },
+      "experiments\\e00\\run_e00.py": {
+        "bytes": 25237,
+        "sha256": "279289576a295a0203e29113e8a96c0fe57eb75874d12c43a06e90e20244ee57"
+      },
+      "experiments\\e00\\run_tests.py": {
+        "bytes": 5474,
+        "sha256": "c38ec73c8966763fa31cbc19e7dd10171fd35c385c9b7e5ec03e35f6e598209b"
+      },
+      "experiments\\e00\\config.json": {
+        "bytes": 1039,
+        "sha256": "0dbcd19e70a69ad8a0aee9065244fe4c234ad6bc3e4234ae3135b9a4c27b89b1"
+      }
+    }
+  },
+  "official_metric_source": {
+    "url": "https://dacon.io/competitions/official/236749/overview/evaluation",
+    "verified_date": "2026-08-30"
+  }
+}

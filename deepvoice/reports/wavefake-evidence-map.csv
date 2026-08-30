@@ -1,0 +1,15 @@
+claim_id,claim,evidence,observed_value,status,notes
+WF01,official archive identity,wavefake-download-run.json,"bytes 28918626084; MD5 76b3e62d69f866e57ad6b1debaff434b; SHA256 431e880dc54361cbb9722f332377f20d4524d231ecfce8ce9ca187dc1b6bec30",PASS,Matches official Zenodo MD5 and verified local record
+WF02,official current record,https://zenodo.org/records/5642694,"WaveFake v1.2.0; generated_audio.zip; CC BY-SA 4.0; no redistributed reference data",PASS,Rechecked 2026-08-30
+WF03,official code repository,https://github.com/RUB-SysSec/wavefake,NeurIPS 2021 WaveFake repository links Zenodo dataset,PASS,Primary repository
+WF04,datasheet composition,deepvoice/data/raw/wavefake/1.2.0/datasheet.pdf,"117985 reported; 16-bit PCM; entire data generated; no recommended split",PASS,Document count differs from measured unique count by 2
+WF05,central directory integrity,wavefake-audit-run.json,"134266 file members; unsafe 0; symlink 0; compressed 28878627156; uncompressed 34522472424",PASS,All members streamed
+WF06,full CRC and parse,wavefake-audit-run.json,"CRC failures 0; RIFF/PCM parse failures 0; signature RIFF_WAVE 134266",PASS,No sampling
+WF07,duplicate-path interpretation,wavefake-duplicate-groups.csv.gz,"16283 file and PCM exact duplicate groups; every group has one root and one nested generated/ gen_<id>.wav",PASS,Canonical shorter root path retained
+WF08,unique generated count,wavefake-audio-inventory.csv.gz,"117983 canonical generated; 16283 redundant nested copies; upstream references 0",PASS,All canonical generated rows technically valid
+WF09,audio format,wavefake-audit-run.json,"all mono pcm_s16le; canonical 22050 Hz 107983 and 24000 Hz 10000",PASS,JSUT is 24 kHz
+WF10,audio quality,wavefake-audit-run.json,"canonical duration 198.655438h; nonfinite 0; silence>=50% 0; clipping>=1% 0",PASS,Definitions recorded in method
+WF11,LJSpeech pairing,wavefake-ljspeech-pairing.csv.gz,"13100 real IDs each joined to all 7 WaveFake LJS generators; missing/extra 0",PASS,Indivisible ID group required
+WF12,JSUT pairing,wavefake-pairing-summary.csv,"5000 IDs in both generator directories",PASS,Indivisible ID group required
+WF13,license,deepvoice/data/raw/wavefake/1.2.0/LICENSE,"CC BY-SA 4.0; attribution; ShareAlike; changes notice",PASS,Conditions retained in final manifest
+WF14,source unchanged,wavefake-audit-run.json,"size and mtime_ns identical before/after",PASS,Read-only audit

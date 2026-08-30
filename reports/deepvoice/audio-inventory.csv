@@ -1,4 +1,0 @@
-archive_path,parse_status,bytes,sha256,codec,channels,sample_rate,sample_width_bytes,frames,duration_seconds,peak_abs,rms,silent_fraction_lt_1e-4,clipped_fraction_ge_0_999,duration_in_official_4_60_range
-outer::data/test/TEST_0000.wav,OK,109006,ff2b127a79b5e6a3b9e9c3eaa1d6552a862a11c4104279831ee5b5af8e114203,WAV_NONE_PCM_S16LE,1,16000,2,54480,3.405000,0.510894775,0.094141825,0.245319383,0.000000000,False
-outer::data/test/TEST_0001.wav,OK,109006,ff2b127a79b5e6a3b9e9c3eaa1d6552a862a11c4104279831ee5b5af8e114203,WAV_NONE_PCM_S16LE,1,16000,2,54480,3.405000,0.510894775,0.094141825,0.245319383,0.000000000,False
-outer::data/test/TEST_0002.wav,OK,109006,ff2b127a79b5e6a3b9e9c3eaa1d6552a862a11c4104279831ee5b5af8e114203,WAV_NONE_PCM_S16LE,1,16000,2,54480,3.405000,0.510894775,0.094141825,0.245319383,0.000000000,False

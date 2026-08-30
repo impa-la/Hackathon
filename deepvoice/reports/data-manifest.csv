@@ -1,0 +1,2 @@
+relative_path,role,source_url,retrieved_at_utc,bytes,sha256,archive_status,parse_status,notes
+deepvoice/open.zip,official_format_example_package_not_training_data,https://dacon.io/competitions/official/236749/data,USER_PROVIDED; exact download time unknown,4563728495,925502542774e08d3f28ed6cca174e607903e2abf948b0b76df5b3d067a8df1c,OK,OK,Read in place; source not modified. Official page says no training dataset is provided.

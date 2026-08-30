@@ -1,0 +1,17 @@
+claim_id,claim,test,source,evidence,result,status,limitation
+FS-01,공식 archive identity,전체 SHA-256 및 bytes,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\fma\official\fma_small.zip,"7679594875 bytes; SHA-256 f923bbef327820456d50965c3c320c3c7b6dab8456449429fd78f7ec96a5d02c",기대값 일치,PASS,공식 웹 현행성은 별도
+FS-02,archive 구조 안전성,central directory 경로·멤버 집계,fma_small.zip,"8002 members; 8000 MP3; unsafe path 0; 7975472258 bytes",extractor 결과와 일치,PASS,CRC는 verified extractor 및 내장 checksum으로 교차 확인
+FS-03,추출본 완전성,파일 수·byte 합,small_extracted\fma_small,"8002 files; 7975472258 bytes",ZIP 합계 일치,PASS,재추출하지 않음
+FS-04,공식 파일 bytes 무결성,내장 SHA-1 전수 대조,fma_small\checksums,"8000 entries; 8000 matches",전수 일치,PASS,음향 decode 가능성은 별도
+FS-05,오디오-메타데이터 조인,track ID set equality,tracks.csv + raw_tracks.csv + MP3 stems,"8000=8000=8000; missing/orphan/duplicate 0",완전 조인,PASS,metadata 자체 정확성은 원저자 계보
+FS-06,strict allowlist 실제 존재,allowlist ID set join,fma-license-allowlist.csv + MP3 stems,"5130 IDs; 5130 files; mismatch 0",완전 존재,PASS,현재 license URL은 미검증
+FS-07,MP3 decode 건전성,FFmpeg 전수 decode,fma-small-audio-inventory.csv,"7997 OK; 3 ERROR: 99134 108925 133297",3개 quarantine,FAIL_PARTIAL,133297은 allowlist
+FS-08,확장자-서명,ID3와 연속 MPEG Layer III frame 검사,fma-small-audio-inventory.csv,"8000 ID3; 7997 validated frames; 3 no consecutive frames",decode 결과와 일치,FAIL_PARTIAL,signature parser는 Layer III 고정
+FS-09,30초 clip 길이,decoded sample count 기반 길이,fma-small-audio-inventory.csv,"7994 within 0.1 sec; short 98565 98567 98569; undecodable 3",6개 예외,OBSERVE,짧은 원천의 의도 여부 미확인
+FS-10,exact file 중복,전체 MP3 SHA-256,fma-small-duplicate-groups.csv,0 groups,없음,PASS,근사 재인코딩 중복 제외
+FS-11,decoded audio 중복,FFmpeg s16le PCM SHA-256,fma-small-duplicate-groups.csv,"12 groups; 24 tracks; cross-split 0",split group 필요,RISK,decoder-version dependent
+FS-12,무음 위험,abs(sample/32768)<1e-4 전수 집계,fma-small-audio-inventory.csv,"overall 0.24236%; silence>=50% 3; allowed 1: 72059",near-silent quarantine 필요,RISK,임계값 기반
+FS-13,클리핑 위험,abs(sample/32768)>=0.999 전수 집계,fma-small-audio-inventory.csv,"3598 files any; >=1% 96; >=5% 41; >=10% 26",민감도 분석 필요,RISK,MP3 decoder clipping 포함
+FS-14,연결성분 split 누수,artist-album bipartite components,fma-small-component-summary.csv,"1760 components; cross-split 66; affected 1072; largest 208",공식 split 재사용 금지,BLOCKING_DESIGN,semantic lineage 추가 union 필요
+FS-15,source/codec shortcut,format distribution 비교,fma-small-audit-run.json,"MP3 only; 3 sample rates; mono/stereo; broad bitrate distribution",fake와 대칭 처리 필요,BLOCKING_DESIGN,모델 단계 반증 필요
+FS-16,원본 비변경,감사 전후 archive/checksums/README stat,fma-small-audit-run.json,size·mtime_ns 동일,읽기 전용 유지,PASS,MP3별 mtime은 별도 미기록

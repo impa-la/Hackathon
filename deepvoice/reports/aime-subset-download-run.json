@@ -1,0 +1,10 @@
+{
+  "completed_at_utc": "2026-08-30T08:43:40.142903+00:00",
+  "dataset": "disco-eth/AIME",
+  "revision": "b84d4be5eda830b6eb714998569dba73530f2601",
+  "files": 36,
+  "rows": 1116,
+  "bytes": 1246815838,
+  "elapsed_seconds": 131.87555020000036,
+  "hash_mismatches": 0
+}

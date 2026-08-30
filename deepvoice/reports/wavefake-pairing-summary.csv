@@ -1,0 +1,13 @@
+﻿dataset_dir,role,source_family,member_count,unique_source_id_count,expected_source_id_count,duplicate_source_id_count,missing_against_family_union_count,pairing_status
+ljspeech_full_band_melgan,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_hifiGAN,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_melgan,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_melgan_large,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_multi_band_melgan,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_parallel_wavegan,generated,ljspeech,13100,13100,13100,0,,PASS
+ljspeech_waveglow,generated,ljspeech,13100,13100,13100,0,,PASS
+jsut_multi_band_melgan,generated,jsut_basic5000,5000,5000,5000,0,,PASS
+jsut_parallel_wavegan,generated,jsut_basic5000,5000,5000,5000,0,,PASS
+common_voices_prompts_from_conformer_fastspeech2_pwg_ljspeech,generated,common_voice_prompt,16283,16283,16283,0,0,PASS
+common_voices_prompts_from_conformer_fastspeech2_pwg_ljspeech,redundant_duplicate_copy,common_voice_prompt,16283,16283,16283,0,0,PASS
+LJSPEECH_REAL_JOIN,real_plus_7_generated,ljspeech,104800,13100,13100,0,0,PASS

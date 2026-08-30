@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "source": "wavefake-audio-inventory.csv",
+      "source_bytes": 93413390,
+      "source_sha256": "002e9166d3d4ee3d1a9615c065a8b100d0514a46b9880ec9760e4838c9aa65ee",
+      "gzip": "wavefake-audio-inventory.csv.gz",
+      "gzip_bytes": 22681186,
+      "gzip_sha256": "09c1e3897859a1eb194b365e5a46815ac9249842f36ee5595e03da20973c8c82",
+      "gzip_mtime": 0
+    },
+    {
+      "source": "wavefake-source-group-manifest.csv",
+      "source_bytes": 13722516,
+      "source_sha256": "6a2c3511df29e31c8d8bf332932b6532d75b329f49b2b11c4a744d61ba908897",
+      "gzip": "wavefake-source-group-manifest.csv.gz",
+      "gzip_bytes": 593001,
+      "gzip_sha256": "5e795e0300bfc0b2fc415c791383571e4f9ba6bc0c6ff061a1c67152ebff133f",
+      "gzip_mtime": 0
+    },
+    {
+      "source": "wavefake-duplicate-groups.csv",
+      "source_bytes": 13161170,
+      "source_sha256": "0e12b4152d3ffa932df178319985b189d019b7be6da4442e26a4f2b640f0aefa",
+      "gzip": "wavefake-duplicate-groups.csv.gz",
+      "gzip_bytes": 1701564,
+      "gzip_sha256": "1781d829b61009e33fd32ec768248b9f4163a58a5d0f815c2c58ba29e215f8d5",
+      "gzip_mtime": 0
+    },
+    {
+      "source": "wavefake-ljspeech-pairing.csv",
+      "source_bytes": 6935396,
+      "source_sha256": "6056ff2ed156e069c318cd50526266b1cc9c924feccdfd71eee466ec24d9a80a",
+      "gzip": "wavefake-ljspeech-pairing.csv.gz",
+      "gzip_bytes": 935016,
+      "gzip_sha256": "841746ea1fb492028fb41952b59ce82591675a890b46f9c0238abcc11f17cc45",
+      "gzip_mtime": 0
+    },
+    {
+      "source": "deepvoice-training-manifest.csv",
+      "source_bytes": 104802355,
+      "source_sha256": "5261bc9684030a15d6c921780ad27338ca10ad799116c93231d6531a149eaf9d",
+      "gzip": "deepvoice-training-manifest.csv.gz",
+      "gzip_bytes": 14236928,
+      "gzip_sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+      "gzip_mtime": 0
+    }
+  ]
+}

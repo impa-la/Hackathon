@@ -1,0 +1,54 @@
+{
+  "data_readiness": "READY",
+  "block_reason": "",
+  "readiness_scope": "user-approved noncommercial hackathon training and local validation; excludes raw-corpus redistribution, commercial use, and a legal conclusion on public model-weight licensing",
+  "target_definition": "binary real versus synthetic provenance label at one source-audio-asset per row; any derived segment must inherit the source row split",
+  "scope": "curated technically valid and rights-eligible LJSpeech, WaveFake, FMA-small, and AIME open-model subset rows",
+  "manifest": {
+    "path": "deepvoice/reports/deepvoice-training-manifest.csv.gz",
+    "build_path": "C:\\Users\\MY PC\\Documents\\ChatGPT\\해커톤\\wavefake-final-staging\\reports\\deepvoice\\deepvoice-training-manifest.csv.gz",
+    "compression": "deterministic gzip, mtime=0",
+    "bytes": 14236928,
+    "sha256": "2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",
+    "uncompressed_bytes": 104802355,
+    "uncompressed_sha256": "5261bc9684030a15d6c921780ad27338ca10ad799116c93231d6531a149eaf9d",
+    "row_count": 137328,
+    "dataset_counts": {
+      "ljspeech-1.1": 13100,
+      "wavefake-1.2.0": 117983,
+      "fma-small": 5129,
+      "aime-open-model-subset": 1116
+    },
+    "label_counts": {
+      "real": 18229,
+      "synthetic": 119099
+    },
+    "split_counts": {
+      "train": 110059,
+      "test": 13729,
+      "validation": 13540
+    },
+    "unique_content_group_count": 35779,
+    "content_groups_crossing_split_count": 0,
+    "total_duration_hours": 268.4124061809886
+  },
+  "required_constraints": {
+    "content_group_split": "mandatory; random row or segment split is forbidden",
+    "ljspeech": "real and all seven WaveFake vocoder outputs share one LJSpeech-ID group",
+    "jsut": "both WaveFake generators share one JSUT basic5000-ID group",
+    "common_voice_prompt": "retain one canonical generated path per ID; exclude 16283 nested exact duplicate copies",
+    "fma": "artist-album bipartite connected component is the indivisible group",
+    "aime": "normalized prompt/description semantic group is indivisible",
+    "evaluation": "report provider-held-out and source-family-held-out results in addition to the content split",
+    "primary_paired_benchmark": "LJSpeech real 13100 versus same-ID WaveFake LJS synthetic 91700; group by ID and use class-balanced sampling/metrics",
+    "confounding_warning": "FMA is real-only while AIME, JSUT, and TTS are synthetic-only; treat unmatched families as stress tests, not a single fair benchmark",
+    "shortcut_control": "normalize codec/rate/channels only within each fold and report unnormalized source-stratified results"
+  },
+  "exclusions": {
+    "wavefake_redundant_duplicate_copy": 16283,
+    "fma_small_not_strict_allowlist_or_decode_failure": 2871,
+    "fma_strict_allowlist_decode_failure": 1,
+    "aime_suno_udio": "not acquired and not present in curated subset",
+    "echoes": "not included because provider output-rights evidence remains conditional/HOLD"
+  }
+}

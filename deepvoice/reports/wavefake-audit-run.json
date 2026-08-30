@@ -1,0 +1,218 @@
+{
+  "data_readiness": "READY",
+  "block_reason": "",
+  "dataset": "WaveFake 1.2.0 official generated_audio.zip",
+  "method": {
+    "scope": "all 134266 ZIP file members; no sampling and no persistent extraction",
+    "streaming": "each ZIP member read to EOF once in central-directory order",
+    "crc": "Python ZipExtFile verification plus independently accumulated CRC-32",
+    "file_duplicate_key": "SHA-256 of complete uncompressed WAV member bytes",
+    "pcm_duplicate_key": "SHA-256 of concatenated WAV data-chunk bytes",
+    "silence_definition": "abs(normalized sample) < 1e-4",
+    "clipping_definition": "abs(normalized sample) >= 0.999",
+    "content_split": "SHA-256 deterministic 80/10/10 by source-family source-ID group",
+    "content_split_salt": "wavefake-content-group-split-v1"
+  },
+  "source": {
+    "archive": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\wavefake\\1.2.0\\generated_audio.zip",
+    "archive_bytes": 28918626084,
+    "official_md5": "76b3e62d69f866e57ad6b1debaff434b",
+    "verified_local_md5": "76b3e62d69f866e57ad6b1debaff434b",
+    "md5_matches": true,
+    "local_sha256": "431e880dc54361cbb9722f332377f20d4524d231ecfce8ce9ca187dc1b6bec30",
+    "expected_sha256": "431e880dc54361cbb9722f332377f20d4524d231ecfce8ce9ca187dc1b6bec30",
+    "sha256_matches": true,
+    "central_directory": {
+      "file_member_count": 134266,
+      "compressed_bytes": 28878627156,
+      "uncompressed_bytes": 34522472424,
+      "unsafe_path_count": 0,
+      "symlink_count": 0,
+      "compression_method_counts": {
+        "8": 134266
+      },
+      "directory_counts": {
+        "common_voices_prompts_from_conformer_fastspeech2_pwg_ljspeech": 32566,
+        "jsut_multi_band_melgan": 5000,
+        "jsut_parallel_wavegan": 5000,
+        "ljspeech_full_band_melgan": 13100,
+        "ljspeech_hifiGAN": 13100,
+        "ljspeech_melgan": 13100,
+        "ljspeech_melgan_large": 13100,
+        "ljspeech_multi_band_melgan": 13100,
+        "ljspeech_parallel_wavegan": 13100,
+        "ljspeech_waveglow": 13100
+      }
+    },
+    "state_before": {
+      "path": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\wavefake\\1.2.0\\generated_audio.zip",
+      "size_bytes": 28918626084,
+      "mtime_ns": 1788081933669733800
+    },
+    "state_after": {
+      "path": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\wavefake\\1.2.0\\generated_audio.zip",
+      "size_bytes": 28918626084,
+      "mtime_ns": 1788081933669733800
+    },
+    "source_state_unchanged": true
+  },
+  "composition": {
+    "total_audio_members": 134266,
+    "generated_audio_members": 117983,
+    "redundant_duplicate_copy_members": 16283,
+    "source_reference_members": 0,
+    "training_eligible_generated_members": 117983,
+    "directory_count": 10,
+    "source_family_counts": {
+      "ljspeech": 91700,
+      "common_voice_prompt": 32566,
+      "jsut_basic5000": 10000
+    },
+    "role_counts": {
+      "generated": 117983,
+      "redundant_duplicate_copy": 16283
+    },
+    "datasheet_reported_generated_count": 117985,
+    "paper_reported_count": 104885,
+    "measured_unique_generated_count": 117983,
+    "measured_total_zip_audio_count": 134266,
+    "count_reconciliation": {
+      "104885_to_117985": "13100 HiFi-GAN LJSpeech clips were added relative to the paper-era count",
+      "117985_to_117983": "datasheet says 16285 TTS phrases while the archive contains 16283 unique generated TTS IDs (two fewer)",
+      "117983_to_134266": "archive stores the same 16283 Common Voice-prompt generated WAVs twice; the nested generated/ paths are byte- and PCM-identical redundant copies"
+    }
+  },
+  "integrity": {
+    "inventory_rows": 134266,
+    "unique_zip_members": 134266,
+    "crc_ok_count": 134266,
+    "crc_failure_count": 0,
+    "parse_ok_count": 134266,
+    "parse_failure_count": 0,
+    "signature_counts": {
+      "RIFF_WAVE": 134266
+    },
+    "uncompressed_size_mismatch_count": 0,
+    "riff_declared_size_mismatch_count": 0
+  },
+  "audio": {
+    "codec_counts": {
+      "pcm_s16le": 134266
+    },
+    "sample_rate_counts": {
+      "22050": 124266,
+      "24000": 10000
+    },
+    "channel_counts": {
+      "1": 134266
+    },
+    "bits_per_sample_counts": {
+      "16": 134266
+    },
+    "total_duration_seconds": 778366.3585600907,
+    "total_duration_hours": 216.21287737780295,
+    "duration_seconds_distribution": {
+      "count": 134266,
+      "min": 0.6733786848072563,
+      "p01": 1.4396371882086167,
+      "p05": 2.182675736961451,
+      "p25": 3.889342403628118,
+      "p50": 5.642448979591837,
+      "p75": 7.743854875283446,
+      "p95": 9.613061224489796,
+      "p99": 10.031020408163265,
+      "max": 16.375,
+      "mean": 5.7971963010746625,
+      "std_population": 2.341889004310489
+    },
+    "total_sample_count": 17258282360,
+    "nonfinite_sample_count": 0,
+    "weighted_silence_fraction_lt_1e_4": 0.019477427822081363,
+    "silence_fraction_distribution": {
+      "count": 134266,
+      "min": 0.002697495183044316,
+      "p01": 0.005521964084266938,
+      "p05": 0.007562078818761295,
+      "p25": 0.011785409556313993,
+      "p50": 0.016487957078725746,
+      "p75": 0.02257669750839316,
+      "p95": 0.03565358996372897,
+      "p99": 0.05353230216966605,
+      "max": 0.13757849880382775,
+      "mean": 0.018424289680422992,
+      "std_population": 0.009724098805695526
+    },
+    "silence_ge_50pct_count": 0,
+    "weighted_clipping_fraction_ge_0_999": 1.767267411888607e-08,
+    "clipping_fraction_distribution": {
+      "count": 134266,
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.000744047619047619,
+      "mean": 1.7876744132310824e-08,
+      "std_population": 2.3138867779403614e-06
+    },
+    "clipping_ge_1pct_count": 0,
+    "file_sha256_duplicate_group_count": 16283,
+    "file_sha256_duplicate_affected_count": 32566,
+    "pcm_sha256_duplicate_group_count": 16283,
+    "pcm_sha256_duplicate_affected_count": 32566,
+    "training_eligible_unique_generated": {
+      "member_count": 117983,
+      "total_duration_seconds": 715159.575430839,
+      "total_duration_hours": 198.65543761967749,
+      "duration_seconds_distribution": {
+        "count": 117983,
+        "min": 0.6733786848072563,
+        "p01": 1.509297052154195,
+        "p05": 2.375,
+        "p25": 4.167981859410431,
+        "p50": 6.060408163265306,
+        "p75": 8.010884353741497,
+        "p95": 9.671111111111111,
+        "p99": 10.042630385487529,
+        "max": 16.375,
+        "mean": 6.061547641870769,
+        "std_population": 2.321823783166805
+      },
+      "total_sample_count": 15864572792,
+      "nonfinite_sample_count": 0,
+      "weighted_silence_fraction_lt_1e_4": 0.019747986605601123,
+      "silence_ge_50pct_count": 0,
+      "weighted_clipping_fraction_ge_0_999": 1.9225226168951856e-08,
+      "clipping_ge_1pct_count": 0
+    }
+  },
+  "pairing": {
+    "ljspeech_real_id_count": 13100,
+    "wavefake_ljspeech_source_id_count": 13100,
+    "missing_generated_source_id_count": 0,
+    "extra_generated_source_id_count": 0,
+    "complete_7_generator_pair_count": 13100,
+    "duplicate_directory_source_id_count": 0,
+    "missing_generated_source_ids": [],
+    "extra_generated_source_ids": [],
+    "duplicate_directory_source_ids": [],
+    "jsut_source_group_count": 5000,
+    "jsut_complete_2_generator_group_count": 5000,
+    "common_voice_canonical_generated_id_count": 16283,
+    "common_voice_redundant_duplicate_id_count": 16283,
+    "common_voice_duplicate_paths_exact_file_and_pcm_match": true,
+    "common_voice_upstream_reference_member_count": 0
+  },
+  "license": {
+    "dataset_license": "CC-BY-SA-4.0",
+    "attribution_required": true,
+    "sharealike_required_for_adapted_material": true,
+    "changes_notice_required": true,
+    "generated_training_status": "GO_WITH_ATTRIBUTION_SA_AND_CHANGES_NOTICE_AFTER_EXACT_DEDUPLICATION",
+    "common_voice_duplicate_copy_status": "EXCLUDED_REDUNDANT_COPY; canonical shorter root path retained",
+    "common_voice_upstream_reference_status": "NOT_PRESENT, consistent with the datasheet statement that reference data are not redistributed"
+  }
+}

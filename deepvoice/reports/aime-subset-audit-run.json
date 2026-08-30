@@ -1,0 +1,214 @@
+{
+  "data_readiness": "BLOCKED",
+  "block_reason": "The curated 36-shard AIME subset is technically and rights-ready with CC BY 4.0 attribution, but combined DeepVoice readiness still awaits WaveFake acquisition and audit.",
+  "aime_subset_readiness": "TECHNICAL_PASS_RIGHTS_GO_WITH_ATTRIBUTION",
+  "dataset": "disco-eth/AIME",
+  "revision": "b84d4be5eda830b6eb714998569dba73530f2601",
+  "source": {
+    "root": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\aime\\b84d4be5eda830b6eb714998569dba73530f2601",
+    "readme_bytes": 2216,
+    "readme_sha256": "8adaaeb78a4a04f49e0b14d3b6a791f1dfb257972cd3f1e02740023710bf7880",
+    "shards_root": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\aime\\b84d4be5eda830b6eb714998569dba73530f2601\\shards",
+    "local_shard_count": 36,
+    "local_shard_bytes": 1246815838,
+    "integrity_failure_count": 0,
+    "source_state_unchanged": true
+  },
+  "repository_projection": {
+    "shard_count": 210,
+    "published_bytes": 62281475287,
+    "projected_rows": 6500,
+    "failed_projected_shards": 0,
+    "projection_scope": [
+      "id",
+      "model"
+    ],
+    "audio_content_downloaded_shards": 36,
+    "audio_content_downloaded_rows": 1116
+  },
+  "subset_schema": {
+    "columns": [
+      "id",
+      "model",
+      "description",
+      "audio"
+    ],
+    "dtypes": {
+      "audio": "Struct({'bytes': Binary, 'path': String})",
+      "description": "String",
+      "id": "String",
+      "model": "String"
+    },
+    "row_count": 1116,
+    "null_counts": {
+      "id": 0,
+      "model": 0,
+      "description": 0,
+      "audio": 0
+    },
+    "unique_id_count": 1116,
+    "provider_id_ranges": {
+      "AudioLDM 2 Large": {
+        "min": 1502,
+        "max": 1997
+      },
+      "AudioLDM 2 Music": {
+        "min": 2015,
+        "max": 2479
+      },
+      "MusicGen Large": {
+        "min": 1020,
+        "max": 1484
+      },
+      "MusicGen Medium": {
+        "min": 507,
+        "max": 971
+      },
+      "MusicGen Small": {
+        "min": 25,
+        "max": 489
+      },
+      "Mustango": {
+        "min": 3024,
+        "max": 3488
+      },
+      "Riffusion": {
+        "min": 2504,
+        "max": 2999
+      },
+      "Stable Audio v1": {
+        "min": 3513,
+        "max": 3977
+      },
+      "Stable Audio v2": {
+        "min": 4002,
+        "max": 4497
+      }
+    },
+    "model_counts": {
+      "MusicGen Small": 124,
+      "MusicGen Medium": 124,
+      "MusicGen Large": 124,
+      "AudioLDM 2 Large": 124,
+      "AudioLDM 2 Music": 124,
+      "Riffusion": 124,
+      "Mustango": 124,
+      "Stable Audio v1": 124,
+      "Stable Audio v2": 124
+    },
+    "unique_description_count": 332,
+    "description_group_size_counts": {
+      "8": 9,
+      "7": 12,
+      "6": 29,
+      "9": 1,
+      "5": 46,
+      "4": 40,
+      "3": 59,
+      "2": 74,
+      "1": 62
+    },
+    "duplicate_description_group_count": 270,
+    "rows_in_duplicate_description_groups": 1054,
+    "audio_bytes_present_count": 1116,
+    "unique_audio_path_count": 532,
+    "duplicate_audio_path_group_count": 201,
+    "rows_in_duplicate_audio_path_groups": 785
+  },
+  "subset_audio": {
+    "count": 1116,
+    "signature_counts": {
+      "RIFF_WAVE": 1116
+    },
+    "decode_status_counts": {
+      "OK": 1116
+    },
+    "codec_counts": {
+      "pcm_f32le": 620,
+      "pcm_s16le": 496
+    },
+    "sample_rate_counts": {
+      "32000": 372,
+      "16000": 372,
+      "44100": 124,
+      "48000": 248
+    },
+    "channel_counts": {
+      "1": 868,
+      "2": 248
+    },
+    "sample_format_counts": {
+      "flt": 620,
+      "s16": 496
+    },
+    "duration_distribution_seconds": {
+      "count": 1116,
+      "min": 10.0,
+      "p05": 10.0,
+      "p50": 10.18,
+      "p95": 10.242,
+      "max": 10.242,
+      "mean": 10.112444444444446,
+      "std_population": 0.10267003361482434
+    },
+    "total_duration_seconds": 11285.488,
+    "total_samples": 475204580,
+    "nonfinite_sample_count": 0,
+    "weighted_silence_fraction_lt_1e_4": 0.02065321213865405,
+    "silence_ge_50pct_count": 0,
+    "weighted_clipping_fraction_ge_0_999": 7.007718654563472e-05,
+    "clipping_ge_1pct_count": 2,
+    "audio_sha256_duplicate_groups": {},
+    "pcm_sha256_duplicate_groups": {}
+  },
+  "acquisition_plan": {
+    "provider_count": 9,
+    "provider_shard_counts": {
+      "AudioLDM 2 Large": 4,
+      "AudioLDM 2 Music": 4,
+      "MusicGen Large": 4,
+      "MusicGen Medium": 4,
+      "MusicGen Small": 4,
+      "Mustango": 4,
+      "Riffusion": 4,
+      "Stable Audio v1": 4,
+      "Stable Audio v2": 4
+    },
+    "shard_count": 36,
+    "expected_rows": 1116,
+    "expected_bytes": 1246815838,
+    "selection": "four pure-provider shards per requested candidate provider, evenly spaced over numeric ID range"
+  },
+  "leakage_findings": {
+    "id_encodes_provider_block": true,
+    "shard_index_is_provider_correlated": true,
+    "audio_path_encodes_prompt_tags": true,
+    "audio_path_exact_description_count": 868,
+    "audio_path_contains_description_count": 1116,
+    "description_is_prompt_and_semantic_group_key": true,
+    "random_row_or_segment_split_allowed": false,
+    "required_group_key": "normalized description/prompt identity, extended with audio and perceptual duplicate components"
+  },
+  "license_gate": {
+    "aime_generated_audio_dataset_license": "CC-BY-4.0 stated in pinned README",
+    "description_metadata_license": "CC-BY-NC-SA-4.0",
+    "selected_subset_rows": 1116,
+    "user_policy": "Noncommercial CC-BY, CC-BY-NC, and share-alike resources are permitted",
+    "selected_subset_training_eligible_rows": 1116,
+    "selected_subset_status": "GO_WITH_AIME_CC_BY_4_ATTRIBUTION",
+    "commercial_suno_udio_status": "HOLD_AND_EXCLUDED_FROM_SELECTED_SUBSET",
+    "scope_note": "Exact generation checkpoint and service-tier gaps are provenance-quality warnings unless an explicit output relicense or detector-training prohibition is found"
+  },
+  "method": {
+    "observed_audio_scope": "all 1116 rows in the selected 36 local parquet shards; no sampling",
+    "workers": 4,
+    "audio_probe": "ffprobe version 9.0.1-essentials_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers",
+    "audio_decode": "FFmpeg full decode to f32le interleaved PCM",
+    "silence_definition": "abs(sample)<1e-4",
+    "clipping_definition": "abs(sample)>=0.999",
+    "duplicate_definitions": [
+      "embedded audio byte SHA-256",
+      "decoded f32le PCM SHA-256"
+    ]
+  }
+}

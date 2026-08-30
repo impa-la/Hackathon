@@ -1,0 +1,32 @@
+{
+  "audit_timestamp_utc": "2026-08-30T08:36:05.586841+00:00",
+  "dataset": "disco-eth/AIME",
+  "revision": "b84d4be5eda830b6eb714998569dba73530f2601",
+  "last_modified": "2025-03-11T20:39:08.000Z",
+  "private": false,
+  "gated": false,
+  "shard_count": 210,
+  "failed_shards": 0,
+  "published_bytes": 62281475287,
+  "projected_rows": 6500,
+  "provider_counts": {
+    "AudioLDM 2 Large": 500,
+    "AudioLDM 2 Music": 500,
+    "MTG-Jamendo": 500,
+    "MusicGen Large": 500,
+    "MusicGen Medium": 500,
+    "MusicGen Small": 500,
+    "Mustango": 500,
+    "Riffusion": 500,
+    "Stable Audio v1": 500,
+    "Stable Audio v2": 500,
+    "Suno v3": 500,
+    "Suno v3.5": 500,
+    "Udio": 500
+  },
+  "read_scope": [
+    "id",
+    "model"
+  ],
+  "note": "HTTP range projection; audio bytes were not downloaded by this audit."
+}

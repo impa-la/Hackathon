@@ -1,0 +1,15 @@
+claim_id,claim,test,source,evidence,result,status,limitation
+LJ-01,공식 LJSpeech 1.1 archive identity,전체 archive SHA-256,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\ljspeech\1.1\LJSpeech-1.1.tar.bz2,"2748572632 bytes; SHA-256 be1a30453f28eb8dd26af4101ae40cbf2c50413b1bb21936cbcdc6fae3de8aa5",기대값 일치,PASS,공식 웹 현행성은 이 로컬 감사 범위 밖
+LJ-02,추출본 완전성,파일 수와 byte 합,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\ljspeech\1.1\extracted\LJSpeech-1.1,"13102 files; 3801111440 bytes",verified extractor 결과와 일치,PASS,재추출은 하지 않음
+LJ-03,WAV 손상 없음,Python wave 전수 decode,ljspeech-audio-inventory.csv,"13100 OK; 0 ERROR",전수 파싱 성공,PASS,WAVE parser가 지각 품질을 보장하지 않음
+LJ-04,포맷 균일,전수 WAV header,ljspeech-audio-inventory.csv,"13100 mono; 22050 Hz; 16-bit; PCM NONE",하나의 header 조합,PASS,계보 MP3 artifact는 header로 검출 불가
+LJ-05,메타데이터 완전 조인,ID set equality,metadata.csv + wav stems,"13100 rows; joined 13100; missing/orphan/duplicate 0",1:1 조인,PASS,target label은 포함되지 않음
+LJ-06,길이 분포,전수 frame/sample-rate,ljspeech-audit-run.json,"86117.0763 sec; 23.9214 h; min 1.1101; median 6.7641; max 10.0962",전수 집계,PASS,표본 없음
+LJ-07,무음 위험,abs normalized sample < 1e-4,ljspeech-audio-inventory.csv,"overall 2.2275%; per-file max 13.3066%; all-silent 0",전역 완전무음 없음,PASS,임계값 기반 진단
+LJ-08,클리핑 위험,abs normalized sample >= 0.999,ljspeech-audio-inventory.csv,"2 samples across LJ007-0073 and LJ038-0029",경미한 극값 관찰,OBSERVE,지각 왜곡 판정이 아님
+LJ-09,오디오 중복 없음,전체 WAV와 PCM SHA-256,ljspeech-duplicate-groups.csv,"file duplicate groups 0; PCM duplicate groups 0",정확 중복 없음,PASS,근사 중복/유사 발화는 별도 문제
+LJ-10,문장 누수 위험,canonical normalized transcript SHA-256,ljspeech-duplicate-groups.csv,"10 groups; 36 IDs",같은 split group 필요,BLOCKING_DESIGN,의미적 paraphrase 중복은 미검사
+LJ-11,MP3 artifact 계보,README 완독,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\ljspeech\1.1\extracted\LJSpeech-1.1\README,"original recordings distributed as 128 kbps MP3; artifact warning",대칭 codec 검증 필요,RISK,artifact 강도를 직접 측정하지 않음
+LJ-12,WaveFake pairing 가능성,datasheet 6쪽 완독 및 로컬 파일 상태,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\wavefake\1.2.0\datasheet.pdf,"117985 generated PCM WAV; generator directories; no recommended split; reference data not redistributed",문서 기반 pairing 설계,PLANNED,실제 filename 규칙은 ZIP 추출 후 검증 필요
+LJ-13,WaveFake local archive 안정성,해시 전후 size/mtime,C:\Users\MY PC\Desktop\Hackathon\deepvoice\data\raw\wavefake\1.2.0\generated_audio.zip,"2157289472 -> 2165186560 bytes during SHA-256; extracted audio 0",다운로드 진행 중,BLOCKED,부분 파일 SHA-256은 무효
+LJ-14,원본 비변경,감사 전후 archive/metadata/README stat,ljspeech-audit-run.json,size와 mtime_ns 동일,읽기 전용 유지,PASS,WAV별 mtime은 별도 기록하지 않음

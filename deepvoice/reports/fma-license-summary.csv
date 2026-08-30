@@ -1,0 +1,292 @@
+﻿record_type,scope,license_category,license_title,license_url,track_count,allowed
+category_summary,all_curated,ALLOW_BY,,,6960,True
+category_summary,all_curated,ALLOW_BY_NC,,,8313,True
+category_summary,all_curated,ALLOW_BY_NC_SA,,,43512,True
+category_summary,all_curated,ALLOW_BY_SA,,,2802,True
+category_summary,all_curated,ALLOW_CC0,,,1014,True
+category_summary,all_curated,EXCLUDE_CUSTOM,,,603,False
+category_summary,all_curated,EXCLUDE_ND,,,42831,False
+category_summary,all_curated,EXCLUDE_RESTRICTED,,,451,False
+category_summary,all_curated,EXCLUDE_UNKNOWN,,,88,False
+license_detail,all_curated,ALLOW_BY,Attribution,http://creativecommons.org/licenses/by/4.0/,4991,True
+license_detail,all_curated,ALLOW_BY,Attribution 1.0 Finland,http://creativecommons.org/licenses/by/1.0/fi/,104,True
+license_detail,all_curated,ALLOW_BY,Attribution 2.0 France,http://creativecommons.org/licenses/by/2.0/fr/,26,True
+license_detail,all_curated,ALLOW_BY,Attribution 2.0 UK: England,http://creativecommons.org/licenses/by/2.0/uk/,7,True
+license_detail,all_curated,ALLOW_BY,Attribution 2.5 Canada,http://creativecommons.org/licenses/by/2.5/ca/,1,True
+license_detail,all_curated,ALLOW_BY,Attribution 2.5 Italy,http://creativecommons.org/licenses/by/2.5/it/,1,True
+license_detail,all_curated,ALLOW_BY,Attribution 3.0 France,http://creativecommons.org/licenses/by/3.0/fr/,16,True
+license_detail,all_curated,ALLOW_BY,Attribution 3.0 International,http://creativecommons.org/licenses/by/3.0/,240,True
+license_detail,all_curated,ALLOW_BY,Attribution 3.0 Netherlands,http://creativecommons.org/licenses/by/3.0/nl/,34,True
+license_detail,all_curated,ALLOW_BY,Attribution 3.0 United States,http://creativecommons.org/licenses/by/3.0/us/,509,True
+license_detail,all_curated,ALLOW_BY,Creative Commons Attribution,http://creativecommons.org/licenses/by/3.0/,1031,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution NonCommercial 2.5,http://creativecommons.org/licenses/by-nc/2.5/,9,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-NonCommercial,http://creativecommons.org/licenses/by-nc/4.0/,3409,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-NonCommercial 2.0 Chile,http://creativecommons.org/licenses/by-nc/2.0/cl/,15,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-NonCommercial 2.5,http://creativecommons.org/licenses/by-nc/2.5/,17,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-NonCommercial 3.0 France,http://creativecommons.org/licenses/by-nc/3.0/fr/,10,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-NonCommercial 3.0 International,http://creativecommons.org/licenses/by-nc/3.0/,3570,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.0 France,http://creativecommons.org/licenses/by-nc/2.0/fr/,8,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.0 UK: England,http://creativecommons.org/licenses/by-nc/2.0/uk/,2,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.1 Japan,http://creativecommons.org/licenses/by-nc/2.1/jp/,30,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.5 Brazil,http://creativecommons.org/licenses/by-nc/2.5/br/,1,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.5 Canada,http://creativecommons.org/licenses/by-nc/2.5/ca/,2,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 2.5 Switzerland,http://creativecommons.org/licenses/by-nc/2.5/ch/,117,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Austria,http://creativecommons.org/licenses/by-nc/3.0/at/,1,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Brazil,http://creativecommons.org/licenses/by-nc/3.0/br/,26,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Germany,http://creativecommons.org/licenses/by-nc/3.0/de/,26,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Netherlands,http://creativecommons.org/licenses/by-nc/3.0/nl/,26,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 New Zealand,http://creativecommons.org/licenses/by-nc/3.0/nz/,8,True
+license_detail,all_curated,ALLOW_BY_NC,Attribution-Noncommercial 3.0 United States,http://creativecommons.org/licenses/by-nc/3.0/us/,1036,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike,http://creativecommons.org/licenses/by-nc-sa/4.0/,6907,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 2.1 Japan,http://creativecommons.org/licenses/by-nc-sa/2.1/jp/,30,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 (Will Not Appear in Vimeo Music Store),http://creativecommons.org/licenses/by-nc-sa/3.0,274,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 France,http://creativecommons.org/licenses/by-nc-sa/3.0/fr/,7,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-nc-sa/3.0/,15260,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 Italy,http://creativecommons.org/licenses/by-nc-sa/3.0/it/,17,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 France,http://creativecommons.org/licenses/by-nc-sa/2.0/fr/,80,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 Generic,http://creativecommons.org/licenses/by-nc-sa/2.0/,2,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 Germany,http://creativecommons.org/licenses/by-nc-sa/2.0/de/,14,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 UK: England,http://creativecommons.org/licenses/by-nc-sa/2.0/uk/,751,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Canada,http://creativecommons.org/licenses/by-nc-sa/2.5/ca/,47,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Israel,http://creativecommons.org/licenses/by-nc-sa/2.5/il/,4,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Italy,http://creativecommons.org/licenses/by-nc-sa/2.5/it/,172,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Mexico,http://creativecommons.org/licenses/by-nc-sa/2.5/mx/,13,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 UK: Scotland,http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/,23,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Brazil,http://creativecommons.org/licenses/by-nc-sa/3.0/br/,54,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-nc-sa/3.0/de/,180,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Netherlands,http://creativecommons.org/licenses/by-nc-sa/3.0/nl/,188,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 New Zealand,http://creativecommons.org/licenses/by-nc-sa/3.0/nz/,105,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Romania,http://creativecommons.org/licenses/by-nc-sa/3.0/ro/,56,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Spain,http://creativecommons.org/licenses/by-nc-sa/3.0/es/,78,True
+license_detail,all_curated,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-nc-sa/3.0/us/,19250,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 2.0 France,http://creativecommons.org/licenses/by-sa/2.0/fr/,21,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 2.0 UK: England,http://creativecommons.org/licenses/by-sa/2.0/uk/,27,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 3.0 Brazil,http://creativecommons.org/licenses/by-sa/3.0/br/,1,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-sa/3.0/de/,5,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 3.0 Netherlands,http://creativecommons.org/licenses/by-sa/3.0/nl/,12,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-sa/3.0/us/,216,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-ShareAlike,http://creativecommons.org/licenses/by-sa/4.0/,1549,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-ShareAlike 2.5 Canada,http://creativecommons.org/licenses/by-sa/2.5/ca/,2,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-ShareAlike 2.5 Portugal,http://creativecommons.org/licenses/by-sa/2.5/pt/,7,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-sa/3.0/,951,True
+license_detail,all_curated,ALLOW_BY_SA,Attribution-ShareAlike 3.0 Romania,http://creativecommons.org/licenses/by-sa/3.0/ro/,11,True
+license_detail,all_curated,ALLOW_CC0,CC0 1.0 Universal,http://creativecommons.org/publicdomain/zero/1.0/,1014,True
+license_detail,all_curated,EXCLUDE_CUSTOM,Art Libre,http://artlibre.org/licence/lal/en,16,False
+license_detail,all_curated,EXCLUDE_CUSTOM,CopyrightPlus,http://www.upitup.com/tracky/newalbum/CopyrightPlus.html,23,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Electronic Frontier Foundation Open Audio License,http://pan.zipcon.net/EFF/oal.html,5,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Free Music Philosophy,http://www.irdial.com/free_and_easy.htm,138,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Noncommercial Sampling Plus,http://creativecommons.org/licenses/nc-sampling+/1.0/,19,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Public Domain,http://creativecommons.org/licenses/publicdomain/,163,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Public Domain Mark 1.0,http://creativecommons.org/publicdomain/mark/1.0/,215,False
+license_detail,all_curated,EXCLUDE_CUSTOM,Sampling Plus,http://creativecommons.org/licenses/sampling+/1.0/,14,False
+license_detail,all_curated,EXCLUDE_CUSTOM,ideology.de,http://www.ideology.de/archives/000019.php,10,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nd/2.5/it/,2,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nd/3.0/us/,57,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NoDerivatives,https://creativecommons.org/licenses/by-nd/4.0/,30,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NoDerivatives 3.0 International,http://creativecommons.org/licenses/by-nd/3.0/,484,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NoDerivatives 4.0 International,http://creativecommons.org/licenses/by-nd/4.0/,372,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NoDerivs 2.0 UK: England & Wales,http://creativecommons.org/licenses/by-nd/2.0/uk/,7,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NoDerivs 2.5 Canada,http://creativecommons.org/licenses/by-nd/2.5/ca/,10,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,http://creativecommons.org/licenses/by-nc-nd/3.0/,17732,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives 2.0 Germany,http://creativecommons.org/licenses/by-nc-nd/2.0/de/,170,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 2.5 Colombia,http://creativecommons.org/licenses/by-nc-nd/2.5/co/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 2.5 Israel,http://creativecommons.org/licenses/by-nc-nd/2.5/il/,21,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 France,http://creativecommons.org/licenses/by-nc-nd/3.0/fr/,31,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 Italy,http://creativecommons.org/licenses/by-nc-nd/3.0/it/,18,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 Poland,http://creativecommons.org/licenses/by-nc-nd/3.0/pl/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 Portugal,http://creativecommons.org/licenses/by-nc-nd/3.0/pt/,7,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.0 UK: England,http://creativecommons.org/licenses/by-nc-nd/2.0/uk/,101,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Denmark,http://creativecommons.org/licenses/by-nc-nd/2.5/dk/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Generic,http://creativecommons.org/licenses/by-nc-nd/2.5/,23,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Hungary,http://creativecommons.org/licenses/by-nc-nd/2.5/hu/,48,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nc-nd/2.5/it/,111,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Mexico,http://creativecommons.org/licenses/by-nc-nd/2.5/mx/,17,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Portugal,http://creativecommons.org/licenses/by-nc-nd/2.5/pt/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Sweden,http://creativecommons.org/licenses/by-nc-nd/2.5/se/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Switzerland,http://creativecommons.org/licenses/by-nc-nd/2.5/ch/,4,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Croatia,http://creativecommons.org/licenses/by-nc-nd/3.0/hr/,2,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Germany,http://creativecommons.org/licenses/by-nc-nd/3.0/de/,192,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Netherlands,http://creativecommons.org/licenses/by-nc-nd/3.0/nl/,13,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Spain,http://creativecommons.org/licenses/by-nc-nd/3.0/es/,13,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nc-nd/3.0/us/,10584,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 Belgium,http://creativecommons.org/licenses/by-nc-nd/2.0/be/,1,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 France,http://creativecommons.org/licenses/by-nc-nd/2.0/fr/,487,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 Generic,http://creativecommons.org/licenses/by-nc-nd/2.0/,18,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.1 Japan,http://creativecommons.org/licenses/by-nc-nd/2.1/jp/,17,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Argentina,http://creativecommons.org/licenses/by-nc-nd/2.5/ar/,50,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Australia,http://creativecommons.org/licenses/by-nc-nd/2.5/au/,9,False
+license_detail,all_curated,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Canada,http://creativecommons.org/licenses/by-nc-nd/2.5/ca/,62,False
+license_detail,all_curated,EXCLUDE_ND,Creative Commons Attribution-NonCommercial-NoDerivatives 4.0,http://creativecommons.org/licenses/by-nc-nd/4.0/,12133,False
+license_detail,all_curated,EXCLUDE_RESTRICTED,Music Sharing,http://freemusicarchive.org/music-sharing,18,False
+license_detail,all_curated,EXCLUDE_RESTRICTED,Orphan Work,http://en.wikipedia.org/wiki/Orphan_work,5,False
+license_detail,all_curated,EXCLUDE_RESTRICTED,Public Domain / Sound Recording Common Law Protection,http://freemusicarchive.org/Sound_Recording_Common_Law,428,False
+license_detail,all_curated,EXCLUDE_UNKNOWN,PennSound,,1,False
+license_detail,all_curated,EXCLUDE_UNKNOWN,,,87,False
+category_summary,small,ALLOW_BY,,,893,True
+category_summary,small,ALLOW_BY_NC,,,930,True
+category_summary,small,ALLOW_BY_NC_SA,,,2884,True
+category_summary,small,ALLOW_BY_SA,,,369,True
+category_summary,small,ALLOW_CC0,,,54,True
+category_summary,small,EXCLUDE_CUSTOM,,,75,False
+category_summary,small,EXCLUDE_ND,,,2789,False
+category_summary,small,EXCLUDE_RESTRICTED,,,1,False
+category_summary,small,EXCLUDE_UNKNOWN,,,5,False
+license_detail,small,ALLOW_BY,Attribution,http://creativecommons.org/licenses/by/4.0/,547,True
+license_detail,small,ALLOW_BY,Attribution 2.0 France,http://creativecommons.org/licenses/by/2.0/fr/,1,True
+license_detail,small,ALLOW_BY,Attribution 2.0 UK: England,http://creativecommons.org/licenses/by/2.0/uk/,1,True
+license_detail,small,ALLOW_BY,Attribution 2.5 Canada,http://creativecommons.org/licenses/by/2.5/ca/,1,True
+license_detail,small,ALLOW_BY,Attribution 2.5 Italy,http://creativecommons.org/licenses/by/2.5/it/,1,True
+license_detail,small,ALLOW_BY,Attribution 3.0 International,http://creativecommons.org/licenses/by/3.0/,20,True
+license_detail,small,ALLOW_BY,Attribution 3.0 United States,http://creativecommons.org/licenses/by/3.0/us/,101,True
+license_detail,small,ALLOW_BY,Creative Commons Attribution,http://creativecommons.org/licenses/by/3.0/,221,True
+license_detail,small,ALLOW_BY_NC,Attribution-NonCommercial,http://creativecommons.org/licenses/by-nc/4.0/,476,True
+license_detail,small,ALLOW_BY_NC,Attribution-NonCommercial 2.5,http://creativecommons.org/licenses/by-nc/2.5/,9,True
+license_detail,small,ALLOW_BY_NC,Attribution-NonCommercial 3.0 International,http://creativecommons.org/licenses/by-nc/3.0/,399,True
+license_detail,small,ALLOW_BY_NC,Attribution-Noncommercial 2.5 Switzerland,http://creativecommons.org/licenses/by-nc/2.5/ch/,8,True
+license_detail,small,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Austria,http://creativecommons.org/licenses/by-nc/3.0/at/,1,True
+license_detail,small,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Germany,http://creativecommons.org/licenses/by-nc/3.0/de/,9,True
+license_detail,small,ALLOW_BY_NC,Attribution-Noncommercial 3.0 United States,http://creativecommons.org/licenses/by-nc/3.0/us/,28,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike,http://creativecommons.org/licenses/by-nc-sa/4.0/,607,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 (Will Not Appear in Vimeo Music Store),http://creativecommons.org/licenses/by-nc-sa/3.0,2,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 France,http://creativecommons.org/licenses/by-nc-sa/3.0/fr/,1,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-nc-sa/3.0/,913,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 France,http://creativecommons.org/licenses/by-nc-sa/2.0/fr/,6,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 Generic,http://creativecommons.org/licenses/by-nc-sa/2.0/,1,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 UK: England,http://creativecommons.org/licenses/by-nc-sa/2.0/uk/,81,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Canada,http://creativecommons.org/licenses/by-nc-sa/2.5/ca/,1,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Italy,http://creativecommons.org/licenses/by-nc-sa/2.5/it/,15,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Brazil,http://creativecommons.org/licenses/by-nc-sa/3.0/br/,2,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-nc-sa/3.0/de/,7,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Netherlands,http://creativecommons.org/licenses/by-nc-sa/3.0/nl/,4,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 New Zealand,http://creativecommons.org/licenses/by-nc-sa/3.0/nz/,5,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Romania,http://creativecommons.org/licenses/by-nc-sa/3.0/ro/,2,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Spain,http://creativecommons.org/licenses/by-nc-sa/3.0/es/,4,True
+license_detail,small,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-nc-sa/3.0/us/,1233,True
+license_detail,small,ALLOW_BY_SA,Attribution-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-sa/3.0/de/,3,True
+license_detail,small,ALLOW_BY_SA,Attribution-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-sa/3.0/us/,29,True
+license_detail,small,ALLOW_BY_SA,Attribution-ShareAlike,http://creativecommons.org/licenses/by-sa/4.0/,182,True
+license_detail,small,ALLOW_BY_SA,Attribution-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-sa/3.0/,155,True
+license_detail,small,ALLOW_CC0,CC0 1.0 Universal,http://creativecommons.org/publicdomain/zero/1.0/,54,True
+license_detail,small,EXCLUDE_CUSTOM,Art Libre,http://artlibre.org/licence/lal/en,6,False
+license_detail,small,EXCLUDE_CUSTOM,Noncommercial Sampling Plus,http://creativecommons.org/licenses/nc-sampling+/1.0/,8,False
+license_detail,small,EXCLUDE_CUSTOM,Public Domain,http://creativecommons.org/licenses/publicdomain/,40,False
+license_detail,small,EXCLUDE_CUSTOM,Public Domain Mark 1.0,http://creativecommons.org/publicdomain/mark/1.0/,18,False
+license_detail,small,EXCLUDE_CUSTOM,Sampling Plus,http://creativecommons.org/licenses/sampling+/1.0/,3,False
+license_detail,small,EXCLUDE_ND,Attribution-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nd/2.5/it/,1,False
+license_detail,small,EXCLUDE_ND,Attribution-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nd/3.0/us/,5,False
+license_detail,small,EXCLUDE_ND,Attribution-NoDerivatives,https://creativecommons.org/licenses/by-nd/4.0/,2,False
+license_detail,small,EXCLUDE_ND,Attribution-NoDerivatives 3.0 International,http://creativecommons.org/licenses/by-nd/3.0/,22,False
+license_detail,small,EXCLUDE_ND,Attribution-NoDerivatives 4.0 International,http://creativecommons.org/licenses/by-nd/4.0/,18,False
+license_detail,small,EXCLUDE_ND,Attribution-NoDerivs 2.0 UK: England & Wales,http://creativecommons.org/licenses/by-nd/2.0/uk/,2,False
+license_detail,small,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,http://creativecommons.org/licenses/by-nc-nd/3.0/,998,False
+license_detail,small,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives 2.0 Germany,http://creativecommons.org/licenses/by-nc-nd/2.0/de/,2,False
+license_detail,small,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 France,http://creativecommons.org/licenses/by-nc-nd/3.0/fr/,1,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.0 UK: England,http://creativecommons.org/licenses/by-nc-nd/2.0/uk/,1,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Generic,http://creativecommons.org/licenses/by-nc-nd/2.5/,2,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Hungary,http://creativecommons.org/licenses/by-nc-nd/2.5/hu/,1,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nc-nd/2.5/it/,4,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Germany,http://creativecommons.org/licenses/by-nc-nd/3.0/de/,28,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Spain,http://creativecommons.org/licenses/by-nc-nd/3.0/es/,2,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nc-nd/3.0/us/,696,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 France,http://creativecommons.org/licenses/by-nc-nd/2.0/fr/,10,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Argentina,http://creativecommons.org/licenses/by-nc-nd/2.5/ar/,11,False
+license_detail,small,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Canada,http://creativecommons.org/licenses/by-nc-nd/2.5/ca/,16,False
+license_detail,small,EXCLUDE_ND,Creative Commons Attribution-NonCommercial-NoDerivatives 4.0,http://creativecommons.org/licenses/by-nc-nd/4.0/,967,False
+license_detail,small,EXCLUDE_RESTRICTED,Music Sharing,http://freemusicarchive.org/music-sharing,1,False
+license_detail,small,EXCLUDE_UNKNOWN,,,5,False
+category_summary,medium_bundle,ALLOW_BY,,,1689,True
+category_summary,medium_bundle,ALLOW_BY_NC,,,1682,True
+category_summary,medium_bundle,ALLOW_BY_NC_SA,,,9702,True
+category_summary,medium_bundle,ALLOW_BY_SA,,,869,True
+category_summary,medium_bundle,ALLOW_CC0,,,107,True
+category_summary,medium_bundle,EXCLUDE_CUSTOM,,,187,False
+category_summary,medium_bundle,EXCLUDE_ND,,,10336,False
+category_summary,medium_bundle,EXCLUDE_RESTRICTED,,,404,False
+category_summary,medium_bundle,EXCLUDE_UNKNOWN,,,24,False
+license_detail,medium_bundle,ALLOW_BY,Attribution,http://creativecommons.org/licenses/by/4.0/,1117,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 2.0 France,http://creativecommons.org/licenses/by/2.0/fr/,1,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 2.0 UK: England,http://creativecommons.org/licenses/by/2.0/uk/,3,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 2.5 Canada,http://creativecommons.org/licenses/by/2.5/ca/,1,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 2.5 Italy,http://creativecommons.org/licenses/by/2.5/it/,1,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 3.0 International,http://creativecommons.org/licenses/by/3.0/,84,True
+license_detail,medium_bundle,ALLOW_BY,Attribution 3.0 United States,http://creativecommons.org/licenses/by/3.0/us/,136,True
+license_detail,medium_bundle,ALLOW_BY,Creative Commons Attribution,http://creativecommons.org/licenses/by/3.0/,346,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution NonCommercial 2.5,http://creativecommons.org/licenses/by-nc/2.5/,1,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-NonCommercial,http://creativecommons.org/licenses/by-nc/4.0/,780,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-NonCommercial 2.5,http://creativecommons.org/licenses/by-nc/2.5/,15,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-NonCommercial 3.0 International,http://creativecommons.org/licenses/by-nc/3.0/,666,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-Noncommercial 2.1 Japan,http://creativecommons.org/licenses/by-nc/2.1/jp/,15,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-Noncommercial 2.5 Switzerland,http://creativecommons.org/licenses/by-nc/2.5/ch/,21,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Austria,http://creativecommons.org/licenses/by-nc/3.0/at/,1,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-Noncommercial 3.0 Germany,http://creativecommons.org/licenses/by-nc/3.0/de/,16,True
+license_detail,medium_bundle,ALLOW_BY_NC,Attribution-Noncommercial 3.0 United States,http://creativecommons.org/licenses/by-nc/3.0/us/,167,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike,http://creativecommons.org/licenses/by-nc-sa/4.0/,1650,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 (Will Not Appear in Vimeo Music Store),http://creativecommons.org/licenses/by-nc-sa/3.0,6,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 France,http://creativecommons.org/licenses/by-nc-sa/3.0/fr/,2,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-nc-sa/3.0/,3248,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-NonCommercial-ShareAlike 3.0 Italy,http://creativecommons.org/licenses/by-nc-sa/3.0/it/,7,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 France,http://creativecommons.org/licenses/by-nc-sa/2.0/fr/,20,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 Generic,http://creativecommons.org/licenses/by-nc-sa/2.0/,1,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 Germany,http://creativecommons.org/licenses/by-nc-sa/2.0/de/,13,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.0 UK: England,http://creativecommons.org/licenses/by-nc-sa/2.0/uk/,207,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Canada,http://creativecommons.org/licenses/by-nc-sa/2.5/ca/,11,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Israel,http://creativecommons.org/licenses/by-nc-sa/2.5/il/,1,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Italy,http://creativecommons.org/licenses/by-nc-sa/2.5/it/,50,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 Mexico,http://creativecommons.org/licenses/by-nc-sa/2.5/mx/,4,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 2.5 UK: Scotland,http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/,3,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Brazil,http://creativecommons.org/licenses/by-nc-sa/3.0/br/,4,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-nc-sa/3.0/de/,63,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Netherlands,http://creativecommons.org/licenses/by-nc-sa/3.0/nl/,21,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 New Zealand,http://creativecommons.org/licenses/by-nc-sa/3.0/nz/,62,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Romania,http://creativecommons.org/licenses/by-nc-sa/3.0/ro/,27,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 Spain,http://creativecommons.org/licenses/by-nc-sa/3.0/es/,15,True
+license_detail,medium_bundle,ALLOW_BY_NC_SA,Attribution-Noncommercial-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-nc-sa/3.0/us/,4287,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-Share Alike 2.0 France,http://creativecommons.org/licenses/by-sa/2.0/fr/,5,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-Share Alike 2.0 UK: England,http://creativecommons.org/licenses/by-sa/2.0/uk/,4,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-Share Alike 3.0 Germany,http://creativecommons.org/licenses/by-sa/3.0/de/,5,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-Share Alike 3.0 United States,http://creativecommons.org/licenses/by-sa/3.0/us/,63,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-ShareAlike,http://creativecommons.org/licenses/by-sa/4.0/,401,True
+license_detail,medium_bundle,ALLOW_BY_SA,Attribution-ShareAlike 3.0 International,http://creativecommons.org/licenses/by-sa/3.0/,391,True
+license_detail,medium_bundle,ALLOW_CC0,CC0 1.0 Universal,http://creativecommons.org/publicdomain/zero/1.0/,107,True
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Art Libre,http://artlibre.org/licence/lal/en,6,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,CopyrightPlus,http://www.upitup.com/tracky/newalbum/CopyrightPlus.html,8,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Electronic Frontier Foundation Open Audio License,http://pan.zipcon.net/EFF/oal.html,3,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Noncommercial Sampling Plus,http://creativecommons.org/licenses/nc-sampling+/1.0/,12,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Public Domain,http://creativecommons.org/licenses/publicdomain/,117,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Public Domain Mark 1.0,http://creativecommons.org/publicdomain/mark/1.0/,29,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,Sampling Plus,http://creativecommons.org/licenses/sampling+/1.0/,5,False
+license_detail,medium_bundle,EXCLUDE_CUSTOM,ideology.de,http://www.ideology.de/archives/000019.php,7,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nd/2.5/it/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nd/3.0/us/,19,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NoDerivatives,https://creativecommons.org/licenses/by-nd/4.0/,12,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NoDerivatives 3.0 International,http://creativecommons.org/licenses/by-nd/3.0/,84,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NoDerivatives 4.0 International,http://creativecommons.org/licenses/by-nd/4.0/,81,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NoDerivs 2.0 UK: England & Wales,http://creativecommons.org/licenses/by-nd/2.0/uk/,7,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NoDerivs 2.5 Canada,http://creativecommons.org/licenses/by-nd/2.5/ca/,5,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,http://creativecommons.org/licenses/by-nc-nd/3.0/,3728,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivatives 2.0 Germany,http://creativecommons.org/licenses/by-nc-nd/2.0/de/,75,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 2.5 Colombia,http://creativecommons.org/licenses/by-nc-nd/2.5/co/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 France,http://creativecommons.org/licenses/by-nc-nd/3.0/fr/,10,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 Italy,http://creativecommons.org/licenses/by-nc-nd/3.0/it/,10,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-NonCommercial-NoDerivs 3.0 Portugal,http://creativecommons.org/licenses/by-nc-nd/3.0/pt/,2,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.0 UK: England,http://creativecommons.org/licenses/by-nc-nd/2.0/uk/,20,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Generic,http://creativecommons.org/licenses/by-nc-nd/2.5/,8,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Hungary,http://creativecommons.org/licenses/by-nc-nd/2.5/hu/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Italy,http://creativecommons.org/licenses/by-nc-nd/2.5/it/,17,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Mexico,http://creativecommons.org/licenses/by-nc-nd/2.5/mx/,11,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Sweden,http://creativecommons.org/licenses/by-nc-nd/2.5/se/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 2.5 Switzerland,http://creativecommons.org/licenses/by-nc-nd/2.5/ch/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Germany,http://creativecommons.org/licenses/by-nc-nd/3.0/de/,44,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Netherlands,http://creativecommons.org/licenses/by-nc-nd/3.0/nl/,1,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 Spain,http://creativecommons.org/licenses/by-nc-nd/3.0/es/,2,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-No Derivative Works 3.0 United States,http://creativecommons.org/licenses/by-nc-nd/3.0/us/,2826,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 France,http://creativecommons.org/licenses/by-nc-nd/2.0/fr/,94,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.0 Generic,http://creativecommons.org/licenses/by-nc-nd/2.0/,16,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.1 Japan,http://creativecommons.org/licenses/by-nc-nd/2.1/jp/,9,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Argentina,http://creativecommons.org/licenses/by-nc-nd/2.5/ar/,11,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Australia,http://creativecommons.org/licenses/by-nc-nd/2.5/au/,2,False
+license_detail,medium_bundle,EXCLUDE_ND,Attribution-Noncommercial-NoDerivatives 2.5 Canada,http://creativecommons.org/licenses/by-nc-nd/2.5/ca/,22,False
+license_detail,medium_bundle,EXCLUDE_ND,Creative Commons Attribution-NonCommercial-NoDerivatives 4.0,http://creativecommons.org/licenses/by-nc-nd/4.0/,3215,False
+license_detail,medium_bundle,EXCLUDE_RESTRICTED,Music Sharing,http://freemusicarchive.org/music-sharing,1,False
+license_detail,medium_bundle,EXCLUDE_RESTRICTED,Public Domain / Sound Recording Common Law Protection,http://freemusicarchive.org/Sound_Recording_Common_Law,403,False
+license_detail,medium_bundle,EXCLUDE_UNKNOWN,,,24,False

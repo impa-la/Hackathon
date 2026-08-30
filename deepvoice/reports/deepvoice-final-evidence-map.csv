@@ -1,0 +1,14 @@
+claim_id,claim,evidence,observed_value,status,notes
+DV01,final readiness,deepvoice-final-audit-run.json,DATA_READINESS READY,PASS,Curated eligible manifest is the final SSOT
+DV02,manifest identity,deepvoice-training-manifest.csv.gz,"137328 rows; gzip SHA256 2f900e53cb728571f330ae24f885d6e6fade8c3ba61b5388fd9b6a4b28792ec6",PASS,Deterministic gzip mtime 0
+DV03,dataset counts,deepvoice-final-audit-run.json,"LJSpeech 13100; WaveFake 117983; FMA 5129; AIME 1116",PASS,Eligible rows only
+DV04,label counts,deepvoice-final-audit-run.json,"real 18229; synthetic 119099",PASS,No WaveFake duplicate copies
+DV05,split counts,deepvoice-training-manifest-summary.csv,"train 110059; validation 13540; test 13729",PASS,Counts summed across datasets
+DV06,group isolation,deepvoice-final-audit-run.json,"35779 unique content groups; crossing splits 0",PASS,Deterministic group hash split
+DV07,total duration,deepvoice-final-audit-run.json,268.412406 hours,PASS,Sum of eligible row durations
+DV08,LJSpeech evidence,ljspeech-audio-inventory.csv,"13100 parse OK and metadata joined",PASS,Historical BLOCKED was pre-WaveFake point-in-time state
+DV09,FMA evidence,fma-small-audit-run.json,"strict allowlist 5130; decode OK 5129; failed ID 133297 excluded",PASS,ND/custom/restricted/unknown excluded
+DV10,AIME evidence,aime-subset-audit-run.json,"1116 selected open-model rows; decode OK 1116; AIME direct CC BY 4.0",PASS,Suno/Udio not acquired and excluded
+DV11,WaveFake evidence,wavefake-audit-run.json,"117983 canonical generated; CRC/parse failures 0; duplicate copies 16283 excluded",PASS,CC BY-SA 4.0 conditions retained
+DV12,group split rules,deepvoice-split-constraints.md,"LJS ID; JSUT ID; TTS prompt ID; FMA artist-album component; AIME prompt semantic hash",PASS,Random row or segment split prohibited
+DV13,large CSV packaging,large-csv-package-run.json,"all selected CSV gzip mtime 0 with before/after SHA256",PASS,No uncompressed large CSV is deployed

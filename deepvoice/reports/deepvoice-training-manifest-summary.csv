@@ -1,0 +1,13 @@
+﻿dataset,label,recommended_content_split,row_count,duration_hours,unique_content_group_count
+aime-open-model-subset,synthetic,test,107,0.30073555555555553,34
+aime-open-model-subset,synthetic,train,888,2.494102222222222,264
+aime-open-model-subset,synthetic,validation,121,0.34002000000000004,34
+fma-small,real,test,487,4.056654979528849,107
+fma-small,real,train,4276,35.59521793717718,855
+fma-small,real,validation,366,3.04882778872197,102
+ljspeech-1.1,real,test,1321,2.391836394557823,1321
+ljspeech-1.1,real,train,10470,19.118253036029223,10470
+ljspeech-1.1,real,validation,1309,2.411320647518267,1309
+wavefake-1.2.0,synthetic,test,11814,19.80495270219199,3402
+wavefake-1.2.0,synthetic,train,94425,158.85162168682288,27567
+wavefake-1.2.0,synthetic,validation,11744,19.998863230662632,3414

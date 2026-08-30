@@ -1,0 +1,14 @@
+# Raw and derived DeepVoice competition data
+deepvoice/data/raw/
+deepvoice/data/interim/
+deepvoice/data/processed/
+
+# Large model artifacts
+deepvoice/artifacts/
+deepvoice/checkpoints/
+
+# Local caches
+deepvoice/.cache/
+deepvoice/reports/.idea/
+__pycache__/
+*.pyc

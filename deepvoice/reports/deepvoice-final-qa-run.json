@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "checks": {
+    "final_ready": true,
+    "wavefake_ready": true,
+    "manifest_rows": true,
+    "dataset_counts": true,
+    "label_counts": true,
+    "split_counts": true,
+    "content_group_cross_split_zero": true,
+    "manifest_sha256": true,
+    "inventory_rows": true,
+    "inventory_roles": true,
+    "eligible_roles": true,
+    "wavefake_crc_zero": true,
+    "wavefake_parse_zero": true,
+    "wavefake_duplicate_exact": true,
+    "final_report_first_line": true,
+    "wavefake_report_first_line": true,
+    "all_gzip_mtime_zero": true,
+    "no_file_ge_50_mib_in_publish_set": true
+  },
+  "failures": [],
+  "observed": {
+    "manifest_rows": 137328,
+    "dataset_counts": {
+      "ljspeech-1.1": 13100,
+      "wavefake-1.2.0": 117983,
+      "fma-small": 5129,
+      "aime-open-model-subset": 1116
+    },
+    "label_counts": {
+      "real": 18229,
+      "synthetic": 119099
+    },
+    "split_counts": {
+      "train": 110059,
+      "test": 13729,
+      "validation": 13540
+    },
+    "inventory_rows": 134266,
+    "role_counts": {
+      "generated": 117983,
+      "redundant_duplicate_copy": 16283
+    },
+    "eligible_role_counts": {
+      "generated": 117983
+    },
+    "gzip_files": {
+      "deepvoice-training-manifest.csv.gz": 14236928,
+      "wavefake-audio-inventory.csv.gz": 22681186,
+      "wavefake-duplicate-groups.csv.gz": 1701564,
+      "wavefake-ljspeech-pairing.csv.gz": 935016,
+      "wavefake-source-group-manifest.csv.gz": 593001
+    }
+  }
+}

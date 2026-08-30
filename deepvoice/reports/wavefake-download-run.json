@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-08-30T09:27:31.133432+00:00",
+  "url": "https://zenodo.org/records/5642694/files/generated_audio.zip?download=1",
+  "destination": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\wavefake\\1.2.0\\generated_audio.zip",
+  "initial_bytes": 11746414592,
+  "final_bytes": 28918626084,
+  "workers": 12,
+  "chunk_mib": 256,
+  "range_count": 64,
+  "md5": "76b3e62d69f866e57ad6b1debaff434b",
+  "sha256": "431e880dc54361cbb9722f332377f20d4524d231ecfce8ce9ca187dc1b6bec30",
+  "elapsed_seconds": 697.6976003999989
+}

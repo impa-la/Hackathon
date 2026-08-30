@@ -1,3 +1,0 @@
-archive_path,csv_kind,encoding,parse_status,rows,columns,header,duplicate_rows,duplicate_ids,blank_cells,ragged_rows,probability_non_numeric,probability_out_of_range,constant_columns,target_columns_present,expected_header_match
-outer::data/sample_submission.csv,submission_format,utf-8-sig,OK,3,6,ID|FILE_FAKE_PROB|VOICE_FAKE_PROB|MUSIC_FAKE_PROB|VOICE_PRESENT_PROB|MUSIC_PRESENT_PROB,0,0,0,0,0,0,FILE_FAKE_PROB|VOICE_FAKE_PROB|MUSIC_FAKE_PROB|VOICE_PRESENT_PROB|MUSIC_PRESENT_PROB,0,True
-baseline_submit.zip::model/panns/class_labels_indices.csv,auxiliary_model_metadata,utf-8-sig,OK,527,3,index|mid|display_name,0,0,0,0,NOT_APPLICABLE,NOT_APPLICABLE,,0,NOT_APPLICABLE

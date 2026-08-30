@@ -1,0 +1,316 @@
+{
+  "DATA_READINESS": "BLOCKED",
+  "audit_time_utc": "2026-08-30T07:01:11.219435+00:00",
+  "network_requests_made": false,
+  "archive": {
+    "path": "C:\\Users\\MY PC\\Desktop\\Hackathon\\deepvoice\\data\\raw\\fma\\official\\fma_metadata.zip",
+    "bytes": 358412441,
+    "sha256": "d9527a5297a65da31c5676484d5047c3e2b8a8060ce72a46e26158be736bf265",
+    "member_count": 12,
+    "corrupt_member": null,
+    "unsafe_path_count": 0,
+    "modified_during_audit": false
+  },
+  "extracted_integrity": {
+    "checksum_entries": 10,
+    "checksum_mismatches": [],
+    "zip_size_mismatch_count": 0,
+    "files": [
+      {
+        "file": "checksums",
+        "bytes": 563,
+        "sha1_expected": "",
+        "sha1_actual": "NOT_LISTED",
+        "checksum_status": "NOT_LISTED",
+        "zip_size_match": true
+      },
+      {
+        "file": "echonest.csv",
+        "bytes": 44000447,
+        "sha1_expected": "d02a25fb1279cdc632448215abf752f9caf509de",
+        "sha1_actual": "d02a25fb1279cdc632448215abf752f9caf509de",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "features.csv",
+        "bytes": 951117185,
+        "sha1_expected": "b7f2339016af1c31e0293cef18383906992b160c",
+        "sha1_actual": "b7f2339016af1c31e0293cef18383906992b160c",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "genres.csv",
+        "bytes": 3922,
+        "sha1_expected": "d2f3a75be03441d324ef9815d23bad33d149c831",
+        "sha1_actual": "d2f3a75be03441d324ef9815d23bad33d149c831",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "not_found.pickle",
+        "bytes": 216942,
+        "sha1_expected": "56efea07a04d527305b871d49c9d42745f77ec8a",
+        "sha1_actual": "56efea07a04d527305b871d49c9d42745f77ec8a",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "raw_albums.csv",
+        "bytes": 24144296,
+        "sha1_expected": "784833f7a2dcb5f54ca18be1d4d4238ad2665401",
+        "sha1_actual": "784833f7a2dcb5f54ca18be1d4d4238ad2665401",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "raw_artists.csv",
+        "bytes": 14044281,
+        "sha1_expected": "4dc5d5752c47f2665c7b5ff0af8e1e13c58f8442",
+        "sha1_actual": "4dc5d5752c47f2665c7b5ff0af8e1e13c58f8442",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "raw_echonest.csv",
+        "bytes": 48642077,
+        "sha1_expected": "a4c9cfa63b61899c506023d3b781958c1653d612",
+        "sha1_actual": "a4c9cfa63b61899c506023d3b781958c1653d612",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "raw_genres.csv",
+        "bytes": 5866,
+        "sha1_expected": "07817da6631ed41d0a6978a8ea956046045da810",
+        "sha1_actual": "07817da6631ed41d0a6978a8ea956046045da810",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "raw_tracks.csv",
+        "bytes": 122246181,
+        "sha1_expected": "2d78c45e4d8415215d4c44eced083ac173feff4f",
+        "sha1_actual": "2d78c45e4d8415215d4c44eced083ac173feff4f",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      },
+      {
+        "file": "README.txt",
+        "bytes": 256,
+        "sha1_expected": "",
+        "sha1_actual": "NOT_LISTED",
+        "checksum_status": "NOT_LISTED",
+        "zip_size_match": true
+      },
+      {
+        "file": "tracks.csv",
+        "bytes": 260414445,
+        "sha1_expected": "e65cfe18cbba4e37921b58ea5293c2510329de75",
+        "sha1_actual": "e65cfe18cbba4e37921b58ea5293c2510329de75",
+        "checksum_status": "OK",
+        "zip_size_match": true
+      }
+    ]
+  },
+  "tracks": {
+    "raw_tracks": 109727,
+    "curated_tracks": 106574,
+    "raw_not_curated": 3153,
+    "curated_not_raw": 0,
+    "duplicate_raw_track_ids": 0,
+    "duplicate_curated_track_ids": 0,
+    "subset_label_counts": {
+      "large": 81574,
+      "medium": 17000,
+      "small": 8000
+    },
+    "split_counts": {
+      "training": 84353,
+      "test": 11263,
+      "validation": 10958
+    },
+    "subset_split_counts": {
+      "large": {
+        "test": 8690,
+        "training": 64431,
+        "validation": 8453
+      },
+      "medium": {
+        "test": 1773,
+        "training": 13522,
+        "validation": 1705
+      },
+      "small": {
+        "test": 800,
+        "training": 6400,
+        "validation": 800
+      }
+    }
+  },
+  "not_found": {
+    "tracks": 45594,
+    "albums": 480,
+    "artists": 250,
+    "audio": 180,
+    "clips": 286,
+    "track_ids_unique": 45594,
+    "track_ids_overlap_raw": 0,
+    "raw_plus_not_found_track_ids_contiguous_0_to_max": true,
+    "audio_ids_overlap_raw": 180,
+    "audio_ids_overlap_curated": 0,
+    "clip_ids_overlap_raw": 286,
+    "clip_ids_overlap_curated": 0
+  },
+  "path_duplicates": {
+    "raw_missing_track_file": 7,
+    "raw_duplicate_path_groups": 633,
+    "raw_duplicate_path_affected_tracks": 1546,
+    "raw_duplicate_path_extra_rows": 913,
+    "raw_max_path_group": 18,
+    "curated_missing_track_file": 0,
+    "curated_duplicate_path_groups": 609,
+    "curated_duplicate_path_affected_tracks": 1481,
+    "curated_duplicate_path_extra_rows": 872,
+    "small_duplicate_path_groups": 0,
+    "small_duplicate_path_affected_tracks": 0
+  },
+  "scopes": {
+    "all_curated": {
+      "tracks": 106574,
+      "split_counts": {
+        "training": 84353,
+        "test": 11263,
+        "validation": 10958
+      },
+      "allowed_tracks": 62601,
+      "excluded_tracks": 43973,
+      "license_category_counts": {
+        "ALLOW_BY_NC_SA": 43512,
+        "EXCLUDE_ND": 42831,
+        "ALLOW_BY_NC": 8313,
+        "ALLOW_BY": 6960,
+        "ALLOW_BY_SA": 2802,
+        "ALLOW_CC0": 1014,
+        "EXCLUDE_CUSTOM": 603,
+        "EXCLUDE_RESTRICTED": 451,
+        "EXCLUDE_UNKNOWN": 88
+      },
+      "artist_split_leakage": {
+        "unique_groups": 16341,
+        "missing_group_rows": 0,
+        "cross_split_groups": 0,
+        "cross_split_affected_tracks": 0,
+        "training_validation_overlap": 0,
+        "training_test_overlap": 0,
+        "validation_test_overlap": 0,
+        "all_three_overlap": 0
+      },
+      "album_split_leakage": {
+        "unique_groups": 14854,
+        "missing_group_rows": 0,
+        "cross_split_groups": 671,
+        "cross_split_affected_tracks": 13997,
+        "training_validation_overlap": 454,
+        "training_test_overlap": 464,
+        "validation_test_overlap": 253,
+        "all_three_overlap": 250
+      }
+    },
+    "small": {
+      "tracks": 8000,
+      "split_counts": {
+        "training": 6400,
+        "validation": 800,
+        "test": 800
+      },
+      "allowed_tracks": 5130,
+      "excluded_tracks": 2870,
+      "license_category_counts": {
+        "ALLOW_BY_NC_SA": 2884,
+        "EXCLUDE_ND": 2789,
+        "ALLOW_BY_NC": 930,
+        "ALLOW_BY": 893,
+        "ALLOW_BY_SA": 369,
+        "EXCLUDE_CUSTOM": 75,
+        "ALLOW_CC0": 54,
+        "EXCLUDE_UNKNOWN": 5,
+        "EXCLUDE_RESTRICTED": 1
+      },
+      "artist_split_leakage": {
+        "unique_groups": 2309,
+        "missing_group_rows": 0,
+        "cross_split_groups": 0,
+        "cross_split_affected_tracks": 0,
+        "training_validation_overlap": 0,
+        "training_test_overlap": 0,
+        "validation_test_overlap": 0,
+        "all_three_overlap": 0
+      },
+      "album_split_leakage": {
+        "unique_groups": 2464,
+        "missing_group_rows": 0,
+        "cross_split_groups": 90,
+        "cross_split_affected_tracks": 549,
+        "training_validation_overlap": 58,
+        "training_test_overlap": 49,
+        "validation_test_overlap": 21,
+        "all_three_overlap": 19
+      }
+    },
+    "medium_bundle": {
+      "tracks": 25000,
+      "split_counts": {
+        "training": 19922,
+        "test": 2573,
+        "validation": 2505
+      },
+      "allowed_tracks": 14049,
+      "excluded_tracks": 10951,
+      "license_category_counts": {
+        "EXCLUDE_ND": 10336,
+        "ALLOW_BY_NC_SA": 9702,
+        "ALLOW_BY": 1689,
+        "ALLOW_BY_NC": 1682,
+        "ALLOW_BY_SA": 869,
+        "EXCLUDE_RESTRICTED": 404,
+        "EXCLUDE_CUSTOM": 187,
+        "ALLOW_CC0": 107,
+        "EXCLUDE_UNKNOWN": 24
+      },
+      "artist_split_leakage": {
+        "unique_groups": 5545,
+        "missing_group_rows": 0,
+        "cross_split_groups": 0,
+        "cross_split_affected_tracks": 0,
+        "training_validation_overlap": 0,
+        "training_test_overlap": 0,
+        "validation_test_overlap": 0,
+        "all_three_overlap": 0
+      },
+      "album_split_leakage": {
+        "unique_groups": 5152,
+        "missing_group_rows": 0,
+        "cross_split_groups": 274,
+        "cross_split_affected_tracks": 2485,
+        "training_validation_overlap": 184,
+        "training_test_overlap": 175,
+        "validation_test_overlap": 93,
+        "all_three_overlap": 89
+      }
+    }
+  },
+  "source_currency": {
+    "metadata_readme_code_url": "https://github.com/mdeff/fma",
+    "metadata_readme_paper_url": "https://arxiv.org/abs/1612.01840",
+    "network_verified_on_audit_date": false,
+    "limitation": "URLs are provenance fields recorded in the local metadata. Current reachability, redirects, license-page changes, and download availability were not checked because this audit made no network requests."
+  },
+  "blocking_reasons": [
+    "This is a metadata-only audit; fma_small.zip is zero bytes and no FMA audio was audited.",
+    "License categories are a conservative project allowlist based on historical metadata URLs, not a current legal or source-page verification.",
+    "FMA is real music only and supplies no DeepVoice competition REAL/FAKE component labels or AI-generated music counterpart.",
+    "Album IDs cross official train/validation/test splits even though artist IDs do not; lineage-safe regrouping is required before use."
+  ]
+}
